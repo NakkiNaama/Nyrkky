@@ -58,8 +58,8 @@
     <IntDir>..\bin\Debug-windows-x86_64\Nyrkky\</IntDir>
     <TargetName>Nyrkky</TargetName>
     <TargetExt>.dll</TargetExt>
-    <IncludePath>$(SolutionDir)Dependencies\tinyxml2\include;$(SolutionDir)Dependencies\freetype\include;$(SolutionDir)Dependencies\GLAD\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)Dependencies\tinyxml2\lib;$(SolutionDir)Nyrkky\Dependencies\freetype;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)Dependencies\freetype\include;$(SolutionDir)Dependencies\GLAD\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Nyrkky\Dependencies\freetype;$(LibraryPath)</LibraryPath>
     <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -80,6 +80,12 @@
     <IncludePath>$(SolutionDir)Dependencies\tinyxml2\include;$(SolutionDir)Dependencies\freetype\include;$(SolutionDir)Dependencies\GLAD\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)Dependencies\tinyxml2\lib;$(SolutionDir)Nyrkky\Dependencies\freetype;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnabled>false</VcpkgEnabled>
+    <VcpkgManifestInstall>false</VcpkgManifestInstall>
+    <VcpkgAutoLink>false</VcpkgAutoLink>
+    <VcpkgApplocalDeps>false</VcpkgApplocalDeps>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -90,13 +96,14 @@
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
       <AdditionalIncludeDirectories>Source\vendor;$(SolutionDir)Dependencies\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>..\bin\Debug-windows-x86_64\Nyrkky\Nyrkky.lib</ImportLibrary>
       <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\freetype;$(SolutionDir)Dependencies\GLFW\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>tinyxml2.lib;glfw3.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;freetype.lib</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;freetype.lib</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>
@@ -118,8 +125,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>..\bin\Release-windows-x86_64\Nyrkky\Nyrkky.lib</ImportLibrary>
-      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\freetype;$(SolutionDir)Dependencies\GLFW\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>tinyxml2.lib;glfw3.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;freetype.lib</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;freetype.lib</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>IF EXIST ..\bin\Release-windows-x86_64\Nyrkky\Nyrkky.dll\ (xcopy /Q /E /Y /I ..\bin\Release-windows-x86_64\Nyrkky\Nyrkky.dll ..\bin\Release-windows-x86_64\NakkiGame &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Release-windows-x86_64\Nyrkky\Nyrkky.dll ..\bin\Release-windows-x86_64\NakkiGame &gt; nul)</Command>
@@ -141,7 +147,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>..\bin\Dist-windows-x86_64\Nyrkky\Nyrkky.lib</ImportLibrary>
       <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\freetype;$(SolutionDir)Dependencies\GLFW\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>tinyxml2.lib;glfw3.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;freetype.lib</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;freetype.lib</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>IF EXIST ..\bin\Dist-windows-x86_64\Nyrkky\Nyrkky.dll\ (xcopy /Q /E /Y /I ..\bin\Dist-windows-x86_64\Nyrkky\Nyrkky.dll ..\bin\Dist-windows-x86_64\NakkiGame &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Dist-windows-x86_64\Nyrkky\Nyrkky.dll ..\bin\Dist-windows-x86_64\NakkiGame &gt; nul)</Command>
@@ -466,6 +472,7 @@
     <ClInclude Include="Source\BunkerBound\UI.h" />
     <ClInclude Include="Source\BunkerBound\Engine\TileTypeList.h" />
     <ClInclude Include="Source\BunkerBound\Timer.h" />
+    <ClInclude Include="Source\vendor\tinyxml2\tinyxml2.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Dependencies\GLAD\src\glad.c" />
@@ -497,6 +504,7 @@
     <ClCompile Include="Source\BunkerBound\UI.cpp" />
     <ClCompile Include="Source\BunkerBound\Engine\TileTypeList.cpp" />
     <ClCompile Include="Source\BunkerBound\Timer.cpp" />
+    <ClCompile Include="Source\vendor\tinyxml2\tinyxml2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\shaders\text.shader" />

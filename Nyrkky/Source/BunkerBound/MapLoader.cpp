@@ -1,6 +1,7 @@
+/**/
 #include "MapLoader.h"
 #include <fstream>
-#include "tinyxml2.h"
+#include "../vendor/tinyxml2/tinyxml2.h"
 #include "GameData.h"
 
 MapLoader::MapLoader()
@@ -13,7 +14,7 @@ MapLoader::MapLoader()
 bool MapLoader::GenerateGenericMap()
 {
     LoadAtlasTextures();
-
+   
     tinyxml2::XMLDocument doc;
     tinyxml2::XMLElement* root = doc.NewElement("root");
     doc.LinkEndChild(root);
@@ -64,12 +65,13 @@ bool MapLoader::GenerateGenericMap()
     }
 
     doc.SaveFile("Maps/generic.xml");
-
+    
     return true;
 }
 
 void MapLoader::LoadMap(const char* path, int& gridSize, std::vector<Tile> &tiles, std::vector<std::shared_ptr<TileRenderData>>& types, std::vector<std::shared_ptr<TileEntity>>& entityTypes, std::vector<std::string>& tileEntities)
 {    
+    
     //std::cout << "load map called" << std::endl;
     tinyxml2::XMLDocument doc;
 
@@ -146,11 +148,12 @@ void MapLoader::LoadMap(const char* path, int& gridSize, std::vector<Tile> &tile
     gridSize = gridSize / numColumns;
 
     std::cout << "new grid size " << gridSize << std::endl;
-
+    
 }
 
 bool MapLoader::SaveMapToFile(int MapSize, const std::vector<Tile>& tiles, const std::vector<std::shared_ptr<TileEntity>> tileEntities)
 {
+    
     std::cout << "save map called" << std::endl;
     tinyxml2::XMLDocument doc;
     tinyxml2::XMLElement* root = doc.NewElement("root");
@@ -225,6 +228,8 @@ bool MapLoader::SaveMapToFile(int MapSize, const std::vector<Tile>& tiles, const
 
     std::cout << "Map save success." << std::endl;
     return true;
+    
+    return 0;
 }
 
 void MapLoader::LoadAtlasTextures()
