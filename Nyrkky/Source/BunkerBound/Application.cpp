@@ -386,14 +386,17 @@ void Application::LeftClick(bool ctrl)
             if (!uiClick)
             {
                 int tile = GetClickedTile();
-                if (GameData::GetUI()->GetUIView() == 0)
+                if (tile != -1)
                 {
-                    if (!ctrl) GameData::GetMap()->ChangeTile(GameData::GetUI()->GetLayer(), tile, GameData::GetUI()->GetTextureID(), GameData::GetUI()->GetIsSolid());
-                    else GameData::GetMap()->ResetTile(tile, GameData::GetUI()->GetLayer());
-                }
-                else
-                {
-                    GameData::GetMap()->SpawnTileEntity(GameData::GetUI()->GetObjectName(), tile);
+                    if (GameData::GetUI()->GetUIView() == 0)
+                    {
+                        if (!ctrl) GameData::GetMap()->ChangeTile(GameData::GetUI()->GetLayer(), tile, GameData::GetUI()->GetTextureID(), GameData::GetUI()->GetIsSolid());
+                        else GameData::GetMap()->ResetTile(tile, GameData::GetUI()->GetLayer());
+                    }
+                    else
+                    {
+                        GameData::GetMap()->SpawnTileEntity(GameData::GetUI()->GetObjectName(), tile);
+                    }
                 }
             }
         }
