@@ -54,13 +54,13 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LinkIncremental>true</LinkIncremental>
     <OutDir>..\bin\Debug-windows-x86_64\Nyrkky\</OutDir>
     <IntDir>..\bin\Debug-windows-x86_64\Nyrkky\</IntDir>
     <TargetName>Nyrkky</TargetName>
     <TargetExt>.dll</TargetExt>
     <IncludePath>$(SolutionDir)Dependencies\tinyxml2\include;$(SolutionDir)Dependencies\freetype\include;$(SolutionDir)Dependencies\GLAD\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)Dependencies\tinyxml2\lib;$(SolutionDir)Nyrkky\Dependencies\freetype;$(LibraryPath)</LibraryPath>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -99,7 +99,8 @@
       <AdditionalDependencies>tinyxml2.lib;glfw3.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;freetype.lib</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>IF EXIST ..\bin\Debug-windows-x86_64\Nyrkky\Nyrkky.dll\ (xcopy /Q /E /Y /I ..\bin\Debug-windows-x86_64\Nyrkky\Nyrkky.dll ..\bin\Debug-windows-x86_64\NakkiGame &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Debug-windows-x86_64\Nyrkky\Nyrkky.dll ..\bin\Debug-windows-x86_64\NakkiGame &gt; nul)</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

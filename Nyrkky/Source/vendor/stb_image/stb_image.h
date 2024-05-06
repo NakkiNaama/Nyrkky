@@ -284,7 +284,7 @@ RECENT REVISION HISTORY:
 //
 //     stbi_hdr_to_ldr_gamma(2.2f);
 //     stbi_hdr_to_ldr_scale(1.0f);
-//
+// 
 // (note, do not use _inverse_ constants; stbi_image will invert them
 // appropriately).
 //
