@@ -1,0 +1,73 @@
+<story>
+    <node id="1" type="scene">
+        <text>You find yourself standing in a dimly lit alleyway.</text>
+        <text>The sound of footsteps echoes in the distance.</text>
+        <choices>
+            <choice>
+                <text>Investigate the source of the footsteps.</text>
+                <nextNodeId>2</nextNodeId>
+            </choice>
+            <choice>
+                <text>Stay put and observe.</text>
+                <nextNodeId>3</nextNodeId>
+            </choice>
+        </choices>
+    </node>
+    <node id="2" type="scene">
+        <text>As you move closer, you see a shadowy figure emerge from the darkness.</text>
+        <text>It's a person wearing a hood, their face obscured.</text>
+        <choices>
+            <choice>
+                <text>Approach the figure cautiously.</text>
+                <nextNodeId>4</nextNodeId>
+            </choice>
+            <choice>
+                <text>Remain hidden and observe from a distance.</text>
+                <nextNodeId>5</nextNodeId>
+            </choice>
+        </choices>
+    </node>
+    <node id="3" type="scene">
+        <text>You decide to stay put and observe.</text>
+        <text>The footsteps grow louder as the figure approaches.</text>
+        <choices>
+            <choice>
+                <text>Confront the figure.</text>
+                <nextNodeId>6</nextNodeId>
+            </choice>
+            <choice>
+                <text>Stay hidden and continue observing.</text>
+                <nextNodeId>7</nextNodeId>
+            </choice>
+        </choices>
+    </node>
+    <node id="4" type="scene">
+        <text>You cautiously approach the figure.</text>
+        <text>They turn around slowly, revealing their face.</text>
+        <choices>
+            <!-- Additional choices and nodes... -->
+        </choices>
+    </node>
+    <node id="5" type="scene">
+        <text>You remain hidden and continue observing.</text>
+        <text>The figure moves on without noticing you.</text>
+        <choices>
+            <!-- Additional choices and nodes... -->
+        </choices>
+    </node>
+    <node id="6" type="scene">
+        <text>You step out from the shadows and confront the figure.</text>
+        <text>They seem startled but not hostile.</text>
+        <choices>
+            <!-- Additional choices and nodes... -->
+        </choices>
+    </node>
+    <node id="7" type="scene">
+        <text>You remain hidden and observe as the figure passes by.</text>
+        <text>They disappear into the darkness.</text>
+        <choices>
+            <!-- Additional choices and nodes... -->
+        </choices>
+    </node>
+    <!-- More nodes and choices... -->
+</story>

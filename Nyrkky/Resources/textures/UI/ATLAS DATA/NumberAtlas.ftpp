@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "0.6.7"
+  },
+  "savePath": "",
+  "images": [
+    {
+      "name": "number_0.png",
+      "path": "E:/C++Projektit/Nyrkky/Nyrkky/Resources/textures/UI/UI_mats/number_0.png",
+      "folder": ""
+    },
+    {
+      "name": "number_1.png",
+      "path": "E:/C++Projektit/Nyrkky/Nyrkky/Resources/textures/UI/UI_mats/number_1.png",
+      "folder": ""
+    },
+    {
+      "name": "number_2.png",
+      "path": "E:/C++Projektit/Nyrkky/Nyrkky/Resources/textures/UI/UI_mats/number_2.png",
+      "folder": ""
+    },
+    {
+      "name": "number_3.png",
+      "path": "E:/C++Projektit/Nyrkky/Nyrkky/Resources/textures/UI/UI_mats/number_3.png",
+      "folder": ""
+    },
+    {
+      "name": "number_4.png",
+      "path": "E:/C++Projektit/Nyrkky/Nyrkky/Resources/textures/UI/UI_mats/number_4.png",
+      "folder": ""
+    },
+    {
+      "name": "number_5.png",
+      "path": "E:/C++Projektit/Nyrkky/Nyrkky/Resources/textures/UI/UI_mats/number_5.png",
+      "folder": ""
+    },
+    {
+      "name": "number_6.png",
+      "path": "E:/C++Projektit/Nyrkky/Nyrkky/Resources/textures/UI/UI_mats/number_6.png",
+      "folder": ""
+    },
+    {
+      "name": "number_7.png",
+      "path": "E:/C++Projektit/Nyrkky/Nyrkky/Resources/textures/UI/UI_mats/number_7.png",
+      "folder": ""
+    },
+    {
+      "name": "number_8.png",
+      "path": "E:/C++Projektit/Nyrkky/Nyrkky/Resources/textures/UI/UI_mats/number_8.png",
+      "folder": ""
+    },
+    {
+      "name": "number_9.png",
+      "path": "E:/C++Projektit/Nyrkky/Nyrkky/Resources/textures/UI/UI_mats/number_9.png",
+      "folder": ""
+    }
+  ],
+  "folders": [],
+  "packOptions": {
+    "textureName": "texture",
+    "textureFormat": "png",
+    "removeFileExtension": false,
+    "prependFolderName": true,
+    "base64Export": false,
+    "tinify": false,
+    "tinifyKey": "",
+    "scale": 1,
+    "filter": "none",
+    "exporter": "JSON (hash)",
+    "fileName": "pack-result",
+    "savePath": "",
+    "width": 512,
+    "height": 512,
+    "fixedSize": false,
+    "powerOfTwo": false,
+    "padding": 0,
+    "extrude": 0,
+    "allowRotation": true,
+    "allowTrim": true,
+    "trimMode": "trim",
+    "alphaThreshold": "0",
+    "detectIdentical": true,
+    "packer": "MaxRectsBin",
+    "packerMethod": "BottomLeftRule"
+  }
+}

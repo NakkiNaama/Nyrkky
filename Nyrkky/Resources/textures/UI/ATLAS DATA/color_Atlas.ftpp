@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "version": "0.6.7"
+  },
+  "savePath": "",
+  "images": [
+    {
+      "name": "blue-transparent.png",
+      "path": "E:/C++Projektit/Nyrkky/Nyrkky/Resources/textures/UI/UI_mats/blue-transparent.png",
+      "folder": ""
+    },
+    {
+      "name": "blue.png",
+      "path": "E:/C++Projektit/Nyrkky/Nyrkky/Resources/textures/UI/UI_mats/blue.png",
+      "folder": ""
+    },
+    {
+      "name": "grey.png",
+      "path": "E:/C++Projektit/Nyrkky/Nyrkky/Resources/textures/UI/UI_mats/grey.png",
+      "folder": ""
+    },
+    {
+      "name": "red-transparent.png",
+      "path": "E:/C++Projektit/Nyrkky/Nyrkky/Resources/textures/UI/UI_mats/red-transparent.png",
+      "folder": ""
+    },
+    {
+      "name": "red.png",
+      "path": "E:/C++Projektit/Nyrkky/Nyrkky/Resources/textures/UI/UI_mats/red.png",
+      "folder": ""
+    },
+    {
+      "name": "white.png",
+      "path": "E:/C++Projektit/Nyrkky/Nyrkky/Resources/textures/UI/UI_mats/white.png",
+      "folder": ""
+    }
+  ],
+  "folders": [],
+  "packOptions": {
+    "textureName": "texture",
+    "textureFormat": "png",
+    "removeFileExtension": false,
+    "prependFolderName": true,
+    "base64Export": false,
+    "tinify": false,
+    "tinifyKey": "",
+    "scale": 1,
+    "filter": "none",
+    "exporter": "JSON (hash)",
+    "fileName": "pack-result",
+    "savePath": "",
+    "width": 256,
+    "height": 128,
+    "fixedSize": false,
+    "powerOfTwo": false,
+    "padding": 0,
+    "extrude": 0,
+    "allowRotation": true,
+    "allowTrim": true,
+    "trimMode": "trim",
+    "alphaThreshold": "0",
+    "detectIdentical": true,
+    "packer": "MaxRectsBin",
+    "packerMethod": "BestShortSideFit"
+  }
+}
