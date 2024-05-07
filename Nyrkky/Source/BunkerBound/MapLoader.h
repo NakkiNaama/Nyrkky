@@ -52,7 +52,7 @@ public:
 	void LoadAtlasTextures();
 
 	
-	void AddTileType(std::string entityName, std::string textureName, std::vector<int> IDs, EventType eventType, int effect = 0, bool collison = true);
+	void AddTileType(std::string entityName, std::vector<std::string> textureNames, EventType eventType, int effect = 0, bool collison = true);
 	
 	
 	void InitalizeTileEntityTypes();

@@ -2,9 +2,8 @@
 #include "../../GameData.h"
 
 
-GenericObjectRenderData::GenericObjectRenderData(std::shared_ptr<TileRenderData> data)
+GenericObjectRenderData::GenericObjectRenderData()
 {
-    _data = data;
     
 }
 
@@ -13,6 +12,8 @@ GenericObjectRenderData::~GenericObjectRenderData()
     Clean();
 }
 
+
+
 void GenericObjectRenderData::Init(int PosX, int PosY)
 {
     // Define Buffer
@@ -20,23 +21,19 @@ void GenericObjectRenderData::Init(int PosX, int PosY)
     int TileSize = 64;
     std::vector<unsigned int> indices;
 
-    int textureID = 0;
-    
+    int textureID = 11;
+
     AddVertex(positions, TileSize * PosX, -TileSize * PosY,
-        (_data->UV_x * _data->SpriteW) / _data->SheetW,
-        ((_data->UV_y) * _data->SpriteH) / _data->SheetH, textureID);
+        0.0f, 0.0f, textureID);
 
     AddVertex(positions, TileSize * (PosX + 1), -TileSize * PosY,
-        ((_data->UV_x + 1) * _data->SpriteW) / _data->SheetW,
-        (_data->UV_y * _data->SpriteH) / _data->SheetH, textureID);
+        1.0f, 0.0f, textureID);
 
     AddVertex(positions, TileSize * PosX, -TileSize * (PosY + 1),
-        ((_data->UV_x) * _data->SpriteW) / _data->SheetW,
-        ((_data->UV_y + 1) * _data->SpriteH) / _data->SheetH, textureID);
+        0.0f, 1.0f, textureID);
 
     AddVertex(positions, TileSize * (PosX + 1), -TileSize * (PosY + 1),
-        ((_data->UV_x + 1) * _data->SpriteW) / _data->SheetW,
-        ((_data->UV_y + 1) * _data->SpriteH) / _data->SheetH, textureID);
+        1.0f, 1.0f, textureID);
     
     
     /*
@@ -82,33 +79,28 @@ void GenericObjectRenderData::Init(int PosX, int PosY)
 
 bool GenericObjectRenderData::Activate(int PosX, int PosY)
 {
-    if (_initialized && _data != nullptr)
+    if (_initialized)
     {
         GameData::GetShader()->Bind();
-        int textureID = 0;
+        int textureID = _texID;
         //_data->GetTexture()->Bind(textureID);
-        GameData::GetShader()->SetUniform1i("u_Textures[" + std::to_string(textureID) + ']', textureID);
+        //GameData::GetShader()->SetUniform1i("u_Textures[" + std::to_string(textureID) + ']', textureID);
         
         int TileSize = 64;
         std::vector<float> positions;
+
         
-
-
         AddVertex(positions, TileSize * PosX, -TileSize * PosY,
-            (_data->UV_x * _data->SpriteW) / _data->SheetW,
-            ((_data->UV_y) * _data->SpriteH) / _data->SheetH, textureID);
+            0.0f, 0.0f, textureID);
 
         AddVertex(positions, TileSize * (PosX + 1), -TileSize * PosY,
-            ((_data->UV_x + 1) * _data->SpriteW) / _data->SheetW,
-            (_data->UV_y * _data->SpriteH) / _data->SheetH, textureID);
+            1.0f, 0.0f, textureID);
 
         AddVertex(positions, TileSize * PosX, -TileSize * (PosY + 1),
-            ((_data->UV_x) * _data->SpriteW) / _data->SheetW,
-            ((_data->UV_y + 1) * _data->SpriteH) / _data->SheetH, textureID);
+            0.0f, 1.0f, textureID);
 
         AddVertex(positions, TileSize * (PosX + 1), -TileSize * (PosY + 1),
-            ((_data->UV_x + 1) * _data->SpriteW) / _data->SheetW,
-            ((_data->UV_y + 1) * _data->SpriteH) / _data->SheetH, textureID);
+            1.0f, 1.0f, textureID);
         
         /*
         AddVertex(positions, TileSize * PosX, -TileSize * PosY, 0.f, 0.f, 0);

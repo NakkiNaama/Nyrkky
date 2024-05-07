@@ -1,14 +1,15 @@
 #include "TileEntity.h"
 #include "GameData.h"
 
-TileEntity::TileEntity(std::string name, Event event, int posx, int posy, std::vector<std::shared_ptr<TileRenderData>> data, bool collision)
-	: _name(name)
+TileEntity::TileEntity(std::string name, Event event, int posx, int posy, std::vector<uint32_t> textures, bool collision)
+	: _name(name), _textures(textures)
 {
 	//std::cout << "eff: " << _effect << std::endl;
 	_event.Type = event.Type;
 	_event.Effect = event.Effect;
 
 	_collision = collision;
+	/*
 	for (auto& d : data)
 	{
 		_data.push_back(d);
@@ -23,7 +24,7 @@ TileEntity::TileEntity(std::string name, Event event, int posx, int posy, std::v
 		Render->Init(PosX, PosY);
 	}
 	else std::cerr << "TileEntity had empty data parameter" << std::endl;
-
+	*/
 	//Initalize(shader, posx, posy, eventType, data, collision);
 }
 
@@ -70,20 +71,20 @@ void TileEntity::ActivateEvent()
 		if (_event.State == 0)
 		{
 			_event.State = 1;
-			Render->SetData(_data[1]);
+			if (_textures.size() > 1) Render->SetTekstuuri(_textures[1]);
 			_collision = false;
 		}
 		else
 		{
 			_event.State = 0;
-			Render->SetData(_data[0]);
+			Render->SetTekstuuri(_textures[0]);
 			_collision = true;
 		}
 		break;
 
 	case EventChest: 
 		_event.Type = EventNone;
-		Render->SetData(_data[1]);
+		if (_textures.size() > 1) Render->SetTekstuuri(_textures[1]);
 		/*
 		GameData::GetStory()->SetNode(0);
 		GameData::SetDialogVisible(true);
@@ -91,7 +92,7 @@ void TileEntity::ActivateEvent()
 		break;
 
 	case EventTeleport:
-		Render->SetData(_data[0]);
+		Render->SetTekstuuri(_textures[0]);
 		//std::cout << _effect << " ddd" << std::endl;
 		if (GameData::GetMaps().size() > _event.Effect)
 		{

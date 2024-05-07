@@ -165,7 +165,7 @@ void UI::CreateEditorUI()
 	{
 		if (GameData::GetMap()->_entityTypes.size() > i)
 		{
-			CreateUIObject(UIObjectType::EditorObjectButton, GameData::GetMap()->_entityTypes[i]->GetFirstData(), xP, yPplus, widthP, heightP, true, i);
+			CreateUIObject(UIObjectType::EditorObjectButton, nullptr, xP, yPplus, widthP, heightP, true, i);
 			yPplus += 0.13f;
 		}
 		else break;

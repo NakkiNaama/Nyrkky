@@ -321,23 +321,33 @@ void MapLoader::InitalizeTileEntityTypes()
     std::cout << "init tile entity types" << std::endl;
     std::vector<std::shared_ptr<TileRenderData>> entityData;
     // Chest
-    AddTileType("Chest01", "chest_atlas.png", std::vector<int>{0, 1}, EventChest);
+    AddTileType("Chest01", { "chest_closed.png", "chest_open.png" }, EventChest);
     // Door
-    AddTileType("Door01", "RPGpack_sheet_2X.png", std::vector<int>{219, 199}, EventDoor);
+    AddTileType("Door01", { "door_closed.png", "door_open.png" }, EventDoor);
     // Ladder
-    AddTileType("Ladder", "ladder.png", std::vector<int>{0}, EventTeleport, 1, false);
+    AddTileType("Ladder", { "ladder.png" }, EventTeleport, 1, false);
 }
 
-void MapLoader::AddTileType(std::string entityName, std::string textureName, std::vector<int> IDs, EventType eventType, int effect, bool collison)
+void MapLoader::AddTileType(std::string entityName, std::vector<std::string> textureNames, EventType eventType, int effect, bool collison)
 {
     std::cout << "Add tile type called" << std::endl;
+
+    /*
     std::vector<std::shared_ptr<TileRenderData>> entityData;
     for (auto& id : IDs)
     {
         entityData.push_back(GetTileTypeByName(textureName, id));
     }
+    */
     Event newEvent = Event(eventType, effect);
-    _entityTypes.push_back(std::make_shared<TileEntity>(entityName, newEvent, 0, 0, entityData, collison));
+    std::vector<uint32_t> textures;
+
+    for (auto& d : textureNames)
+    {
+        textures.push_back(GameData::GetTextureIndex(d));
+    }
+
+    _entityTypes.push_back(std::make_shared<TileEntity>(entityName, newEvent, 0, 0, textures, collison));
 }
 
 

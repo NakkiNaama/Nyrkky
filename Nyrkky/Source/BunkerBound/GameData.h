@@ -242,7 +242,7 @@ public:
 		return Get().ImpGetCharacterTextureArray();
 	}
 
-	static size_t GameData::GetTextureIndex(const std::string& textureName) {
+	static uint32_t GameData::GetTextureIndex(const std::string& textureName) {
 		return Get().ImpGetTextureIndex(textureName);
 	}
 
@@ -515,7 +515,7 @@ private:
 		return characterTextureArray;
 	}
 
-	size_t ImpGetTextureIndex(const std::string& textureName) {
+	uint32_t ImpGetTextureIndex(const std::string& textureName) {
 		//std::cout << "texture index map size " << textureIndexMap.size() << std::endl;
 		for (const auto& pair : textureIndexMap) {
 			//std::cout << pair.first << ": " << pair.second << std::endl;

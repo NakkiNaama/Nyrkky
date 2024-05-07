@@ -8,7 +8,7 @@
 class TileEntity : public Entity
 {
 public:
-	TileEntity(std::string name, Event event, int posx, int posy, std::vector<std::shared_ptr<TileRenderData>> data, bool collision);
+	TileEntity(std::string name, Event event, int posx, int posy, std::vector<uint32_t> textures, bool collision);
 	~TileEntity();
 
 	TileEntity(const TileEntity& other) 
@@ -16,25 +16,18 @@ public:
 		PosX = other.PosX;
 		PosY = other.PosY;
 		_event = other._event;
-		_data = other._data;
+		_textures = other._textures;
 
 		//std::cout << "data size: " << _data.size() << std::endl;
 
 		_collision = other._collision;
-		Render = std::make_shared<GenericObjectRenderData>(_data.front());
+		Render = std::make_shared<GenericObjectRenderData>();
 		Render->Init(PosX, PosY);
+		Render->SetTekstuuri(_textures[0]);
 		//std::cout << "copy finished" << std::endl;
 	}
 	
-	std::shared_ptr<TileRenderData> GetFirstData()
-	{
-		if (_data.size() > 0)
-		{
-			return _data.front();
-		}
-		std::cerr << "map entity first texture nullptr!" << std::endl;
-		return nullptr;
-	}
+
 
 	std::shared_ptr<TileEntity> clone() const
 	{
@@ -55,7 +48,7 @@ public:
 	{
 		return _collision;
 	}
-	void Initalize(Shader* shader, int posx, int posy, EventType eventType, std::vector<std::shared_ptr<TileRenderData>> data, bool collision);
+	//void Initalize(Shader* shader, int posx, int posy, EventType eventType, std::vector<std::shared_ptr<TileRenderData>> data, bool collision);
 
 	inline std::string GetName() const
 	{
@@ -78,7 +71,7 @@ public:
 
 protected:
 
-	std::vector<std::shared_ptr<TileRenderData>> _data;
+	std::vector<uint32_t> _textures;
 	bool _collision = false;
 
 	std::string _name;

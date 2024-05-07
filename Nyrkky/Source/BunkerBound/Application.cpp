@@ -588,6 +588,12 @@ void Application::InitTextureArray()
     paths.push_back(path + "StoneFloor01.png");
     paths.push_back(path + "StoneFloor02.png");
 
+    paths.push_back(path + "chest_closed.png");
+    paths.push_back(path + "chest_open.png");
+    paths.push_back(path + "ladder.png");
+    paths.push_back(path + "door_closed.png");
+    paths.push_back(path + "door_open.png");
+
     std::shared_ptr<TextureArray> AR = TextureManager::GetTextureArray(paths);
 
 

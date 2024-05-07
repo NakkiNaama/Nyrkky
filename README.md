@@ -1,1 +1,1 @@
-Nyrkky Engine - very chaotic version - in middle of changing to texture array from using texture atlas.
+Nyrkky Engine
