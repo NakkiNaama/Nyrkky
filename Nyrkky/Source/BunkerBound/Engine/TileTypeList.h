@@ -94,8 +94,8 @@ private:
 struct Tile
 {
 public:
-	Tile(TileRenderData data, bool solid, bool hasSub, TileRenderData subRender)
-		: Data(data), SubData(subRender)
+	Tile(bool solid, bool hasSub, std::vector<uint32_t> textures)
+		: _textures(textures)
 	{
 		_solid = solid;
 		HasSub = hasSub;
@@ -107,14 +107,18 @@ public:
 		_solid = solid;
 	}
 
-	TileRenderData Data;
-	TileRenderData SubData;
 	bool HasSub;
+
+	uint32_t GetTexture(bool sub) const
+	{
+		if (sub && _textures.size() > 1) return _textures[1];
+		else return _textures[0];
+	}
 
 private:
 	std::string _name;
 	bool _solid;
-
+	std::vector<uint32_t> _textures;
 
 };
 

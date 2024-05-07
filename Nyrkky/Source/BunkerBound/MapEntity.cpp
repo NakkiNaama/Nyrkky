@@ -3,6 +3,7 @@
 
 MapEntity::MapEntity(const char* path, int posx, int posy, int State)
 {
+
 	PosX = posx;
 	PosY = posy;
     //GameData::GetMapLoader();
@@ -10,11 +11,14 @@ MapEntity::MapEntity(const char* path, int posx, int posy, int State)
     std::vector<std::string> tileEntityData;
     //MapLoader& loader = GameData::GetMapLoader();
     GridSize = 0;
-    GameData::GetMapLoader()->LoadMap(path, GridSize, _tiles, _tileTypes, _entityTypes, tileEntityData);
-    _uiRenderData = GameData::GetMapLoader()->_uiRenderData;
+
+    //  _tileTypes, _entityTypes, are not in load anymore
+    GameData::GetMapLoader()->LoadMap(path, GridSize, _tiles, tileEntityData);
+    //_uiRenderData = GameData::GetMapLoader()->_uiRenderData;
     
     _characterRenderData = GameData::GetMapLoader()->_characterRenderData;
 
+    /*
     for (int i = 0; i < tileEntityData.size(); i++)
     {
         if (tileEntityData[i] != "-")
@@ -22,30 +26,38 @@ MapEntity::MapEntity(const char* path, int posx, int posy, int State)
             SpawnTileEntity(tileEntityData[i], i);
         }
     }
+    */
     
     if (State == 0) SpawnCharacterEntity(ECharacter::Emily, 3);
 
     //InitalizeTileTypes();
-    std::vector<TileRenderData> layer0;
-    std::vector<TileRenderData> layer1;
+    //std::vector<TileRenderData> layer0;
+    //std::vector<TileRenderData> layer1;
 
     for (auto &tile : _tiles)
     {
-        layer0.push_back(tile.Data);
-        layer1.push_back(tile.SubData);
+        //layer0.push_back(tile.Data);
+        //layer1.push_back(tile.SubData);
     }
 
+    Renders.push_back(std::make_shared<MapRenderData>(0, 0, 0, GridSize, TileSize));
+    Renders.back()->Init(0, 0);
+
+    /*
     for (int i = 0; i <= 1; i++) // increase to have more layers
     {
         if (i == 0)
         {
-            Renders.push_back(std::make_shared<MapRenderData>(i, PosX, PosY, GridSize, TileSize, _tileTypes, layer0));
+            //int layer, int ScreenX, int ScreenY, int gridSize, int tileSize;
+            Renders.push_back(std::make_shared<MapRenderData>(i, PosX, PosY, GridSize, TileSize));
         }
         else {
-            Renders.push_back(std::make_shared<MapRenderData>(i, PosX, PosY, GridSize, TileSize, _tileTypes, layer1));
+            Renders.push_back(std::make_shared<MapRenderData>(i, PosX, PosY, GridSize, TileSize));
         }
         Renders.back()->Init(PosX, PosY);
     }
+    */
+
 }
 
 MapEntity::~MapEntity()
@@ -59,6 +71,7 @@ void MapEntity::Tick(float DeltaTime)
 
 void MapEntity::ChangeTile(int layer, int index, int ID, bool solid)
 {
+    /*
     std::shared_ptr<TileRenderData> z = GameData::GetMapLoader()->GetTileType(ID);
     if (z != nullptr)
     {   
@@ -86,6 +99,7 @@ void MapEntity::ChangeTile(int layer, int index, int ID, bool solid)
 
     }
     else std::cout << "Change tile failed!" << std::endl;
+    */
 }
 
 void MapEntity::SaveCurrentMap()
@@ -95,6 +109,7 @@ void MapEntity::SaveCurrentMap()
 
 void MapEntity::ModifyMapRender(int index, int layer)
 {
+    /*
     TileRenderData* newRender;
     if (layer == 0)
     {
@@ -136,6 +151,7 @@ void MapEntity::ModifyMapRender(int index, int layer)
     {
         std::cout << "change tile out of bounds!" << std::endl;
     }
+    */
 }
 
 void MapEntity::SpawnTileEntity(std::string entityName, int tile)
@@ -199,6 +215,7 @@ void MapEntity::SpawnCharacterEntity(ECharacter id, int tile)
 
 void MapEntity::ResetTile(int index, int layer)
 {
+    /*
     std::cout << "reset tile" << std::endl;
     std::shared_ptr<TileRenderData> z = GameData::GetMapLoader()->GetTileTypeByName("black.png", 0);
     TileRenderData subRender = *z;
@@ -207,7 +224,7 @@ void MapEntity::ResetTile(int index, int layer)
     _tiles[index] = tempTile;
 
     ModifyMapRender(index, layer);
-
+    */
 }
 
 void MapEntity::RenderEntity()
@@ -225,7 +242,7 @@ void MapEntity::RenderEntity()
                     {
                         GameData::GetRenderer()->Draw(c->GetVA(), c->GetIB());
                     }
-                    else std::cout << "map render activate failed!" << std::endl;
+                    else std::cout << "map render activate failed! 0000000000112233445566789987" << std::endl;
                 }
                 else std::cout << "object render failed! nullptr!" << std::endl;
             }

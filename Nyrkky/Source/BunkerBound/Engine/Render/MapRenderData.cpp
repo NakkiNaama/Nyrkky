@@ -1,8 +1,7 @@
 #include "MapRenderData.h"
 #include "../../GameData.h"
 
-MapRenderData::MapRenderData(int layer, int ScreenX, int ScreenY, int gridSize, int tileSize, std::vector<std::shared_ptr<TileRenderData>> types, std::vector<TileRenderData> tileRenderDatas)
-    : _tileTypes(types), _tiles(tileRenderDatas)
+MapRenderData::MapRenderData(int layer, int ScreenX, int ScreenY, int gridSize, int tileSize)
 {
     _layer = layer;
     Update(ScreenX, ScreenY, gridSize, tileSize);
@@ -38,39 +37,26 @@ void MapRenderData::Init(int PosX, int PosY)
         for (int x = 0; x < GridSize; x++) {
             int index = y * GridSize + x;
             
-
+            /*
             TileRenderData* data;
 
             data = &_tiles[index];
+            */
 
-            //size_t textureIndex = GameData::GetTextureIndex("StoneFloor01.png");
+            int textureID = GameData::GetTextureIndex("StoneFloor01.png");
+      
 
-            
-            //int textureID = rand() % 5;
-            //size_t textureIndex = 
-            //std::cout << textureIndex << " tex id!!" << std::endl;
-            int textureID = GameData::GetTextureIndex("StoneFloor02.png");
-            //int textureID = GameData::GetTextureIndex("ObjectView.png");
-            //std::cout << textureID << " tex id!!" << std::endl;
-            //textureID = 14;
-            
-            //int textureID = 13;
-            
             AddVertex(positions, TileSize * x, -TileSize * y,
-                (data->UV_x * data->SpriteW) / data->SheetW,
-                ((data->UV_y) * data->SpriteH) / data->SheetH, textureID);
+                0.0f, 0.0f, textureID);
 
             AddVertex(positions, TileSize * (x + 1), -TileSize * y,
-                ((data->UV_x + 1) * data->SpriteW) / data->SheetW,
-                (data->UV_y * data->SpriteH) / data->SheetH, textureID);
+                1.0f, 0.0f, textureID);
 
             AddVertex(positions, TileSize * x, -TileSize * (y + 1),
-                ((data->UV_x) * data->SpriteW) / data->SheetW,
-                ((data->UV_y + 1) * data->SpriteH) / data->SheetH, textureID);
+                0.0f, 1.0f, textureID);
 
             AddVertex(positions, TileSize * (x + 1), -TileSize * (y + 1),
-                ((data->UV_x + 1) * data->SpriteW) / data->SheetW,
-                ((data->UV_y + 1) * data->SpriteH) / data->SheetH, textureID);
+                1.0f, 1.0f, textureID);
             
 
             /*

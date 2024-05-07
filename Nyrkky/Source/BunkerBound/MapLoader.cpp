@@ -7,7 +7,7 @@
 MapLoader::MapLoader()
 {
     LoadAtlasTextures();
-    //GenerateGenericMap();
+    GenerateGenericMap();
     InitalizeTileEntityTypes();
 }
 
@@ -29,34 +29,30 @@ bool MapLoader::GenerateGenericMap()
             tinyxml2::XMLElement* tile = doc.NewElement("Tile");
             root->LinkEndChild(tile);
 
-            for (int i = 0; i <= 6; i++)
+            for (int i = 0; i <= 5; i++)
             {
                 switch (i)
                 {
                 case 0: childName = "Name"; break;
-                case 1: childName = "AtlasID"; break;
-                case 2: childName = "Collision"; break;
+                case 1: childName = "Collision"; break;
 
-                case 3: childName = "HasSub"; break;
+                case 2: childName = "HasSub"; break;
 
-                case 4: childName = "SubName"; break;
-                case 5: childName = "SubAtlasID"; break;
+                case 3: childName = "SubName"; break;
 
-                case 6: childName = "EntityName"; break;
+                case 4: childName = "EntityName"; break;
                 }
                 tinyxml2::XMLElement* child = doc.NewElement(childName);
                 switch (i)
                 {
-                case 0: child->SetText("RPGpack_sheet_2X.png"); break;
-                case 1: child->SetText("145"); break;
+                case 0: child->SetText("StoneFloor01.png"); break;
+                case 1: child->SetText("0"); break;
+
                 case 2: child->SetText("0"); break;
 
-                case 3: child->SetText("0"); break;
+                case 3: child->SetText("-"); break;
 
                 case 4: child->SetText("-"); break;
-                case 5: child->SetText("0"); break;
-
-                case 6: child->SetText("-"); break;
                 }
 
                 tile->LinkEndChild(child);
@@ -69,13 +65,13 @@ bool MapLoader::GenerateGenericMap()
     return true;
 }
 
-void MapLoader::LoadMap(const char* path, int& gridSize, std::vector<Tile> &tiles, std::vector<std::shared_ptr<TileRenderData>>& types, std::vector<std::shared_ptr<TileEntity>>& entityTypes, std::vector<std::string>& tileEntities)
+void MapLoader::LoadMap(const char* path, int& gridSize, std::vector<Tile> &tiles, std::vector<std::string>& tileEntities)
 {    
     
     //std::cout << "load map called" << std::endl;
     tinyxml2::XMLDocument doc;
 
-    std::shared_ptr<TileRenderData> t;
+    //std::shared_ptr<TileRenderData> t;
 
     if (doc.LoadFile(path) == tinyxml2::XML_SUCCESS)
     {
@@ -85,75 +81,51 @@ void MapLoader::LoadMap(const char* path, int& gridSize, std::vector<Tile> &tile
             for (tinyxml2::XMLElement* child = root->FirstChildElement(); child != nullptr; child = child->NextSiblingElement())
             {
                 std::string name = child->FirstChildElement("Name")->GetText();
-                int AtlasID = std::stoi(child->FirstChildElement("AtlasID")->GetText());
+
                 bool Collision = std::stoi(child->FirstChildElement("Collision")->GetText());
 
                 bool HasSub = std::stoi(child->FirstChildElement("HasSub")->GetText());
 
                 std::string SubName = child->FirstChildElement("SubName")->GetText();
-                int SubAtlasID = std::stoi(child->FirstChildElement("SubAtlasID")->GetText());
+
 
                 tileEntities.push_back(child->FirstChildElement("EntityName")->GetText());
 
-
-                t = GetTileTypeByName(name, AtlasID);
-
-                if (t != nullptr)
+                std::vector<uint32_t> textures;
+                textures.push_back(GameData::GetTextureIndex(name));
+                /*
+                if (HasSub)
                 {
-                    if (t->GetTexID() >= 0) 
-                    {
-                        if (HasSub)
-                        {
-                            std::shared_ptr<TileRenderData> subRender;
-                            subRender = GetTileTypeByName(SubName, SubAtlasID);
+                    textures.push_back(GameData::GetTextureIndex(SubName));
+                }
+                */
 
-                            if (subRender != nullptr)
-                            {
-                                Tile v = Tile(*t, Collision, HasSub, *subRender);
-                                tiles.push_back(v);
-                            }
-                            else
-                            {
-                                std::cout << "missing sub map texture!" << std::endl;
-                                Tile v = Tile(*t, Collision, HasSub, *_transparent);
-                                tiles.push_back(v);
-                            }
-                        }
-                        else 
-                        {
-                            Tile v = Tile(*t, Collision, HasSub, *_transparent);
-                            tiles.push_back(v);
-                        }
-                    }
-                }
-                else
-                {
-                    std::cout << "missing map texture!" << std::endl;
-                    Tile v = Tile(*_transparent, false, false, *_transparent);
-                    tiles.push_back(v);
-                }
+                Tile v = Tile(false, false, textures);
+
                 gridSize++;
+             
             }
-
         }
         else std::cerr << "map xml root could not be found!";
 
-        
+        /*
         types = _tileTypes;
         entityTypes = _entityTypes;
+        */
     }
     else std::cerr << "Map that were to be loaded could not be found!" << std::endl;
 
-    int numColumns = sqrt(gridSize); // Assuming grid is square
+    int numColumns = sqrt(gridSize);
     gridSize = gridSize / numColumns;
 
     std::cout << "new grid size " << gridSize << std::endl;
+
     
 }
 
 bool MapLoader::SaveMapToFile(int MapSize, const std::vector<Tile>& tiles, const std::vector<std::shared_ptr<TileEntity>> tileEntities)
 {
-    
+    /*
     std::cout << "save map called" << std::endl;
     tinyxml2::XMLDocument doc;
     tinyxml2::XMLElement* root = doc.NewElement("root");
@@ -229,17 +201,20 @@ bool MapLoader::SaveMapToFile(int MapSize, const std::vector<Tile>& tiles, const
     std::cout << "Map save success." << std::endl;
     return true;
     
+
+    */
     return 0;
 }
 
 void MapLoader::LoadAtlasTextures()
 {
+    /*
     std::cout << "load texture atlas called" << std::endl;
     // If tile has no sub texture   
     std::shared_ptr<Texture> transparent = std::make_shared<Texture>("..\\Nyrkky\\Resources\\Textures\\transparent.png", false);
     _transparent = std::make_shared<TileRenderData>("-", transparent, 64, 64, 64, 64, 0);
     _transparent->SetTextureID(-1);
-    /**/
+
 
     std::shared_ptr<Texture> texture;
     int ID = 0;
@@ -313,13 +288,13 @@ void MapLoader::LoadAtlasTextures()
     _tileTypes.push_back(std::make_shared<TileRenderData>("12.png", texture, 64, 64, 64, 64, 0));
     _tileTypes.back()->SetTextureID(ID);
     ID++;
-
+    */
 }
 
 void MapLoader::InitalizeTileEntityTypes()
 {
     std::cout << "init tile entity types" << std::endl;
-    std::vector<std::shared_ptr<TileRenderData>> entityData;
+
     // Chest
     AddTileType("Chest01", { "chest_closed.png", "chest_open.png" }, EventChest);
     // Door
@@ -332,13 +307,6 @@ void MapLoader::AddTileType(std::string entityName, std::vector<std::string> tex
 {
     std::cout << "Add tile type called" << std::endl;
 
-    /*
-    std::vector<std::shared_ptr<TileRenderData>> entityData;
-    for (auto& id : IDs)
-    {
-        entityData.push_back(GetTileTypeByName(textureName, id));
-    }
-    */
     Event newEvent = Event(eventType, effect);
     std::vector<uint32_t> textures;
 

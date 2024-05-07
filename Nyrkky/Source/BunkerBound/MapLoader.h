@@ -8,7 +8,7 @@ class MapLoader
 {
 public:
 	MapLoader();
-	void LoadMap(const char* path, int& gridSize, std::vector<Tile>& tiles, std::vector<std::shared_ptr<TileRenderData>>& types, std::vector<std::shared_ptr<TileEntity>>& entityTypes, std::vector<std::string>& tileEntities);
+	void LoadMap(const char* path, int& gridSize, std::vector<Tile>& tiles, std::vector<std::string>& tileEntities);
 	
 	std::shared_ptr<TileEntity> GetEntityTypeByName(std::string name) const
 	{

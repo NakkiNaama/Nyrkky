@@ -24,8 +24,8 @@ UI::UI(int frameBufferX, int frameBufferY)
 	}
 	// --------------------
 
-	CreateGameUI();
-	CreateEditorUI();
+	//CreateGameUI();
+	//CreateEditorUI();
 	
 	UpdateUIOnFramebufferResize(_frameBufferX, _frameBufferY);
 
@@ -38,6 +38,7 @@ UI::~UI()
 
 void UI::InitalizeUIData()
 {
+	/*
 	_collisionOffData = GameData::GetMap()->_uiRenderData[1];
 	_collisionOnData = GameData::GetMap()->_uiRenderData[9];
 	_selectionData = GameData::GetMap()->_uiRenderData[25];
@@ -52,6 +53,7 @@ void UI::InitalizeUIData()
 
 	GameData::SetDialogSprite(0, GameData::GetMap()->_characterRenderData[0]); 
 	GameData::SetDialogSprite(1, GameData::GetMap()->_characterRenderData[0]);
+	*/
 
 }
 

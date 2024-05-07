@@ -50,7 +50,7 @@ public:
 	
 	std::vector<Tile> _tiles;
 	std::vector<std::shared_ptr<TileRenderData>> _tileTypes;
-	std::vector<std::shared_ptr<TileRenderData>> _uiRenderData;
+	//std::vector<std::shared_ptr<TileRenderData>> _uiRenderData;
 	std::vector<std::shared_ptr<TileRenderData>> _characterRenderData;
 
 	std::vector<std::shared_ptr<TileEntity>> _entityTypes;

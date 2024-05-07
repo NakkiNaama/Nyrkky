@@ -8,7 +8,7 @@
 class MapRenderData : public RenderBase
 {
 public:
-	MapRenderData(int layer, int ScreenX, int ScreenY, int gridSize, int tileSize, std::vector<std::shared_ptr<TileRenderData>> types, std::vector<TileRenderData> tileRenderDatas);
+	MapRenderData(int layer, int ScreenX, int ScreenY, int gridSize, int tileSize);
 	~MapRenderData();
 
 	void Init(int PosX, int PosY) override;

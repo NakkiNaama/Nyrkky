@@ -258,6 +258,7 @@ int main()
 
 void Application::InitalizeGameStartingState()
 {
+
     glfwSetFramebufferSizeCallback(Window, framebuffer_size_callback);
     int windowWidth, windowHeight;
     glfwGetFramebufferSize(Window, &windowWidth, &windowHeight);
@@ -279,13 +280,15 @@ void Application::InitalizeGameStartingState()
     std::shared_ptr<MapLoader> mapLoader = std::make_shared<MapLoader>();
     GameData::SetMapLoader(mapLoader);
 
-    std::shared_ptr<MapEntity> map = std::make_shared<MapEntity>("Maps/Map01.xml", 0, 0, 0);
+    std::shared_ptr<MapEntity> map = std::make_shared<MapEntity>("Maps/generic.xml", 0, 0, 0);
+
     map->SetActive(true);
     GameData::AddMap(map);
 
-    std::shared_ptr<MapEntity> map2 = std::make_shared<MapEntity>("Maps/Map02.xml", 0, 0, 1);
+    /*
+    std::shared_ptr<MapEntity> map2 = std::make_shared<MapEntity>("Maps/generic.xml", 0, 0, 1);
     GameData::AddMap(map2);
-
+    */
 
 
     //const std::vector<Tile>& tiles = map->_tiles;
@@ -298,6 +301,8 @@ void Application::InitalizeGameStartingState()
     int width, height;
     glfwGetFramebufferSize(Window, &width, &height);
     //_ui = new UI(&_proj, width, height, shader, textShader, _map);
+
+
     std::shared_ptr<UI> ui = std::make_shared<UI>(width, height);
     GameData::InitalizeUI(ui);
 
