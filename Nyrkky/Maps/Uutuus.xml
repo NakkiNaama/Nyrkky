@@ -4,7 +4,7 @@
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
-        <EntityName>-</EntityName>
+        <EntityName>Chest</EntityName>
         <EntityName/>
     </Tile>
     <Tile>
@@ -268,7 +268,7 @@
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
-        <EntityName>Chest01</EntityName>
+        <EntityName>-</EntityName>
         <EntityName/>
     </Tile>
     <Tile>

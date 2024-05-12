@@ -2,12 +2,14 @@
 #include "../../GameData.h"
 
 
-UIObjectRenderData::UIObjectRenderData(std::shared_ptr<TileRenderData> data, float x, float y, float xSize, float ySize, bool interactable, std::shared_ptr<UIObjectRenderData> highlight, int ID)
+UIObjectRenderData::UIObjectRenderData(uint32_t arrayID, uint32_t texture, float x, float y, float xSize, float ySize, bool interactable, std::shared_ptr<UIObjectRenderData> highlight, int ID)
 {
     _highlight = highlight;
     _ID = ID;
+    _textureArray = arrayID;
+     tekstuuriID = texture;
+
     // Define Buffer
-    _tileRenderData = data;
     std::vector<float> positions;
     std::vector<unsigned int> indices;
     xStart = x;
@@ -67,63 +69,68 @@ bool UIObjectRenderData::Updater()
 {
     if (_initialized)
     {
-        if (_tileRenderData != nullptr)
+
+        GameData::GetShader()->Bind();
+
+        // Bind the texture array
+        /**/
+        std::shared_ptr<TextureArray> arr;
+        
+        switch (_textureArray)
         {
-            GameData::GetShader()->Bind();
+        case 0: arr = GameData::GetTextureArray(); break;
+        case 1: arr = GameData::GetCharacterTextureArray(); break;
 
-            // Bind the texture array
-            if (GameData::GetTextureArray() != nullptr)
-            {
-                GameData::GetTextureArray()->Bind();
-
-                //ameData::GetShader()->SetUniform1i("u_Layer", GameData::GetTextureIndex("121.png"));
-            }
-            /*
-            GameData::GetShader()->Bind();
-            int textureID = _tileRenderData->GetTexID();
-            _tileRenderData->GetTexture()->Bind(textureID);
-            GameData::GetShader()->SetUniform1i("u_Textures[" + std::to_string(textureID) + ']', textureID);
-            */
-            std::vector<float> positions;
-            int texIndex = tekstuuriID;
-
-            AddVertex(positions, xStart, yEnd,
-                0.0f, 1.0f, texIndex);
-
-            AddVertex(positions, xEnd, yEnd,
-                1.0f, 1.0f, texIndex);
-
-            AddVertex(positions, xStart, yStart,
-                0.0f, 0.0f, texIndex);
-
-            AddVertex(positions, xEnd, yStart,
-                1.0f, 0.0f, texIndex);
-
-
-            /*
-            AddVertex(positions, xStart, yEnd,
-                _tileRenderData->UV_x * _tileRenderData->SpriteW / _tileRenderData->SheetW,
-                _tileRenderData->UV_y * _tileRenderData->SpriteH / _tileRenderData->SheetH, texIndex);
-
-            AddVertex(positions, xEnd, yEnd,
-                (_tileRenderData->UV_x + 1) * _tileRenderData->SpriteW / _tileRenderData->SheetW,
-                _tileRenderData->UV_y * _tileRenderData->SpriteH / _tileRenderData->SheetH, texIndex);
-
-            AddVertex(positions, xStart, yStart,
-                _tileRenderData->UV_x * _tileRenderData->SpriteW / _tileRenderData->SheetW,
-                (_tileRenderData->UV_y + 1) * _tileRenderData->SpriteH / _tileRenderData->SheetH, texIndex);
-
-            AddVertex(positions, xEnd, yStart,
-                (_tileRenderData->UV_x + 1) * _tileRenderData->SpriteW / _tileRenderData->SheetW,
-                (_tileRenderData->UV_y + 1) * _tileRenderData->SpriteH / _tileRenderData->SheetH, texIndex);
-            */
-
-            _vb->Bind();
-            _vb->Update(positions.data(), positions.size() * sizeof(float));
-            return true;
+        default: break;
         }
-        std::cout << "UI renderer nullptr - updater" << std::endl;
-        return false;
+        
+        if (arr != nullptr)
+        {
+            arr->Bind();
+        }
+        /*
+        GameData::GetShader()->Bind();
+        int textureID = _tileRenderData->GetTexID();
+        _tileRenderData->GetTexture()->Bind(textureID);
+        GameData::GetShader()->SetUniform1i("u_Textures[" + std::to_string(textureID) + ']', textureID);
+        */
+        std::vector<float> positions;
+        int texIndex = tekstuuriID;
+
+        AddVertex(positions, xStart, yEnd,
+            0.0f, 0.0f, texIndex);
+
+        AddVertex(positions, xEnd, yEnd,
+            1.0f, 0.0f, texIndex);
+
+        AddVertex(positions, xStart, yStart,
+            0.0f, 1.0f, texIndex);
+
+        AddVertex(positions, xEnd, yStart,
+            1.0f, 1.0f, texIndex);
+
+
+        /*
+        AddVertex(positions, xStart, yEnd,
+            _tileRenderData->UV_x * _tileRenderData->SpriteW / _tileRenderData->SheetW,
+            _tileRenderData->UV_y * _tileRenderData->SpriteH / _tileRenderData->SheetH, texIndex);
+
+        AddVertex(positions, xEnd, yEnd,
+            (_tileRenderData->UV_x + 1) * _tileRenderData->SpriteW / _tileRenderData->SheetW,
+            _tileRenderData->UV_y * _tileRenderData->SpriteH / _tileRenderData->SheetH, texIndex);
+
+        AddVertex(positions, xStart, yStart,
+            _tileRenderData->UV_x * _tileRenderData->SpriteW / _tileRenderData->SheetW,
+            (_tileRenderData->UV_y + 1) * _tileRenderData->SpriteH / _tileRenderData->SheetH, texIndex);
+
+        AddVertex(positions, xEnd, yStart,
+            (_tileRenderData->UV_x + 1) * _tileRenderData->SpriteW / _tileRenderData->SheetW,
+            (_tileRenderData->UV_y + 1) * _tileRenderData->SpriteH / _tileRenderData->SheetH, texIndex);
+        */
+
+        _vb->Bind();
+        _vb->Update(positions.data(), positions.size() * sizeof(float));
+        return true;
     }
     else std::cout << "generic object renderer not initalized!" << std::endl;
     return false;
@@ -133,14 +140,10 @@ bool UIObjectRenderData::Updater()
 
 void UIObjectRenderData::Update()
 {
-    if (_tileRenderData != nullptr)
-    {
-        int slot = _tileRenderData->GetTexID();
-        //_tileRenderData->GetTexture()->Bind(slot);
+    int slot = tekstuuriID;
+    //_tileRenderData->GetTexture()->Bind(slot);
 
-        GameData::GetShader()->SetUniform1i("u_Textures[" + std::to_string(slot) + ']', slot);
-    }
-    else std::cout << "UI renderer nullptr - update" << std::endl;
+    GameData::GetShader()->SetUniform1i("u_Textures[" + std::to_string(slot) + ']', slot);
 }
 
 

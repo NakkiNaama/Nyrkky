@@ -5,7 +5,7 @@
 class UIObjectRenderData : public RenderBase
 {
 public:
-	UIObjectRenderData(std::shared_ptr<TileRenderData> data, float x, float y, float xSize, float ySize, bool interactable, std::shared_ptr<UIObjectRenderData> highlight = nullptr, int ID = 0);
+	UIObjectRenderData(uint32_t arrayID, uint32_t texture, float x, float y, float xSize, float ySize, bool interactable, std::shared_ptr<UIObjectRenderData> highlight = nullptr, int ID = 0);
 	~UIObjectRenderData();
 
 	void Init(float x, float y, float xSize, float ySize);
@@ -23,10 +23,6 @@ public:
 	float xEnd;
 	float yEnd;
 
-	void SetRenderData(std::shared_ptr<TileRenderData> data)
-	{
-		_tileRenderData = data;
-	}
 	void SetTekstuuri(size_t x)
 	{
 		tekstuuriID = x;
@@ -35,7 +31,7 @@ public:
 	{
 		_highlight = highlight;
 	}
-	const std::shared_ptr<TileRenderData> GetRenderData() const { return _tileRenderData; }
+	//const std::shared_ptr<TileRenderData> GetRenderData() const { return _tileRenderData; }
 	const std::shared_ptr<UIObjectRenderData> GetHighlight() const { return _highlight; }
 
 	int _ID = 0;
@@ -45,8 +41,9 @@ protected:
 	void AddIndex(std::vector<unsigned int>& x, float v1, float v2, float v3) override;
 	bool _interactable = false;
 
-	std::shared_ptr<TileRenderData> _tileRenderData;
+	//std::shared_ptr<TileRenderData> _tileRenderData;
 	size_t tekstuuriID = 0;
+	size_t _textureArray = 0;
 	std::shared_ptr<UIObjectRenderData> _highlight = nullptr;
 
 

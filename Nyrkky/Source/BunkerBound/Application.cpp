@@ -609,10 +609,13 @@ void Application::InitTextureArray()
 
     GameData::SetTextureArray(AR);
 
-    size_t textureIndex = GameData::GetTextureIndex("StoneFloor01.png");
-    std::string textureName = GameData::GetTextureName(textureIndex);
+    {
+        size_t textureIndex = GameData::GetTextureIndex("StoneFloor01.png");
+        std::string textureName = GameData::GetTextureName(textureIndex);
 
-    std::cout << "tex: " << textureIndex << "   " << textureName << std::endl;
+        std::cout << "tex: " << textureIndex << "   " << textureName << std::endl;
+    }
+
 
 
 
@@ -620,6 +623,17 @@ void Application::InitTextureArray()
 
     std::vector<std::string> cpaths;
     cpaths.push_back("..\\Nyrkky\\Resources\\Textures\\Arisu.png");
+
+    for (size_t i = 0; i < cpaths.size(); ++i) {
+        std::string fileName = cpaths[i].substr(cpaths[i].find_last_of("\\/") + 1);
+        GameData::AddToCharacterTextureIndex(fileName, i);
+    }
+
+    {
+        size_t textureIndex = GameData::GetCharacterTextureIndex("Arisu.png");
+        std::string textureName = GameData::GetCharacterTextureName(textureIndex);
+        std::cout << "character tex: " << textureIndex << "   " << textureName << std::endl;
+    }
 
     std::shared_ptr<TextureArray> CAR = TextureManager::GetTextureArray(cpaths);
 

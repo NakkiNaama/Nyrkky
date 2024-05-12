@@ -8,6 +8,12 @@
 #include <filesystem>
 
 
+enum ETextureArray
+{
+	EMapTexture = 0,
+	ECharacterTexture = 1
+};
+
 enum ClickResponse
 {
 	NoneClick, 
@@ -42,7 +48,7 @@ public:
 
 	void InitalizeUIData();
 
-	std::shared_ptr<UIObjectRenderData> CreateUIObject(UIObjectType type, std::shared_ptr<TileRenderData> data, float xPercentage, float yPercentage, float widthPercentage, float heightPercentage, bool interactable, int id = 0);
+	std::shared_ptr<UIObjectRenderData> CreateUIObject(UIObjectType type, uint32_t arrayID, uint32_t texture, float xPercentage, float yPercentage, float widthPercentage, float heightPercentage, bool interactable, int id = 0);
 	
 	void CreateGameUI();
 	void CreateEditorUI();

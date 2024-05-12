@@ -137,7 +137,7 @@ public:
 		Get().ImpSetDialogText(text);
 	}
 
-	static std::shared_ptr<TileRenderData> GetDialogSprite(int index)
+	static uint32_t GetDialogSprite(int index)
 	{
 		return Get().ImpGetDialogSprite(index);
 	}
@@ -246,9 +246,18 @@ public:
 		return Get().ImpGetTextureIndex(textureName);
 	}
 
+	static uint32_t GameData::GetCharacterTextureIndex(const std::string& textureName) {
+		return Get().ImpGetCharacterTextureIndex(textureName);
+	}
+
 	static void AddToTextureIndex(std::string fileName, size_t i)
 	{
 		Get().GameData::ImpAddToTextureIndex(fileName, i);
+	}
+
+	static void AddToCharacterTextureIndex(std::string fileName, size_t i)
+	{
+		Get().GameData::ImpAddToCharacterTextureIndex(fileName, i);
 	}
 
 	static std::string GetTextureName(size_t index)
@@ -256,6 +265,10 @@ public:
 		return Get().GameData::ImpGetTextureName(index);
 	}
 
+	static std::string GetCharacterTextureName(size_t index)
+	{
+		return Get().GameData::ImpGetCharacterTextureName(index);
+	}
 
 private:
 
@@ -365,9 +378,9 @@ private:
 		//dialogText = text;
 	}
 
-	std::shared_ptr<TileRenderData> ImpGetDialogSprite(int index)
+	uint32_t ImpGetDialogSprite(int index)
 	{
-		return dialogSprites[index];
+		return 0;
 	}
 
 	void ImpSetDialogSprite(int index, std::shared_ptr<TileRenderData> data)
@@ -516,12 +529,15 @@ private:
 	}
 
 	uint32_t ImpGetTextureIndex(const std::string& textureName) {
-		//std::cout << "texture index map size " << textureIndexMap.size() << std::endl;
-		for (const auto& pair : textureIndexMap) {
-			//std::cout << pair.first << ": " << pair.second << std::endl;
-		}
-
 		auto& indexMap = textureIndexMap;
+		auto it = indexMap.find(textureName);
+		if (it != indexMap.end())
+			return it->second;
+		return std::numeric_limits<size_t>::max();
+	}
+
+	uint32_t ImpGetCharacterTextureIndex(const std::string& textureName) {
+		auto& indexMap = characterTextureIndexMap;
 		auto it = indexMap.find(textureName);
 		if (it != indexMap.end())
 			return it->second;
@@ -533,9 +549,24 @@ private:
 		GameData::textureIndexMap[fileName] = i;
 	}
 
+	void ImpAddToCharacterTextureIndex(std::string fileName, size_t i)
+	{
+		GameData::characterTextureIndexMap[fileName] = i;
+	}
+
 	std::string ImpGetTextureName(size_t index) 
 	{
 		for (const auto& pair : textureIndexMap) {
+			if (pair.second == index) {
+				return pair.first;
+			}
+		}
+		return "";
+	}
+
+	std::string ImpGetCharacterTextureName(size_t index)
+	{
+		for (const auto& pair : characterTextureIndexMap) {
 			if (pair.second == index) {
 				return pair.first;
 			}
@@ -571,8 +602,11 @@ private:
 	std::shared_ptr<TextureArray> textureArray;
 	std::shared_ptr<TextureArray> characterTextureArray;
 
-	// Indecies for texture array
+	// Indecies for texture array (map)
 	std::unordered_map<std::string, size_t> textureIndexMap;
+
+	// Indecies for texture array (characters)
+	std::unordered_map<std::string, size_t> characterTextureIndexMap;
 
 	bool dialog = false;
 	bool choice = false;

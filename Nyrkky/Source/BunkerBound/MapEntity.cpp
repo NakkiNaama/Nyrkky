@@ -18,7 +18,7 @@ MapEntity::MapEntity(const char* path, int posx, int posy, int State)
     
     _characterRenderData = GameData::GetMapLoader()->_characterRenderData;
 
-    /*
+    
     for (int i = 0; i < tileEntityData.size(); i++)
     {
         if (tileEntityData[i] != "-")
@@ -26,7 +26,7 @@ MapEntity::MapEntity(const char* path, int posx, int posy, int State)
             SpawnTileEntity(tileEntityData[i], i);
         }
     }
-    */
+    
     
     if (State == 0) SpawnCharacterEntity(ECharacter::Emily, 3);
 

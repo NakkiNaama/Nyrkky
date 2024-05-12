@@ -52,7 +52,12 @@ bool MapLoader::GenerateGenericMap()
 
                 case 3: child->SetText("-"); break;
 
-                case 4: child->SetText("-"); break;
+                case 4: 
+                    if (x == 1 && y == 1)
+                    {
+                        child->SetText("Chest01"); break;
+                    }
+                    else child->SetText("-"); break;
                 }
 
                 tile->LinkEndChild(child);
@@ -101,6 +106,7 @@ void MapLoader::LoadMap(const char* path, int& gridSize, std::vector<Tile> &tile
                 */
 
                 Tile v = Tile(false, false, textures);
+                tiles.push_back(v);
 
                 gridSize++;
              

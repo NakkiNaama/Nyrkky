@@ -54,7 +54,7 @@ Story::Story()
     choice1.nextNode = route1.id;
 
     Choice choice2;
-    choice2.text = "Investigate the source of the gays.";
+    choice2.text = "Investigate the source of the shadows.";
     choice2.nextNode = route2.id;
 
 
