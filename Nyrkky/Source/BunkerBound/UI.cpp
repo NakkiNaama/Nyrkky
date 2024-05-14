@@ -107,7 +107,7 @@ std::shared_ptr<UIObjectRenderData> UI::CreateHighlight(UIObjectType type, std::
 	xP += offset * 2;
 	yP += offset * 2 * 1.55;
 
-	std::shared_ptr<UIObjectRenderData> element = CreateUIObject(UIObjectType::Selection, ETextureArray::EMapTexture, GameData::GetTextureIndex("transparent.png"), hP, wP, xP, yP, true);
+	std::shared_ptr<UIObjectRenderData> element = CreateUIObject(UIObjectType::Selection, ETextureArray::EMapTexture, GameData::GetTextureIndex("highlight.png"), hP, wP, xP, yP, true);
 
 	return element;
 }
@@ -154,9 +154,9 @@ void UI::CreateEditorUI()
 
 	for (int i = 0 ; i < 5; i++)
 	{
-		if (GameData::GetMap()->_tileTypes.size() > i)
+		if (GameData::GetTextureArray()->GetSize() > i)
 		{
-			CreateUIObject(UIObjectType::EditorTextureButton, GameData::GetTextureIndex("transparent.png"), xP, yPplus, widthP, heightP, true, i);
+			CreateUIObject(UIObjectType::EditorTextureButton, ETextureArray::EMapTexture, i, xP, yPplus, widthP, heightP, true, i);
 			yPplus += 0.13f;
 		}
 		else break;
@@ -166,9 +166,9 @@ void UI::CreateEditorUI()
 
 	for (int i = 0; i < 5; i++)
 	{
-		if (GameData::GetMap()->_entityTypes.size() > i)
+		if (GameData::GetMapLoader()->_entityTypes.size() > i)
 		{
-			CreateUIObject(UIObjectType::EditorObjectButton, GameData::GetTextureIndex("transparent.png"), xP, yPplus, widthP, heightP, true, i);
+			CreateUIObject(UIObjectType::EditorObjectButton, ETextureArray::EMapTexture, GameData::GetMapLoader()->_entityTypes[i]->GetFirstTexture(), xP, yPplus, widthP, heightP, true, i);
 			yPplus += 0.13f;
 		}
 		else break;
@@ -183,7 +183,7 @@ void UI::AddTextureOffset(int offset)
 	{
 		_tOffset = 0;
 	}
-	else if (_tOffset + _editorButtons.size() > GameData::GetMap()->_tileTypes.size())
+	else if (_tOffset + _editorButtons.size() > GameData::GetTextureArray()->GetSize()) // GameData::GetMap()->_tileTypes.size()
 	{
 		_tOffset -= offset;
 	}
@@ -207,6 +207,7 @@ void UI::DrawHighlight(std::shared_ptr<UIObjectRenderData> render)
 	
 	if (render->GetHighlight() != nullptr)
 	{
+		
 		bool draw = false;
 		if (_view == 0)
 		{
@@ -216,15 +217,15 @@ void UI::DrawHighlight(std::shared_ptr<UIObjectRenderData> render)
 		{
 			if (render->_ID + _oOffset == _lastClickedObject) draw = true;
 		}
-			/*
+		
 		if (draw)
 		{
-			if (render->GetHighlight()->UpdaterWithData(_selectionData))
+			if (render->GetHighlight()->Updater())
 			{
 				_renderer->Draw(render->GetHighlight()->GetVA(), render->GetHighlight()->GetIB());
 			}
 		}
-		*/
+		
 
 	}
 	
@@ -241,8 +242,8 @@ void UI::DrawEditorButtons()
 			if (render != nullptr && render->GetVA() != nullptr && render->GetIB() != nullptr)
 			{
 				int id = index + _tOffset;
-
-				if (GameData::GetMap()->_tileTypes.size() > id)
+				
+				if (GameData::GetTextureArray()->GetSize() > id)
 				{
 					//render->SetRenderData(GameData::GetMap()->_tileTypes[id]);
 					render->SetTekstuuri(id);
@@ -265,11 +266,11 @@ void UI::DrawEditorButtons()
 			if (render != nullptr && render->GetVA() != nullptr && render->GetIB() != nullptr)
 			{
 				int id = index + _oOffset;
-
-				if (GameData::GetMap()->_entityTypes.size() > id)
+				//std::cout << "obj render" << std::endl;
+				if (GameData::GetMapLoader()->_entityTypes.size() > id)
 				{
 					//render->SetRenderData(GameData::GetMap()->_entityTypes[id]->GetFirstData());
-					render->SetTekstuuri(id);
+					render->SetTekstuuri(GameData::GetMapLoader()->_entityTypes[id]->GetFirstTexture());
 					if (render->Updater())
 					{
 						GameData::GetRenderer()->Draw(render->GetVA(), render->GetIB());
@@ -547,7 +548,7 @@ void UI::DrawObjects()
 		{
 			if (render != nullptr && render->GetVA() != nullptr && render->GetIB() != nullptr)
 			{
-				render->SetTekstuuri(3);
+				//render->SetTekstuuri(3);
 				if (render->Updater())
 				{
 					GameData::GetRenderer()->Draw(render->GetVA(), render->GetIB());

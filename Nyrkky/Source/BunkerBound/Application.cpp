@@ -131,6 +131,21 @@ void Application::MouseClickEvent(int button, int action, int mods)
 
 void Application::MouseScrollEvent(double xoffset, double yoffset)
 {
+    if (GameData::GetUI()->GetUIView() == 0)
+    {
+        if (xoffset > 0) yoffset = 1;
+        else if (xoffset < 0) yoffset = -1;
+        GameData::GetUI()->AddTextureOffset(yoffset);
+    }
+    else
+    {
+        if (xoffset > 0)
+        {
+            if (xoffset > 0) yoffset = 1;
+            else if (xoffset < 0) yoffset = -1;
+            GameData::GetUI()->AddObjectOffset(yoffset);
+        }      
+    }
 }
 
 void Application::UpdateViewMatrix() {
@@ -280,10 +295,21 @@ void Application::InitalizeGameStartingState()
     std::shared_ptr<MapLoader> mapLoader = std::make_shared<MapLoader>();
     GameData::SetMapLoader(mapLoader);
 
-    std::shared_ptr<MapEntity> map = std::make_shared<MapEntity>("Maps/generic.xml", 0, 0, 0);
+
+    //std::shared_ptr<MapEntity> map = std::make_shared<MapEntity>("Maps/generic.xml", 0, 0, 0, true);
+
+    GameData::AddMap(std::make_shared<MapEntity>("Maps/generic.xml", 0, 0, 0, true));
+    GameData::GetMaps().back()->InitMap();
+    
+    
+    /*
+    std::shared_ptr<MapEntity> map = std::make_shared<MapEntity>("Maps/generic.xml", 0, 0, 0, true);
+
+    std::cout << "setting map to active" << std::endl;
 
     map->SetActive(true);
     GameData::AddMap(map);
+    */
 
     /*
     std::shared_ptr<MapEntity> map2 = std::make_shared<MapEntity>("Maps/generic.xml", 0, 0, 1);
@@ -416,6 +442,7 @@ void Application::RightClick()
 
 void Application::ChangeOffset(int offset, bool cursorPosCheck)
 {
+    std::cout << "change offset +-" << std::endl;
     bool valid = true;
     if (cursorPosCheck)
     {
@@ -450,6 +477,11 @@ void Application::HandleKeyPress(float DeltaTime)
         if (_pressedKeys.count(GLFW_KEY_D)) MoveMainCharacter(Direction::Right);
         if (_pressedKeys.count(GLFW_KEY_S)) MoveMainCharacter(Direction::Backwards);
         if (_pressedKeys.count(GLFW_KEY_A)) MoveMainCharacter(Direction::Left);
+
+
+            
+
+
 
         StaticDelayPress(DeltaTime);
     }
@@ -515,6 +547,18 @@ void Application::StaticDelayPress(float DeltaTime)
         {
             _editor = !_editor;
             std::cout << "editor state change" << std::endl;
+            _staticDelayTimer = 0;
+        }
+
+        if (_pressedKeys.count(GLFW_KEY_KP_ADD))
+        {
+            ChangeOffset(1, false);
+            _staticDelayTimer = 0;
+        }
+
+        if (_pressedKeys.count(GLFW_KEY_KP_SUBTRACT))
+        {
+            ChangeOffset(-1, false);
             _staticDelayTimer = 0;
         }
 
@@ -600,7 +644,7 @@ void Application::InitTextureArray()
     paths.push_back(path + "door_open.png");
 
     std::shared_ptr<TextureArray> AR = TextureManager::GetTextureArray(paths);
-
+    //AR->GetSize();
 
     for (size_t i = 0; i < paths.size(); ++i) {
         std::string fileName = paths[i].substr(paths[i].find_last_of("\\/") + 1);

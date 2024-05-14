@@ -278,6 +278,7 @@ private:
 		if (currentMap == nullptr)
 		{
 			currentMap = pmap;
+			std::cout << "First map has been set to the active map" << std::endl;
 		}
 	}
 

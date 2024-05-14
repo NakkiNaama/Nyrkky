@@ -69,6 +69,20 @@ public:
 		return _event.Type;
 	}
 
+	uint32_t GetFirstTexture() const
+	{
+		if (_textures.size() > 0)
+		{
+			return _textures[0];
+		}
+		return ~0;
+	}
+
+	std::vector<uint32_t> GetTextures() const
+	{
+		return _textures;
+	}
+
 protected:
 
 	std::vector<uint32_t> _textures;

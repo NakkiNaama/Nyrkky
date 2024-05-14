@@ -45,7 +45,19 @@ bool MapLoader::GenerateGenericMap()
                 tinyxml2::XMLElement* child = doc.NewElement(childName);
                 switch (i)
                 {
-                case 0: child->SetText("StoneFloor01.png"); break;
+                case 0:
+                    {
+                        int roll = rand() % 2;
+                        switch (roll)
+                        {
+                        case 0: child->SetText("StoneFloor01.png"); break;
+                        case 1: child->SetText("StoneFloor02.png"); break;
+                        case 2: child->SetText("D.png"); break;
+                        default: child->SetText("A.png"); break;
+                        }
+                    }
+                    break;
+
                 case 1: child->SetText("0"); break;
 
                 case 2: child->SetText("0"); break;
@@ -95,9 +107,10 @@ void MapLoader::LoadMap(const char* path, int& gridSize, std::vector<Tile> &tile
 
 
                 tileEntities.push_back(child->FirstChildElement("EntityName")->GetText());
-
+                /*
                 std::vector<uint32_t> textures;
-                textures.push_back(GameData::GetTextureIndex(name));
+                textures.push_back();
+                */
                 /*
                 if (HasSub)
                 {
@@ -105,7 +118,9 @@ void MapLoader::LoadMap(const char* path, int& gridSize, std::vector<Tile> &tile
                 }
                 */
 
-                Tile v = Tile(false, false, textures);
+                std::shared_ptr<SubTile> subTile = std::make_shared<SubTile>(0, false);
+
+                Tile v = Tile(false, false, GameData::GetTextureIndex(name), subTile);
                 tiles.push_back(v);
 
                 gridSize++;

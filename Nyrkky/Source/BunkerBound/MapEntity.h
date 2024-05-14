@@ -8,7 +8,8 @@
 class MapEntity : public Entity
 {
 public:
-	MapEntity(const char* path, int posx, int posy, int State);
+	MapEntity(const char* path, int posx, int posy, int State, bool setActive = false);
+	void InitMap();
 	~MapEntity();
 
 	void SpawnTileEntity(std::string entityName, int tile);

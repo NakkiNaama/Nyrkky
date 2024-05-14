@@ -20,11 +20,18 @@ public:
         return _rendererID;
     }
 
+    int GetSize()
+    {
+        return _textureNum;
+    }
+
 private:
     GLuint _rendererID;
     int _width = 64;
     int _height = 64;
     int _BPP;
+    int _textureNum;
+
 };
 
 class TextureManager

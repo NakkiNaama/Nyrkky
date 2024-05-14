@@ -1,6 +1,38 @@
 <root>
     <Tile>
+        <Name>StoneFloor02.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>-</SubName>
+        <EntityName>-</EntityName>
+        <EntityName/>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor02.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>-</SubName>
+        <EntityName>-</EntityName>
+        <EntityName/>
+    </Tile>
+    <Tile>
         <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>-</SubName>
+        <EntityName>-</EntityName>
+        <EntityName/>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>-</SubName>
+        <EntityName>-</EntityName>
+        <EntityName/>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -48,7 +80,87 @@
         <EntityName/>
     </Tile>
     <Tile>
+        <Name>StoneFloor02.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>-</SubName>
+        <EntityName>-</EntityName>
+        <EntityName/>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor02.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>-</SubName>
+        <EntityName>-</EntityName>
+        <EntityName/>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor02.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>-</SubName>
+        <EntityName>-</EntityName>
+        <EntityName/>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor02.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>-</SubName>
+        <EntityName>-</EntityName>
+        <EntityName/>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor02.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>-</SubName>
+        <EntityName>-</EntityName>
+        <EntityName/>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor02.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>-</SubName>
+        <EntityName>-</EntityName>
+        <EntityName/>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor02.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>-</SubName>
+        <EntityName>-</EntityName>
+        <EntityName/>
+    </Tile>
+    <Tile>
         <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>-</SubName>
+        <EntityName>-</EntityName>
+        <EntityName/>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor02.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>-</SubName>
+        <EntityName>-</EntityName>
+        <EntityName/>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>-</SubName>
+        <EntityName>-</EntityName>
+        <EntityName/>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -72,7 +184,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -96,7 +208,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -120,7 +232,15 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>-</SubName>
+        <EntityName>-</EntityName>
+        <EntityName/>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -136,127 +256,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>-</SubName>
-        <EntityName>-</EntityName>
-        <EntityName/>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>-</SubName>
-        <EntityName>-</EntityName>
-        <EntityName/>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>-</SubName>
-        <EntityName>-</EntityName>
-        <EntityName/>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>-</SubName>
-        <EntityName>-</EntityName>
-        <EntityName/>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>-</SubName>
-        <EntityName>-</EntityName>
-        <EntityName/>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>-</SubName>
-        <EntityName>-</EntityName>
-        <EntityName/>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>-</SubName>
-        <EntityName>-</EntityName>
-        <EntityName/>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>-</SubName>
-        <EntityName>-</EntityName>
-        <EntityName/>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>-</SubName>
-        <EntityName>-</EntityName>
-        <EntityName/>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>-</SubName>
-        <EntityName>-</EntityName>
-        <EntityName/>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>-</SubName>
-        <EntityName>-</EntityName>
-        <EntityName/>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>-</SubName>
-        <EntityName>-</EntityName>
-        <EntityName/>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>-</SubName>
-        <EntityName>-</EntityName>
-        <EntityName/>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>-</SubName>
-        <EntityName>-</EntityName>
-        <EntityName/>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>-</SubName>
-        <EntityName>-</EntityName>
-        <EntityName/>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -272,7 +272,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -288,7 +288,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -296,7 +296,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -304,7 +304,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -320,7 +320,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -328,7 +328,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -344,7 +344,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -352,7 +352,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -368,7 +368,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -376,7 +376,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -384,7 +384,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -400,7 +400,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -424,7 +424,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -432,7 +432,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -440,7 +440,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -448,7 +448,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -456,7 +456,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -464,7 +464,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -488,7 +488,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -568,7 +568,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -584,7 +584,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -616,7 +616,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -624,7 +624,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -640,7 +640,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -648,7 +648,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -704,7 +704,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -728,7 +728,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -744,7 +744,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -752,7 +752,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -784,7 +784,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -792,7 +792,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -800,7 +800,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -808,7 +808,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -816,7 +816,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -848,7 +848,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -864,7 +864,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -880,7 +880,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -888,7 +888,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -920,7 +920,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -928,7 +928,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -936,7 +936,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -944,7 +944,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -976,7 +976,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -992,7 +992,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1000,7 +1000,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1008,7 +1008,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1024,7 +1024,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1056,7 +1056,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1088,7 +1088,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1096,7 +1096,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1104,7 +1104,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1112,7 +1112,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1120,7 +1120,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1128,7 +1128,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1136,7 +1136,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1144,7 +1144,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1152,7 +1152,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1160,7 +1160,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1168,7 +1168,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1184,7 +1184,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1232,7 +1232,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1256,7 +1256,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1272,7 +1272,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1288,7 +1288,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1304,7 +1304,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1320,7 +1320,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1328,7 +1328,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1336,7 +1336,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1360,7 +1360,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1400,7 +1400,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1416,7 +1416,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1440,7 +1440,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1456,7 +1456,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1464,7 +1464,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1504,7 +1504,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1512,7 +1512,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1528,7 +1528,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1544,7 +1544,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1552,7 +1552,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1560,7 +1560,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1576,7 +1576,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1584,7 +1584,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1600,7 +1600,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1616,7 +1616,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1624,7 +1624,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1640,7 +1640,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1648,7 +1648,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1672,7 +1672,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1704,7 +1704,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1712,7 +1712,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1728,7 +1728,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1736,7 +1736,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1744,7 +1744,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1752,7 +1752,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1760,7 +1760,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1768,7 +1768,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1784,7 +1784,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1848,7 +1848,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1856,7 +1856,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1872,7 +1872,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1880,7 +1880,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1928,7 +1928,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1944,7 +1944,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1960,7 +1960,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1968,7 +1968,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -1992,7 +1992,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2024,7 +2024,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2064,7 +2064,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2072,7 +2072,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2080,7 +2080,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2112,7 +2112,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2136,7 +2136,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2144,7 +2144,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2152,7 +2152,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2160,7 +2160,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2184,7 +2184,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2192,7 +2192,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2224,7 +2224,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2232,7 +2232,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2240,7 +2240,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2256,7 +2256,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2264,7 +2264,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2272,7 +2272,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2280,7 +2280,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2296,7 +2296,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2312,7 +2312,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2336,7 +2336,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2344,7 +2344,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2368,7 +2368,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2384,7 +2384,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2392,7 +2392,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2408,7 +2408,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2432,7 +2432,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2440,7 +2440,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2456,7 +2456,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2464,7 +2464,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2480,7 +2480,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2504,7 +2504,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2512,7 +2512,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2520,7 +2520,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2528,7 +2528,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2544,7 +2544,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2552,7 +2552,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2560,7 +2560,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2568,7 +2568,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2584,7 +2584,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2592,7 +2592,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2600,7 +2600,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2608,7 +2608,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2632,7 +2632,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2656,7 +2656,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2680,7 +2680,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2696,7 +2696,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2712,7 +2712,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2720,7 +2720,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2728,7 +2728,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2736,7 +2736,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2744,7 +2744,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2776,7 +2776,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2784,7 +2784,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2800,7 +2800,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2832,7 +2832,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2864,7 +2864,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2872,7 +2872,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2880,7 +2880,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2896,7 +2896,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2920,7 +2920,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2936,7 +2936,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2944,7 +2944,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2976,7 +2976,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -2984,7 +2984,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3000,7 +3000,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3040,7 +3040,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3048,7 +3048,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3064,7 +3064,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3080,7 +3080,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3088,7 +3088,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3144,7 +3144,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3152,7 +3152,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3168,7 +3168,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3176,7 +3176,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3192,7 +3192,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3200,7 +3200,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3216,7 +3216,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3240,7 +3240,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3264,7 +3264,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3272,7 +3272,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3288,7 +3288,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3296,7 +3296,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3304,7 +3304,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3312,7 +3312,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3328,7 +3328,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3344,7 +3344,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3352,7 +3352,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3360,7 +3360,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3376,7 +3376,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3384,7 +3384,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3392,7 +3392,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3400,7 +3400,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3456,7 +3456,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3472,7 +3472,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3504,7 +3504,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3512,7 +3512,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3520,7 +3520,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3544,7 +3544,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3552,7 +3552,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3584,7 +3584,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3600,7 +3600,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3608,7 +3608,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3648,7 +3648,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3672,7 +3672,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3680,7 +3680,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3712,7 +3712,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3736,7 +3736,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3768,7 +3768,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3784,7 +3784,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3800,7 +3800,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3808,7 +3808,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3832,7 +3832,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3856,7 +3856,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3864,7 +3864,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3872,7 +3872,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3888,7 +3888,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3896,7 +3896,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3904,7 +3904,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3920,7 +3920,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3952,7 +3952,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3968,7 +3968,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3976,7 +3976,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3984,7 +3984,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -3992,7 +3992,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4048,7 +4048,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4056,7 +4056,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4064,7 +4064,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4072,7 +4072,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4080,7 +4080,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4120,7 +4120,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4136,7 +4136,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4152,7 +4152,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4168,7 +4168,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4192,7 +4192,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4200,7 +4200,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4208,7 +4208,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4232,7 +4232,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4240,7 +4240,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4256,7 +4256,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4272,7 +4272,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4288,7 +4288,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4296,7 +4296,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4304,7 +4304,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4336,7 +4336,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4352,7 +4352,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4368,7 +4368,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4384,7 +4384,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4416,7 +4416,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4424,7 +4424,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4456,7 +4456,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4472,7 +4472,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4480,7 +4480,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4488,7 +4488,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4496,7 +4496,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4504,7 +4504,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4528,7 +4528,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4544,7 +4544,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4560,7 +4560,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4568,7 +4568,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4576,7 +4576,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4584,7 +4584,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4592,7 +4592,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4600,7 +4600,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4608,7 +4608,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4632,7 +4632,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4640,7 +4640,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4688,7 +4688,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4696,7 +4696,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4712,7 +4712,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4720,7 +4720,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4728,7 +4728,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4736,7 +4736,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4744,7 +4744,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4752,7 +4752,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4768,7 +4768,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4784,7 +4784,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4808,7 +4808,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4816,7 +4816,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4824,7 +4824,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4832,7 +4832,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4840,7 +4840,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4848,7 +4848,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4880,7 +4880,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4888,7 +4888,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4912,7 +4912,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4920,7 +4920,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4928,7 +4928,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4944,7 +4944,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4968,7 +4968,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -4984,7 +4984,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5008,7 +5008,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5024,7 +5024,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5032,7 +5032,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5040,7 +5040,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5048,7 +5048,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5072,7 +5072,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5080,7 +5080,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5112,7 +5112,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5128,7 +5128,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5144,7 +5144,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5152,7 +5152,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5184,7 +5184,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5208,7 +5208,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5216,7 +5216,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5224,7 +5224,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5248,7 +5248,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5264,7 +5264,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5272,7 +5272,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5288,7 +5288,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5296,7 +5296,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5312,7 +5312,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5344,7 +5344,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5352,7 +5352,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5368,7 +5368,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5384,7 +5384,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5392,7 +5392,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5400,7 +5400,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5408,7 +5408,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5432,7 +5432,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5440,7 +5440,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5456,7 +5456,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5464,7 +5464,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5472,7 +5472,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5480,7 +5480,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5488,7 +5488,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5504,7 +5504,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5520,7 +5520,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5528,7 +5528,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5536,7 +5536,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5544,7 +5544,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5552,7 +5552,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5576,7 +5576,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5592,7 +5592,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5616,7 +5616,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5632,7 +5632,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5664,7 +5664,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5672,7 +5672,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5688,7 +5688,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5696,7 +5696,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5704,7 +5704,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5720,7 +5720,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5736,7 +5736,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5744,7 +5744,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5776,7 +5776,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5784,7 +5784,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5792,7 +5792,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5832,7 +5832,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5840,7 +5840,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5848,7 +5848,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5856,7 +5856,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5880,7 +5880,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5904,7 +5904,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5920,7 +5920,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5928,7 +5928,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5936,7 +5936,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5968,7 +5968,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5984,7 +5984,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -5992,7 +5992,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6000,7 +6000,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6016,7 +6016,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6032,7 +6032,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6064,7 +6064,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6072,7 +6072,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6104,7 +6104,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6120,7 +6120,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6128,7 +6128,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6136,7 +6136,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6144,7 +6144,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6152,7 +6152,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6168,7 +6168,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6176,7 +6176,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6184,7 +6184,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6200,7 +6200,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6208,7 +6208,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6224,7 +6224,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6232,7 +6232,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6240,7 +6240,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6248,7 +6248,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6256,7 +6256,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6264,7 +6264,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6304,7 +6304,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6352,7 +6352,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6360,7 +6360,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6392,7 +6392,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6408,7 +6408,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6416,7 +6416,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6432,7 +6432,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6448,7 +6448,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6456,7 +6456,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6480,7 +6480,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6488,7 +6488,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6496,7 +6496,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6520,7 +6520,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6544,7 +6544,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6552,7 +6552,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6560,7 +6560,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6568,7 +6568,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6576,7 +6576,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6600,7 +6600,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6624,7 +6624,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6632,7 +6632,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6688,7 +6688,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6696,7 +6696,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6712,7 +6712,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6736,7 +6736,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6744,7 +6744,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6752,7 +6752,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6776,7 +6776,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6840,7 +6840,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6848,7 +6848,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6856,7 +6856,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6872,7 +6872,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6880,7 +6880,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6888,7 +6888,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6896,7 +6896,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6944,7 +6944,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6952,7 +6952,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -6992,7 +6992,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7008,7 +7008,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7024,7 +7024,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7056,7 +7056,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7064,7 +7064,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7072,7 +7072,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7128,7 +7128,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7136,7 +7136,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7152,7 +7152,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7168,7 +7168,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7176,7 +7176,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7192,7 +7192,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7200,7 +7200,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7224,7 +7224,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7256,7 +7256,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7264,7 +7264,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7272,7 +7272,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7288,7 +7288,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7304,7 +7304,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7312,7 +7312,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7320,7 +7320,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7328,7 +7328,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7336,7 +7336,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7360,7 +7360,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7368,7 +7368,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7384,7 +7384,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7408,7 +7408,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7424,7 +7424,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7448,7 +7448,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7456,7 +7456,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7464,7 +7464,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7472,7 +7472,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7480,7 +7480,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7488,7 +7488,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7496,7 +7496,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7520,7 +7520,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7536,7 +7536,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7544,7 +7544,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7552,7 +7552,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7560,7 +7560,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7576,7 +7576,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7616,7 +7616,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7656,7 +7656,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7664,7 +7664,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7672,7 +7672,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7680,7 +7680,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7688,7 +7688,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7712,7 +7712,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7728,7 +7728,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7752,7 +7752,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7760,7 +7760,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7776,7 +7776,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7792,7 +7792,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7800,7 +7800,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7840,7 +7840,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7848,7 +7848,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7864,7 +7864,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7872,7 +7872,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7880,7 +7880,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7888,7 +7888,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7896,7 +7896,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7912,7 +7912,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7928,7 +7928,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7952,7 +7952,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7960,7 +7960,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -7992,7 +7992,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -8000,7 +8000,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -8016,7 +8016,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -8032,7 +8032,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -8040,7 +8040,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -8088,7 +8088,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -8096,7 +8096,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -8128,7 +8128,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -8144,7 +8144,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -8160,7 +8160,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -8168,7 +8168,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>
@@ -8184,7 +8184,7 @@
         <EntityName/>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
+        <Name>StoneFloor02.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>-</SubName>

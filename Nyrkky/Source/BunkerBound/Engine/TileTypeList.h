@@ -74,31 +74,34 @@ private:
 	size_t NewTex = 0;
 	std::shared_ptr<Texture> _texture;
 };
-/*
+
 struct SubTile
 {
 public:
-	SubTile(TileRenderData data)
-		: Data(data)
+	SubTile(uint32_t texture, bool solid)
 	{
+		_texture = texture;
 		_solid = solid;
 	}
 
 	bool IsSolid() const { return _solid; }
-	TileRenderData Data;
+	uint32_t GetTextureID() const { return _texture; }
+
 
 private:
 	bool _solid;
+	uint32_t _texture;
 };
-*/
+
 struct Tile
 {
 public:
-	Tile(bool solid, bool hasSub, std::vector<uint32_t> textures)
-		: _textures(textures)
+	Tile(bool solid, bool hasSub, uint32_t texture, std::shared_ptr<SubTile> sub)
+		: _texture(texture)
 	{
 		_solid = solid;
 		HasSub = hasSub;
+		subTile = sub;
 	}
 	std::string GetTileName() const { return _name; }
 	bool IsSolid() const { return _solid; }
@@ -109,17 +112,21 @@ public:
 
 	bool HasSub;
 
-	uint32_t GetTexture(bool sub) const
+	uint32_t GetTexture() const
 	{
-		if (sub && _textures.size() > 1) return _textures[1];
-		else return _textures[0];
+		return _texture;
+	}
+
+	std::shared_ptr<SubTile> GetSubTile()
+	{
+		return subTile;
 	}
 
 private:
 	std::string _name;
 	bool _solid;
-	std::vector<uint32_t> _textures;
-
+	uint32_t _texture;
+	std::shared_ptr<SubTile> subTile;
 };
 
 class TileTypeList

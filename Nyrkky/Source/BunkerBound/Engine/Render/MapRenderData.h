@@ -18,7 +18,7 @@ public:
 	// contains types of tiles in the game
 	std::vector<std::shared_ptr<TileRenderData>> _tileTypes;
 	// contains invidual tiles in the game
-	std::vector<TileRenderData> _tiles;
+	//std::vector<TileRenderData> _tiles;
 
 	// contains vertexes in the map
 	std::vector<float> positions;

@@ -1,9 +1,21 @@
 #include "MapEntity.h"
 #include "GameData.h"
 
-MapEntity::MapEntity(const char* path, int posx, int posy, int State)
+MapEntity::MapEntity(const char* path, int posx, int posy, int State, bool setActive)
 {
 
+    std::cout << "map entity init" << std::endl;
+    //GameData::AddMap(shared_from_this());
+    /*
+    if (setActive)
+    {
+        
+        //SetActive(true);
+        GameData::AddMap(std::shared_ptr<MapEntity>(this));
+        //GameData::ChangeMap(0);
+    }
+    */ 
+    
 	PosX = posx;
 	PosY = posy;
     //GameData::GetMapLoader();
@@ -36,12 +48,12 @@ MapEntity::MapEntity(const char* path, int posx, int posy, int State)
 
     for (auto &tile : _tiles)
     {
+        //std::cout << "tiles: " << tile.GetTexture(false) << std::endl;
         //layer0.push_back(tile.Data);
         //layer1.push_back(tile.SubData);
     }
 
-    Renders.push_back(std::make_shared<MapRenderData>(0, 0, 0, GridSize, TileSize));
-    Renders.back()->Init(0, 0);
+
 
     /*
     for (int i = 0; i <= 1; i++) // increase to have more layers
@@ -60,6 +72,13 @@ MapEntity::MapEntity(const char* path, int posx, int posy, int State)
 
 }
 
+void MapEntity::InitMap()
+{
+    Renders.push_back(std::make_shared<MapRenderData>(0, 0, 0, GridSize, TileSize));
+    Renders.back()->Init(0, 0);
+    SetActive(true);
+}
+
 MapEntity::~MapEntity()
 {
 }
@@ -71,6 +90,32 @@ void MapEntity::Tick(float DeltaTime)
 
 void MapEntity::ChangeTile(int layer, int index, int ID, bool solid)
 {
+    std::cout << "change tile called!" << std::endl;
+    Tile old = _tiles[index];
+    std::shared_ptr<SubTile> subTile;
+
+
+    subTile = std::make_shared<SubTile>(old.GetSubTile()->GetTextureID(), old.GetSubTile()->IsSolid());
+    Tile tempTile = Tile(solid, old.HasSub, ID, subTile);
+    _tiles[index] = tempTile;
+    /*
+    if (layer == 0)
+    {
+        subTile = std::make_shared<SubTile>(old.GetSubTile()->GetTextureID(), old.GetSubTile()->IsSolid());
+        Tile tempTile = Tile(solid, old.HasSub, index, subTile);
+        _tiles[index] = tempTile;
+    }
+    else
+    {
+        subTile = std::make_shared<SubTile>(index, solid);
+        Tile tempTile = Tile(old.IsSolid(), true, old.GetTexture(), subTile);
+        _tiles[index] = tempTile;
+    }
+    */
+    ModifyMapRender(index, layer);
+
+
+
     /*
     std::shared_ptr<TileRenderData> z = GameData::GetMapLoader()->GetTileType(ID);
     if (z != nullptr)
@@ -119,29 +164,31 @@ void MapEntity::ModifyMapRender(int index, int layer)
     {
         newRender = &_tiles[index].SubData;
     }
+    */
+    
 
     if (_tiles.size() > index)
     {
         int tileOffset = index * 4 * 5;
 
-        Renders[layer]->positions[tileOffset + 2] = ((newRender->UV_x) * newRender->SpriteW) / newRender->SheetW;
-        Renders[layer]->positions[tileOffset + 3] = ((newRender->UV_y) * newRender->SpriteH) / newRender->SheetH;
-        Renders[layer]->positions[tileOffset + 4] = newRender->GetTexID();
+        //Renders[layer]->positions[tileOffset + 2] = ((newRender->UV_x) * newRender->SpriteW) / newRender->SheetW;
+        //Renders[layer]->positions[tileOffset + 3] = ((newRender->UV_y) * newRender->SpriteH) / newRender->SheetH;
+        Renders[layer]->positions[tileOffset + 4] = _tiles[index].GetTexture();
         tileOffset += 5;
 
-        Renders[layer]->positions[tileOffset + 2] = ((newRender->UV_x + 1) * newRender->SpriteW) / newRender->SheetW;
-        Renders[layer]->positions[tileOffset + 3] = (newRender->UV_y * newRender->SpriteH) / newRender->SheetH;
-        Renders[layer]->positions[tileOffset + 4] = newRender->GetTexID();
+        //Renders[layer]->positions[tileOffset + 2] = ((newRender->UV_x + 1) * newRender->SpriteW) / newRender->SheetW;
+        //Renders[layer]->positions[tileOffset + 3] = (newRender->UV_y * newRender->SpriteH) / newRender->SheetH;
+        Renders[layer]->positions[tileOffset + 4] = _tiles[index].GetTexture();
         tileOffset += 5;
 
-        Renders[layer]->positions[tileOffset + 2] = ((newRender->UV_x) * newRender->SpriteW) / newRender->SheetW;
-        Renders[layer]->positions[tileOffset + 3] = ((newRender->UV_y + 1) * newRender->SpriteH) / newRender->SheetH;
-        Renders[layer]->positions[tileOffset + 4] = newRender->GetTexID();
+        //Renders[layer]->positions[tileOffset + 2] = ((newRender->UV_x) * newRender->SpriteW) / newRender->SheetW;
+        //Renders[layer]->positions[tileOffset + 3] = ((newRender->UV_y + 1) * newRender->SpriteH) / newRender->SheetH;
+        Renders[layer]->positions[tileOffset + 4] = _tiles[index].GetTexture();
         tileOffset += 5;
 
-        Renders[layer]->positions[tileOffset + 2] = ((newRender->UV_x + 1) * newRender->SpriteW) / newRender->SheetW;
-        Renders[layer]->positions[tileOffset + 3] = ((newRender->UV_y + 1) * newRender->SpriteH) / newRender->SheetH;
-        Renders[layer]->positions[tileOffset + 4] = newRender->GetTexID();
+        //Renders[layer]->positions[tileOffset + 2] = ((newRender->UV_x + 1) * newRender->SpriteW) / newRender->SheetW;
+        //Renders[layer]->positions[tileOffset + 3] = ((newRender->UV_y + 1) * newRender->SpriteH) / newRender->SheetH;
+        Renders[layer]->positions[tileOffset + 4] = _tiles[index].GetTexture();
         tileOffset += 5;
 
         Renders[layer]->GetVB()->Bind();
@@ -151,7 +198,7 @@ void MapEntity::ModifyMapRender(int index, int layer)
     {
         std::cout << "change tile out of bounds!" << std::endl;
     }
-    */
+    
 }
 
 void MapEntity::SpawnTileEntity(std::string entityName, int tile)

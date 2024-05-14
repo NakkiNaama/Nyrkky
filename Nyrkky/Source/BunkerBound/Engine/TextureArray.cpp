@@ -23,7 +23,7 @@ TextureArray::TextureArray(std::vector<std::string>& paths)
     glGenTextures(1, &_rendererID);
     glBindTexture(GL_TEXTURE_2D_ARRAY, _rendererID);
 
-    int numTextures = static_cast<int>(paths.size());
+    _textureNum = static_cast<int>(paths.size());
 
     unsigned char* localBuffer = nullptr;
 
@@ -44,9 +44,9 @@ TextureArray::TextureArray(std::vector<std::string>& paths)
     _width = maxWidth;
     _height = maxHeight;
 
-    glTexImage3D(GL_TEXTURE_2D_ARRAY, 0, GL_RGBA8, _width, _height, numTextures, 0, GL_RGBA, GL_UNSIGNED_BYTE, nullptr);
+    glTexImage3D(GL_TEXTURE_2D_ARRAY, 0, GL_RGBA8, _width, _height, _textureNum, 0, GL_RGBA, GL_UNSIGNED_BYTE, nullptr);
 
-    for (int i = 0; i < numTextures; ++i) {
+    for (int i = 0; i < _textureNum; ++i) {
         localBuffer = stbi_load(paths[i].c_str(), &_width, &_height, &_BPP, 4);
         if (localBuffer) {
             glTexSubImage3D(GL_TEXTURE_2D_ARRAY, 0, 0, 0, i, _width, _height, 1, GL_RGBA, GL_UNSIGNED_BYTE, localBuffer);

@@ -3,6 +3,7 @@
 
 MapRenderData::MapRenderData(int layer, int ScreenX, int ScreenY, int gridSize, int tileSize)
 {
+    std::cout << "map render data init" << std::endl;
     _layer = layer;
     Update(ScreenX, ScreenY, gridSize, tileSize);
 }
@@ -42,9 +43,17 @@ void MapRenderData::Init(int PosX, int PosY)
 
             data = &_tiles[index];
             */
+            int textureID;
+           if (GameData::GetMap() != nullptr && GameData::GetMap()->_tiles.size() > index)
+            {
+                textureID = GameData::GetMap()->_tiles[index].GetTexture();
+                //std::cout << "tiles size: " << GameData::GetMap()->_tiles.size() << std::endl;
+            }
+            else textureID = 0;
 
-            int textureID = GameData::GetTextureIndex("StoneFloor01.png");
-      
+            
+
+            //int textureID = GameData::GetTextureIndex("StoneFloor01.png");
 
             AddVertex(positions, TileSize * x, -TileSize * y,
                 0.0f, 0.0f, textureID);
@@ -75,7 +84,7 @@ void MapRenderData::Init(int PosX, int PosY)
     }
 
     /**/
-    unsigned int vertexArrayID;
+    //unsigned int vertexArrayID;
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
