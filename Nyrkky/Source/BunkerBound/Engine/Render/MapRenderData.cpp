@@ -43,10 +43,22 @@ void MapRenderData::Init(int PosX, int PosY)
 
             data = &_tiles[index];
             */
+
+
+
             int textureID;
            if (GameData::GetMap() != nullptr && GameData::GetMap()->_tiles.size() > index)
             {
-                textureID = GameData::GetMap()->_tiles[index].GetTexture();
+               if (_layer == 0) textureID = GameData::GetMap()->_tiles[index].GetTexture();
+               else
+               {
+                   if (GameData::GetMap()->_tiles[index].HasSub)
+                   {
+                       textureID = GameData::GetMap()->_tiles[index].GetSubTile()->GetTextureID();
+                   }
+                   else textureID = GameData::GetTextureIndex("invisible.png");
+               }
+                
                 //std::cout << "tiles size: " << GameData::GetMap()->_tiles.size() << std::endl;
             }
             else textureID = 0;

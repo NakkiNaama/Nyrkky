@@ -96,9 +96,10 @@ private:
 struct Tile
 {
 public:
-	Tile(bool solid, bool hasSub, uint32_t texture, std::shared_ptr<SubTile> sub)
+	Tile(std::string name, bool solid, bool hasSub, uint32_t texture, std::shared_ptr<SubTile> sub)
 		: _texture(texture)
 	{
+		_name = name;
 		_solid = solid;
 		HasSub = hasSub;
 		subTile = sub;
@@ -117,7 +118,12 @@ public:
 		return _texture;
 	}
 
-	std::shared_ptr<SubTile> GetSubTile()
+	void SetSubTile(std::shared_ptr<SubTile> newSub)
+	{
+		subTile = newSub;
+	}
+
+	std::shared_ptr<SubTile> GetSubTile() const
 	{
 		return subTile;
 	}

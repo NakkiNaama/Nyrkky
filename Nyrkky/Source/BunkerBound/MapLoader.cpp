@@ -58,18 +58,14 @@ bool MapLoader::GenerateGenericMap()
                     }
                     break;
 
-                case 1: child->SetText("0"); break;
+                case 1: child->SetText("0"); break; // collision
 
-                case 2: child->SetText("0"); break;
+                case 2: child->SetText("0"); break; // has sub
 
-                case 3: child->SetText("-"); break;
+                case 3: child->SetText("-"); break; // sub name
 
-                case 4: 
-                    if (x == 1 && y == 1)
-                    {
-                        child->SetText("Chest01"); break;
-                    }
-                    else child->SetText("-"); break;
+                case 4: child->SetText("-"); break;
+
                 }
 
                 tile->LinkEndChild(child);
@@ -117,10 +113,17 @@ void MapLoader::LoadMap(const char* path, int& gridSize, std::vector<Tile> &tile
                     textures.push_back(GameData::GetTextureIndex(SubName));
                 }
                 */
+                std::shared_ptr<SubTile> subTile;
+                if (HasSub)
+                {
+                    subTile = std::make_shared<SubTile>(GameData::GetTextureIndex(SubName), false);
+                }
+                else
+                {
+                    subTile = std::make_shared<SubTile>(GameData::GetTextureIndex("invisible.png"), false);
+                }
 
-                std::shared_ptr<SubTile> subTile = std::make_shared<SubTile>(0, false);
-
-                Tile v = Tile(false, false, GameData::GetTextureIndex(name), subTile);
+                Tile v = Tile(name, false, HasSub, GameData::GetTextureIndex(name), subTile);
                 tiles.push_back(v);
 
                 gridSize++;
@@ -146,7 +149,7 @@ void MapLoader::LoadMap(const char* path, int& gridSize, std::vector<Tile> &tile
 
 bool MapLoader::SaveMapToFile(int MapSize, const std::vector<Tile>& tiles, const std::vector<std::shared_ptr<TileEntity>> tileEntities)
 {
-    /*
+    
     std::cout << "save map called" << std::endl;
     tinyxml2::XMLDocument doc;
     tinyxml2::XMLElement* root = doc.NewElement("root");
@@ -165,34 +168,30 @@ bool MapLoader::SaveMapToFile(int MapSize, const std::vector<Tile>& tiles, const
         tinyxml2::XMLElement* tileElement = doc.NewElement("Tile");
         root->LinkEndChild(tileElement);
 
-        for (int i = 0; i <= 6; i++)
+        for (int i = 0; i <= 4; i++)
         {
             switch (i)
             {
             case 0: childName = "Name"; break;
-            case 1: childName = "AtlasID"; break;
-            case 2: childName = "Collision"; break;
+            case 1: childName = "Collision"; break;
+            case 2: childName = "HasSub"; break;
 
-            case 3: childName = "HasSub"; break;
-
-            case 4: childName = "SubName"; break;
-            case 5: childName = "SubAtlasID"; break;
-
-            case 6: childName = "EntityName"; break;
+            case 3: childName = "SubName"; break;
+            case 4: childName = "EntityName"; break;
             }
             tinyxml2::XMLElement* child = doc.NewElement(childName);
             switch (i)
             {
-            case 0: child->SetText(tile.Data.GetName().c_str()); break;
-            case 1: child->SetText(std::to_string(tile.Data.UV_ID).c_str()); break;
-            case 2: child->SetText(std::to_string(tile.IsSolid()).c_str()); break;
+            case 0: child->SetText(tile.GetTileName().c_str()); break;
+            case 1: child->SetText(std::to_string(tile.IsSolid()).c_str()); break;
+            case 2: child->SetText(std::to_string(tile.HasSub).c_str()); break;
 
-            case 3: child->SetText(std::to_string(tile.HasSub).c_str()); break;
+            case 3: child->SetText(GameData::GetTextureName(tile.GetSubTile()->GetTextureID()).c_str()); break;
 
-            case 4: child->SetText(tile.SubData.GetName().c_str()); break;
-            case 5: child->SetText(tile.SubData.UV_ID); break;
+            case 4: 
+                child->SetText("-"); break;
 
-            case 6: 
+                
                 finished = false;
                 for (auto& ent : tileEntities)
                 {
@@ -210,6 +209,7 @@ bool MapLoader::SaveMapToFile(int MapSize, const std::vector<Tile>& tiles, const
                     child->SetText("-"); 
                 }
                 break;
+                
             }
 
             tileElement->LinkEndChild(child);
@@ -221,10 +221,7 @@ bool MapLoader::SaveMapToFile(int MapSize, const std::vector<Tile>& tiles, const
 
     std::cout << "Map save success." << std::endl;
     return true;
-    
 
-    */
-    return 0;
 }
 
 void MapLoader::LoadAtlasTextures()

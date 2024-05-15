@@ -297,8 +297,12 @@ void Application::InitalizeGameStartingState()
 
 
     //std::shared_ptr<MapEntity> map = std::make_shared<MapEntity>("Maps/generic.xml", 0, 0, 0, true);
+    // Map paths here
+    //GameData::AddMap(std::make_shared<MapEntity>("Maps/generic.xml", 0, 0, 0, true));
 
-    GameData::AddMap(std::make_shared<MapEntity>("Maps/generic.xml", 0, 0, 0, true));
+    GameData::AddMap(std::make_shared<MapEntity>("Maps/NewMap.xml", 0, 0, 0, true));
+
+
     GameData::GetMaps().back()->InitMap();
     
     
@@ -426,6 +430,7 @@ void Application::LeftClick(bool ctrl)
                     }
                     else
                     {
+                        std::cout << GameData::GetUI()->GetObjectName() << std::endl;
                         GameData::GetMap()->SpawnTileEntity(GameData::GetUI()->GetObjectName(), tile);
                     }
                 }
@@ -530,6 +535,7 @@ void Application::StaticDelayPress(float DeltaTime)
         {
             if (_editor)
             {
+                std::cout << "t" << std::endl;
                 SaveMap();
                 _staticDelayTimer = 0;
             }
@@ -616,6 +622,9 @@ void Application::InitTextureArray()
 {
     std::vector<std::string> paths;
     std::string path = "..\\Nyrkky\\Resources\\Textures\\Array\\";
+
+    paths.push_back(path + "error.png");
+    paths.push_back(path + "invisible.png");
 
     paths.push_back(path + "A.png");
     paths.push_back(path + "B.png");

@@ -196,7 +196,7 @@ void UI::AddObjectOffset(int offset)
 	{
 		_oOffset = 0;
 	}
-	else if (_oOffset + _objectButtons.size() > GameData::GetMap()->_entityTypes.size())
+	else if (_oOffset + _objectButtons.size() > GameData::GetMapLoader()->_entityTypes.size())
 	{
 		_oOffset -= offset;
 	}
@@ -289,7 +289,9 @@ void UI::DrawEditorButtons()
 		
 		if (_collisionButton != nullptr && _collisionButton->GetVA() != nullptr && _collisionButton->GetIB() != nullptr)
 		{
-			_collisionButton->SetTekstuuri(GameData::GetTextureIndex("collisionOff.png"));
+			if (!_collision) _collisionButton->SetTekstuuri(GameData::GetTextureIndex("collisionOff.png"));
+			else _collisionButton->SetTekstuuri(GameData::GetTextureIndex("collisionOn.png"));
+
 			if (_collisionButton->Updater())
 			{
 				GameData::GetRenderer()->Draw(_collisionButton->GetVA(), _collisionButton->GetIB());
@@ -298,7 +300,9 @@ void UI::DrawEditorButtons()
 
 		if (_layerButton != nullptr && _layerButton->GetVA() != nullptr && _layerButton->GetIB() != nullptr)
 		{
-			_layerButton->SetTekstuuri(GameData::GetTextureIndex("number_1.png"));
+			if (_layer == 0) _layerButton->SetTekstuuri(GameData::GetTextureIndex("number_1.png"));
+			else _layerButton->SetTekstuuri(GameData::GetTextureIndex("number_2.png"));
+			
 			if (_layerButton->Updater())
 			{
 				GameData::GetRenderer()->Draw(_layerButton->GetVA(), _layerButton->GetIB());
@@ -309,7 +313,9 @@ void UI::DrawEditorButtons()
 	//if(_viewButton->GetVA() != nullptr) std::cout << "nullptr" << std::endl;
 	if (_viewButton != nullptr && _viewButton->GetVA() != nullptr && _viewButton->GetIB() != nullptr)
 	{
-		_viewButton->SetTekstuuri(GameData::GetTextureIndex("ObjectView.png"));
+		if (_view == 0) _viewButton->SetTekstuuri(GameData::GetTextureIndex("ObjectView.png"));
+		else _viewButton->SetTekstuuri(GameData::GetTextureIndex("TerrainView.png"));
+
 		if (_viewButton->Updater())
 		{
 			GameData::GetRenderer()->Draw(_viewButton->GetVA(), _viewButton->GetIB());
@@ -519,9 +525,9 @@ void UI::UpdateUIOnFramebufferResize(int newWidth, int newHeight)
 
 std::string UI::GetObjectName() const
 {
-	if (GameData::GetMap()->_entityTypes.size() > _objectID)
+	if (GameData::GetMapLoader()->_entityTypes.size() > _objectID)
 	{
-		return GameData::GetMap()->_entityTypes[_objectID]->GetName();
+		return GameData::GetMapLoader()->_entityTypes[_objectID]->GetName();
 	}
 	return "error";
 }
