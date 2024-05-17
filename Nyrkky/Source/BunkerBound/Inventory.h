@@ -12,13 +12,13 @@ enum EItem
 struct Item
 {
 public:
-	Item(EItem id, std::string name, std::shared_ptr<TileRenderData> data)
-		:ID(id), Name(name), Data(data)
+	Item(EItem id, std::string name)
+		:ID(id), Name(name)
 	{}
 
 	EItem ID;
 	std::string Name;
-	std::shared_ptr<TileRenderData> Data;
+
 };
 
 class Inventory

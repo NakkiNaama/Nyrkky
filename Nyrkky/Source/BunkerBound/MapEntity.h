@@ -8,7 +8,7 @@
 class MapEntity : public Entity
 {
 public:
-	MapEntity(const char* path, int posx, int posy, int State, bool setActive = false);
+	MapEntity(const char* path, int posx, int posy, int State);
 	void InitMap();
 	~MapEntity();
 
@@ -50,11 +50,7 @@ public:
 	void SaveCurrentMap();
 	
 	std::vector<Tile> _tiles;
-	std::vector<std::shared_ptr<TileRenderData>> _tileTypes;
-	//std::vector<std::shared_ptr<TileRenderData>> _uiRenderData;
-	std::vector<std::shared_ptr<TileRenderData>> _characterRenderData;
 
-	//std::vector<std::shared_ptr<TileEntity>> _entityTypes;
 	std::vector<std::shared_ptr<TileEntity>> _tileEntities;
 	std::vector<std::shared_ptr<CharacterEntity>> _characterEntities;
 	
@@ -95,8 +91,6 @@ public:
 	}
 
 protected:
-	//std::unique_ptr<MapLoader> mapLoader;
-	//Shader* usedShader;
 
 	int GridSize = 12;
 	float TileSize = 64;

@@ -35,14 +35,6 @@ void GenericObjectRenderData::Init(int PosX, int PosY)
     AddVertex(positions, TileSize * (PosX + 1), -TileSize * (PosY + 1),
         1.0f, 1.0f, textureID);
     
-    
-    /*
-    AddVertex(positions, TileSize * PosX, -TileSize * PosY, 0.f, 0.f, 0);
-    AddVertex(positions, TileSize * (PosX + 1), -TileSize * PosY, 1.f, 0.f, 0);
-    AddVertex(positions, TileSize * PosX, -TileSize * (PosY + 1), 0.f, 1.f, 0);
-    AddVertex(positions, TileSize * (PosX + 1), -TileSize * (PosY + 1), 1.f, 1.f, 0);
-    */
-
     AddIndex(indices, 1, 2, 3);
     AddIndex(indices, 2, 1, 0);
 
@@ -57,7 +49,6 @@ void GenericObjectRenderData::Init(int PosX, int PosY)
     _va = new VertexArray();
     // --------------------------------------------------------------------------
 
-    //_layout->Push<float>(5);
     _layout->Push<float>(2);
     _layout->Push<float>(2);
     _layout->Push<float>(1);
@@ -71,7 +62,6 @@ void GenericObjectRenderData::Init(int PosX, int PosY)
     // -----
 
     // Texture Init
-    //_texture = std::make_unique<Texture>("../Nyrkky/Resources/Textures/Chest.png");
     _initialized = true;
     Activate(PosX, PosY);
 
@@ -83,9 +73,7 @@ bool GenericObjectRenderData::Activate(int PosX, int PosY)
     {
         GameData::GetShader()->Bind();
         int textureID = _texID;
-        //_data->GetTexture()->Bind(textureID);
-        //GameData::GetShader()->SetUniform1i("u_Textures[" + std::to_string(textureID) + ']', textureID);
-        
+
         int TileSize = 64;
         std::vector<float> positions;
 
@@ -102,13 +90,6 @@ bool GenericObjectRenderData::Activate(int PosX, int PosY)
         AddVertex(positions, TileSize * (PosX + 1), -TileSize * (PosY + 1),
             1.0f, 1.0f, textureID);
         
-        /*
-        AddVertex(positions, TileSize * PosX, -TileSize * PosY, 0.f, 0.f, 0);
-        AddVertex(positions, TileSize * (PosX + 1), -TileSize * PosY, 1.f, 0.f, 0);
-        AddVertex(positions, TileSize * PosX, -TileSize * (PosY + 1), 0.f, 1.f, 0);
-        AddVertex(positions, TileSize * (PosX + 1), -TileSize * (PosY + 1), 1.f, 1.f, 0);
-        */
-
         _vb->Bind();
         _vb->Update(positions.data(), positions.size() * sizeof(float));
         return true;

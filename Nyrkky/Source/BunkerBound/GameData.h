@@ -15,11 +15,6 @@ public:
 
 	GameData::GameData()
 	{
-		for (int i = 0; i <= 1; i++)
-		{
-			dialogSprites.push_back(nullptr);
-		}
-		
 	}
 
 	static GameData& Get()
@@ -140,11 +135,6 @@ public:
 	static uint32_t GetDialogSprite(int index)
 	{
 		return Get().ImpGetDialogSprite(index);
-	}
-
-	static void SetDialogSprite(int index, std::shared_ptr<TileRenderData> data)
-	{
-		Get().ImpSetDialogSprite(index, data);
 	}
 
 	static void SetStory(std::shared_ptr<Story> pstory)
@@ -384,11 +374,6 @@ private:
 		return 0;
 	}
 
-	void ImpSetDialogSprite(int index, std::shared_ptr<TileRenderData> data)
-	{
-		dialogSprites[index] = data;
-	}
-
 	void ImpSetStory(std::shared_ptr<Story> pstory)
 	{
 		story = pstory;
@@ -594,7 +579,6 @@ private:
 	std::shared_ptr<Shader> textShader;
 
 	std::shared_ptr<Renderer> renderer;
-	std::vector<std::shared_ptr<TileRenderData>> dialogSprites;
 
 	std::shared_ptr<CharacterEntity> Player;
 	std::vector<std::shared_ptr<CharacterEntity>> characterEntities;

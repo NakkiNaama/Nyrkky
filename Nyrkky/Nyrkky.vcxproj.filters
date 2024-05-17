@@ -353,7 +353,6 @@
     <ClCompile Include="Source\BunkerBound\TileEntity.cpp" />
     <ClCompile Include="Source\BunkerBound\MapEntity.cpp" />
     <ClCompile Include="Source\BunkerBound\UI.cpp" />
-    <ClCompile Include="Source\BunkerBound\Engine\TileTypeList.cpp" />
     <ClCompile Include="Source\BunkerBound\Engine\Render\CharacterRenderData.cpp" />
     <ClCompile Include="Source\BunkerBound\Engine\Render\GenericObjectRenderData.cpp" />
     <ClCompile Include="Source\BunkerBound\Engine\Render\MapRenderData.cpp" />

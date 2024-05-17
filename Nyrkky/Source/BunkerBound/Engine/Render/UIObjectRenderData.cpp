@@ -7,7 +7,7 @@ UIObjectRenderData::UIObjectRenderData(uint32_t arrayID, uint32_t texture, float
     _highlight = highlight;
     _ID = ID;
     _textureArray = arrayID;
-     tekstuuriID = texture;
+     _textureID = texture;
 
     // Define Buffer
     std::vector<float> positions;
@@ -16,7 +16,7 @@ UIObjectRenderData::UIObjectRenderData(uint32_t arrayID, uint32_t texture, float
     yStart = y;
     xEnd = (x + xSize);
     yEnd = (y + ySize);
-    _interactable = interactable;
+
 
     AddVertex(positions, xStart, yStart, 0.f, 1.f, 0);
     AddVertex(positions, xEnd, yStart, 1.f, 1.f, 0);
@@ -46,12 +46,7 @@ UIObjectRenderData::UIObjectRenderData(uint32_t arrayID, uint32_t texture, float
     // Setup Index buffer
     _ib = new IndexBuffer(indices.data(), indices.size());
     _ib->Bind();
-    // -----
 
-    // Texture Init
-    //_texture = std::make_unique<Texture>("../Nyrkky/Resources/Textures/test.png", true);
-    //_texture = texture;
-    /**/
     _initialized = true;
 }
 
@@ -65,7 +60,7 @@ void UIObjectRenderData::Init(float x, float y, float xSize, float ySize)
 
 }
 
-bool UIObjectRenderData::Updater()
+bool UIObjectRenderData::Update()
 {
     if (_initialized)
     {
@@ -88,14 +83,9 @@ bool UIObjectRenderData::Updater()
         {
             arr->Bind();
         }
-        /*
-        GameData::GetShader()->Bind();
-        int textureID = _tileRenderData->GetTexID();
-        _tileRenderData->GetTexture()->Bind(textureID);
-        GameData::GetShader()->SetUniform1i("u_Textures[" + std::to_string(textureID) + ']', textureID);
-        */
+
         std::vector<float> positions;
-        int texIndex = tekstuuriID;
+        int texIndex = _textureID;
 
         AddVertex(positions, xStart, yEnd,
             0.0f, 0.0f, texIndex);
@@ -109,25 +99,6 @@ bool UIObjectRenderData::Updater()
         AddVertex(positions, xEnd, yStart,
             1.0f, 1.0f, texIndex);
 
-
-        /*
-        AddVertex(positions, xStart, yEnd,
-            _tileRenderData->UV_x * _tileRenderData->SpriteW / _tileRenderData->SheetW,
-            _tileRenderData->UV_y * _tileRenderData->SpriteH / _tileRenderData->SheetH, texIndex);
-
-        AddVertex(positions, xEnd, yEnd,
-            (_tileRenderData->UV_x + 1) * _tileRenderData->SpriteW / _tileRenderData->SheetW,
-            _tileRenderData->UV_y * _tileRenderData->SpriteH / _tileRenderData->SheetH, texIndex);
-
-        AddVertex(positions, xStart, yStart,
-            _tileRenderData->UV_x * _tileRenderData->SpriteW / _tileRenderData->SheetW,
-            (_tileRenderData->UV_y + 1) * _tileRenderData->SpriteH / _tileRenderData->SheetH, texIndex);
-
-        AddVertex(positions, xEnd, yStart,
-            (_tileRenderData->UV_x + 1) * _tileRenderData->SpriteW / _tileRenderData->SheetW,
-            (_tileRenderData->UV_y + 1) * _tileRenderData->SpriteH / _tileRenderData->SheetH, texIndex);
-        */
-
         _vb->Bind();
         _vb->Update(positions.data(), positions.size() * sizeof(float));
         return true;
@@ -135,17 +106,6 @@ bool UIObjectRenderData::Updater()
     else std::cout << "generic object renderer not initalized!" << std::endl;
     return false;
 }
-
-
-
-void UIObjectRenderData::Update()
-{
-    int slot = tekstuuriID;
-    //_tileRenderData->GetTexture()->Bind(slot);
-
-    GameData::GetShader()->SetUniform1i("u_Textures[" + std::to_string(slot) + ']', slot);
-}
-
 
 void UIObjectRenderData::Init(int PosX, int PosY)
 {

@@ -502,7 +502,6 @@
     <ClCompile Include="Source\BunkerBound\Engine\Texture.cpp" />
     <ClCompile Include="Source\BunkerBound\TextEntity.cpp" />
     <ClCompile Include="Source\BunkerBound\UI.cpp" />
-    <ClCompile Include="Source\BunkerBound\Engine\TileTypeList.cpp" />
     <ClCompile Include="Source\BunkerBound\Timer.cpp" />
     <ClCompile Include="Source\vendor\tinyxml2\tinyxml2.cpp" />
   </ItemGroup>

@@ -300,31 +300,9 @@ void Application::InitalizeGameStartingState()
     // Map paths here
     //GameData::AddMap(std::make_shared<MapEntity>("Maps/generic.xml", 0, 0, 0, true));
 
-    GameData::AddMap(std::make_shared<MapEntity>("Maps/NewMap.xml", 0, 0, 0, true));
-
-
+    GameData::AddMap(std::make_shared<MapEntity>("Maps/NewMap.xml", 0, 0, 0));
     GameData::GetMaps().back()->InitMap();
     
-    
-    /*
-    std::shared_ptr<MapEntity> map = std::make_shared<MapEntity>("Maps/generic.xml", 0, 0, 0, true);
-
-    std::cout << "setting map to active" << std::endl;
-
-    map->SetActive(true);
-    GameData::AddMap(map);
-    */
-
-    /*
-    std::shared_ptr<MapEntity> map2 = std::make_shared<MapEntity>("Maps/generic.xml", 0, 0, 1);
-    GameData::AddMap(map2);
-    */
-
-
-    //const std::vector<Tile>& tiles = map->_tiles;
-
-
-    _textEntities.push_back(std::make_shared<TextEntity>(0, 0, 24));
 
     /* UI */
 
@@ -384,41 +362,47 @@ glm::vec2 Application::ScreenToWorld()
 
 void Application::LeftClick(bool ctrl)
 {
-    std::cout << "left click" << std::endl;
-    if (true) // _editor
+    bool uiClick = false;
+    if (GameData::GetUI() != nullptr)
     {
-        bool uiClick = false;
-        if (GameData::GetUI() != nullptr)
+        double x, y;
+        int id;
+        GetClickedUIPosition(x, y);
+        ClickResponse click = GameData::GetUI()->IdentifyClick(glm::vec2(x, y), id);
+        switch (click)
         {
-            double x, y;
-            int id;
-            GetClickedUIPosition(x, y);
-            ClickResponse click = GameData::GetUI()->IdentifyClick(glm::vec2(x, y), id);
-            switch (click)
+        case NoneClick: break;
+        case GameClick:
+            break;
+        case ButtonClick:
+            uiClick = true;
+            GameData::GetStory()->ChoiceSelected(id);
+            GameData::SetIsChoice(false);
+            std::cout << "game button clicked" << std::endl;
+            break;
+        case EditorButtonClick:
+            if (_editor)
             {
-            case NoneClick: break;
-            case GameClick:
-                break;
-            case ButtonClick:
-                uiClick = true;
-                GameData::GetStory()->ChoiceSelected(id);
-                GameData::SetIsChoice(false);
-                std::cout << "game button clicked" << std::endl;
-                break;
-            case EditorButtonClick:
                 uiClick = true;
                 if (id >= 0)
                 {
                     if (GameData::GetUI()->GetUIView() == 0) GameData::GetUI()->SetTextureID(id);
                     else GameData::GetUI()->SetObjectID(id);
                 }
-                break;
-            case StaticElementClick:
-                uiClick = true;
-                break;
             }
+            break;
+        case StaticElementClick:
+            uiClick = true;
+            break;
+        }
 
-            if (!uiClick)
+        if (!uiClick)
+        {
+            if (!_editor)
+            {
+                //std::cout << "non editor click" << std::endl;
+            }
+            else
             {
                 int tile = GetClickedTile();
                 if (tile != -1)
@@ -436,8 +420,8 @@ void Application::LeftClick(bool ctrl)
                 }
             }
         }
-        else std::cout << "ui was nullptr!" << std::endl;
     }
+    else std::cout << "ui was nullptr!" << std::endl;
 }
 
 void Application::RightClick()
@@ -447,7 +431,6 @@ void Application::RightClick()
 
 void Application::ChangeOffset(int offset, bool cursorPosCheck)
 {
-    std::cout << "change offset +-" << std::endl;
     bool valid = true;
     if (cursorPosCheck)
     {
@@ -589,20 +572,20 @@ void Application::StaticDelayPressDialog(float DeltaTime)
                     bool hasNext = GameData::GetStory()->HasNextNode();
                     if (hasNext)
                     {
-                        std::cout << "has next node" << std::endl;
+                        //std::cout << "has next node" << std::endl;
                         GameData::GetStory()->NextNode();
 
                     }
                     else
                     {
-                        std::cout << "no next node" << std::endl;
+                        //std::cout << "no next node" << std::endl;
                         if (GameData::GetStory()->currentNode->choices.size() > 0)
                         {
                             GameData::SetIsChoice(true);
                         }
                         else
                         {
-                            std::cout << "dialog finished!" << std::endl;
+                            //std::cout << "dialog finished!" << std::endl;
                             GameData::GetStory()->FinishChain();
                             GameData::SetDialogVisible(false);
                         }

@@ -27,12 +27,9 @@ void CharacterRenderData::Init(int PosX, int PosY)
     AddIndex(indices, 1, 2, 3);
     AddIndex(indices, 2, 1, 0);
 
-
-    /**/
     unsigned int vertexArrayID;
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-    //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
 
     _vb = new VertexBuffer(positions.data(), positions.size() * sizeof(float), true);
     _layout = new VertexBufferLayout();
@@ -42,9 +39,9 @@ void CharacterRenderData::Init(int PosX, int PosY)
     _layout->Push<float>(2);
     _layout->Push<float>(2);
     _layout->Push<float>(1);
-    /**/
+
     _va->AddBuffer(*_vb, *_layout);
-    // -----
+
 
     // Setup Index buffer
     _ib = new IndexBuffer(indices.data(), indices.size());
@@ -53,8 +50,7 @@ void CharacterRenderData::Init(int PosX, int PosY)
 
     // Texture Init
     texture = std::make_unique<Texture>(_textureLoc);
-    //texture = std::make_unique<Texture>("../Nyrkky/Resources/Textures/world/RPGpack_sheet_2X.png");
-    //texture->Bind();
+
     _initialized = true;
     Activate(PosX, PosY);
 
@@ -74,17 +70,8 @@ bool CharacterRenderData::Activate(int PosX, int PosY)
 
             GameData::GetShader()->SetUniform1i("u_Layer", 0);
         }
-
-                  
-        /*
-        GameData::GetShader()->Bind();
-        texture->Bind(0);
-        GameData::GetShader()->SetUniform1i("u_Textures[0]", 0);
-        */
+               
         int TileSize = 64;
-
-
-
 
         float x = 0;
         float y = 0;

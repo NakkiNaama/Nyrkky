@@ -1,34 +1,19 @@
 #include "MapEntity.h"
 #include "GameData.h"
 
-MapEntity::MapEntity(const char* path, int posx, int posy, int State, bool setActive)
+MapEntity::MapEntity(const char* path, int posx, int posy, int State)
 {
 
     std::cout << "map entity init" << std::endl;
-    //GameData::AddMap(shared_from_this());
-    /*
-    if (setActive)
-    {
-        
-        //SetActive(true);
-        GameData::AddMap(std::shared_ptr<MapEntity>(this));
-        //GameData::ChangeMap(0);
-    }
-    */ 
     
 	PosX = posx;
 	PosY = posy;
-    //GameData::GetMapLoader();
 
     std::vector<std::string> tileEntityData;
-    //MapLoader& loader = GameData::GetMapLoader();
     GridSize = 0;
 
-    //  _tileTypes, _entityTypes, are not in load anymore
     GameData::GetMapLoader()->LoadMap(path, GridSize, _tiles, tileEntityData);
-    //_uiRenderData = GameData::GetMapLoader()->_uiRenderData;
-    
-    _characterRenderData = GameData::GetMapLoader()->_characterRenderData;
+
 
     
     for (int i = 0; i < tileEntityData.size(); i++)
@@ -42,34 +27,8 @@ MapEntity::MapEntity(const char* path, int posx, int posy, int State, bool setAc
     
     if (State == 0) SpawnCharacterEntity(ECharacter::Emily, 3);
 
-    //InitalizeTileTypes();
-    //std::vector<TileRenderData> layer0;
-    //std::vector<TileRenderData> layer1;
-
-    for (auto &tile : _tiles)
-    {
-        //std::cout << "tiles: " << tile.GetTexture(false) << std::endl;
-        //layer0.push_back(tile.Data);
-        //layer1.push_back(tile.SubData);
-    }
 
 
-
-    /*
-    for (int i = 0; i <= 1; i++) // increase to have more layers
-    {
-        if (i == 0)
-        {
-            //int layer, int ScreenX, int ScreenY, int gridSize, int tileSize;
-            Renders.push_back(std::make_shared<MapRenderData>(i, PosX, PosY, GridSize, TileSize));
-        }
-        else {
-            Renders.push_back(std::make_shared<MapRenderData>(i, PosX, PosY, GridSize, TileSize));
-        }
-        Renders.back()->Init(PosX, PosY);
-    }
-    
-    */
 }
 
 void MapEntity::InitMap()
@@ -88,24 +47,6 @@ void MapEntity::InitMap()
         SetActive(true);
     }
     
-
-    /*
-    Renders.push_back(std::make_shared<MapRenderData>(0, 0, 0, GridSize, TileSize));
-    Renders.back()->Init(0, 0);
-    SetActive(true);
-    */
-
-
-    /*
-    Renders.push_back(std::make_shared<MapRenderData>(1, 0, 0, GridSize, TileSize));
-    Renders.back()->Init(0, 0);
-    SetActive(true);
-    */
-    /*
-    Renders.push_back(std::make_shared<MapRenderData>(1, 0, 0, GridSize, TileSize));
-    Renders.back()->Init(0, 0);
-    SetActive(true);
-    */
 }
 
 MapEntity::~MapEntity()
@@ -138,53 +79,8 @@ void MapEntity::ChangeTile(int layer, int index, int ID, bool solid)
         _tiles[index].HasSub = true;
     }
 
-    /*
-    if (layer == 0)
-    {
-        subTile = std::make_shared<SubTile>(old.GetSubTile()->GetTextureID(), old.GetSubTile()->IsSolid());
-        Tile tempTile = Tile(solid, old.HasSub, index, subTile);
-        _tiles[index] = tempTile;
-    }
-    else
-    {
-        subTile = std::make_shared<SubTile>(index, solid);
-        Tile tempTile = Tile(old.IsSolid(), true, old.GetTexture(), subTile);
-        _tiles[index] = tempTile;
-    }
-    */
     ModifyMapRender(index, layer);
 
-
-
-    /*
-    std::shared_ptr<TileRenderData> z = GameData::GetMapLoader()->GetTileType(ID);
-    if (z != nullptr)
-    {   
-        bool sub = layer != 0 || _tiles[index].HasSub;
-
-        if (layer == 0)
-        {
-            TileRenderData subRender = _tiles[index].SubData;
-            Tile tempTile = Tile(*z, solid, sub, subRender);
-            tempTile.HasSub = sub;
-            _tiles[index] = tempTile;
-        }
-        else
-        {
-            Tile tempTile = _tiles[index];
-            TileRenderData subRender = *(GameData::GetMapLoader()->GetTileType(ID));
-            tempTile.SetSolid(solid);
-            tempTile.SubData = subRender;
-            tempTile.HasSub = true;
-            _tiles[index] = tempTile;
-
-        }
-        
-        ModifyMapRender(index, layer);
-
-    }
-    else std::cout << "Change tile failed!" << std::endl;
-    */
 }
 
 void MapEntity::SaveCurrentMap()
@@ -194,19 +90,6 @@ void MapEntity::SaveCurrentMap()
 
 void MapEntity::ModifyMapRender(int index, int layer)
 {
-    /*
-    TileRenderData* newRender;
-    if (layer == 0)
-    {
-        newRender = &_tiles[index].Data;
-    }
-    else
-    {
-        newRender = &_tiles[index].SubData;
-    }
-    */
-    
-
     if (_tiles.size() > index)
     {
 

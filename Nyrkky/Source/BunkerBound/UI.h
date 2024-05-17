@@ -46,13 +46,11 @@ public:
 
 	~UI();
 
-	void InitalizeUIData();
-
 	std::shared_ptr<UIObjectRenderData> CreateUIObject(UIObjectType type, uint32_t arrayID, uint32_t texture, float xPercentage, float yPercentage, float widthPercentage, float heightPercentage, bool interactable, int id = 0);
 	
 	void CreateGameUI();
 	void CreateEditorUI();
-	std::shared_ptr<UIObjectRenderData> CreateHighlight(UIObjectType type, std::shared_ptr<TileRenderData> data, float xPercentage, float yPercentage, float widthPercentage, float heightPercentage, bool interactable);
+	std::shared_ptr<UIObjectRenderData> CreateHighlight(UIObjectType type, float xPercentage, float yPercentage, float widthPercentage, float heightPercentage, bool interactable);
 
 	std::shared_ptr<Text> _text = nullptr;
 	std::vector<std::shared_ptr<Text>> _choiceText;
@@ -142,8 +140,6 @@ protected:
 	std::vector<std::shared_ptr<UIObjectRenderData>> _dialogRenders;
 	std::vector<std::shared_ptr<UIObjectRenderData>> _choiceRenders;
 
-
-	//std::vector<std::shared_ptr<UIObjectRenderData>> _highlights;
 	std::shared_ptr<UIObjectRenderData> _selectedObject;
 	std::shared_ptr<UIObjectRenderData> _collisionButton;
 
@@ -152,27 +148,8 @@ protected:
 	std::shared_ptr<UIObjectRenderData> _vnRightCharacterBox;
 
 	std::shared_ptr<UIObjectRenderData> _choiceBox = nullptr;
-	//std::shared_ptr<UIObjectRenderData> _choiceButton1;
 
 
-	std::shared_ptr<TileRenderData> _collisionOnData;
-	std::shared_ptr<TileRenderData> _collisionOffData;
-	std::shared_ptr<TileRenderData> _selectionData;
-	std::shared_ptr<TileRenderData> _layer1Data;
-	std::shared_ptr<TileRenderData> _layer2Data;
-
-	std::shared_ptr<TileRenderData> _view1Data;
-	std::shared_ptr<TileRenderData> _view2Data;
-
-	std::shared_ptr<TileRenderData> _borderData;
-	std::shared_ptr<TileRenderData> _redBorderData;
-	//std::shared_ptr<TileRenderData> _leftCharacter;
-	//std::shared_ptr<TileRenderData> _rightCharacter;
-
-
-
-	//Shader* _shader;
-	//Shader* _textShader;
 	int _frameBufferX, _frameBufferY;
 
 	int _lastClickedTexture = 0;
@@ -188,12 +165,9 @@ protected:
 
 	Renderer* _renderer;
 
-	// Selected texture in editor
 	int _textureID = 0;
-	// Selected object in editor
 	int _objectID = 0;
-	
-	//const std::shared_ptr<MapEntity> _map;
+
 
 };
 

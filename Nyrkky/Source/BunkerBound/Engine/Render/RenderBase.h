@@ -4,12 +4,6 @@
 #include "../Shader.h"
 #include <memory>
 
-//#include <iostream>
-//#include <fstream>
-//#include <string>
-//#include <sstream>
-//#include <vector>
-
 #include "../Renderer.h"
 #include "../VertexBuffer.h"
 #include "../IndexBuffer.h"
@@ -22,8 +16,6 @@
 class RenderBase
 {
 public:
-	//RenderBase(int ScreenX, int ScreenY, Shader* shader);
-	//~RenderBase();
 
 	virtual void Init(int PosX, int PosY) = 0;
 	virtual bool Activate(int PosX, int PosY) = 0;
@@ -39,9 +31,6 @@ public:
 protected:
 	void Clean();
 	bool _initialized = false;
-
-	//int windowX;
-	//int windowY;
 
 	std::vector<Texture*> _textures;
 	Shader* _shader;

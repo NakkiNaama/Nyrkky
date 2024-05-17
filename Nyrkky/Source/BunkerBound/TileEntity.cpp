@@ -4,55 +4,17 @@
 TileEntity::TileEntity(std::string name, Event event, int posx, int posy, std::vector<uint32_t> textures, bool collision)
 	: _name(name), _textures(textures)
 {
-	//std::cout << "eff: " << _effect << std::endl;
 	_event.Type = event.Type;
 	_event.Effect = event.Effect;
 
 	_collision = collision;
-	/*
-	for (auto& d : data)
-	{
-		_data.push_back(d);
-	}
 
-	if (_data.size() > 0)
-	{
-		PosX = posx;
-		PosY = posy;
-		Render = std::make_shared<GenericObjectRenderData>(_data.front());
-
-		Render->Init(PosX, PosY);
-	}
-	else std::cerr << "TileEntity had empty data parameter" << std::endl;
-	*/
-	//Initalize(shader, posx, posy, eventType, data, collision);
 }
 
 void TileEntity::Tick(float DeltaTime)
 {
 
 }
-
-/*
-void TileEntity::Initalize(Shader* shader, int posx, int posy, EventType eventType, std::vector<std::shared_ptr<TileRenderData>> data, bool collision)
-{
-	_collision = collision;
-	for (auto& d : data)
-	{
-		_data.push_back(d);
-	}
-	if (_data.size() > 0)
-	{
-		_eventType = eventType;
-		PosX = posx;
-		PosY = posy;
-		Render = std::make_shared<GenericObjectRenderer>(_data.front());
-		usedShader = shader;
-		Render->Init(usedShader, PosX, PosY);
-	}
-	else std::cerr << "TileEntity had empty data parameter" << std::endl;
-}
-*/
 
 TileEntity::~TileEntity()
 {
@@ -71,29 +33,26 @@ void TileEntity::ActivateEvent()
 		if (_event.State == 0)
 		{
 			_event.State = 1;
-			if (_textures.size() > 1) Render->SetTekstuuri(_textures[1]);
+			if (_textures.size() > 1) Render->SetTexture(_textures[1]);
 			_collision = false;
 		}
 		else
 		{
 			_event.State = 0;
-			Render->SetTekstuuri(_textures[0]);
+			Render->SetTexture(_textures[0]);
 			_collision = true;
 		}
 		break;
 
 	case EventChest: 
 		_event.Type = EventNone;
-		if (_textures.size() > 1) Render->SetTekstuuri(_textures[1]);
-		/*
-		GameData::GetStory()->SetNode(0);
-		GameData::SetDialogVisible(true);
-		*/
+		if (_textures.size() > 1) Render->SetTexture(_textures[1]);
+
 		break;
 
 	case EventTeleport:
-		Render->SetTekstuuri(_textures[0]);
-		//std::cout << _effect << " ddd" << std::endl;
+		Render->SetTexture(_textures[0]);
+
 		if (GameData::GetMaps().size() > _event.Effect)
 		{
 			GameData::ChangeMap(_event.Effect);
@@ -124,7 +83,6 @@ void TileEntity::RenderEntity()
 		}
 		else std::cout << "object render failed! nullptr!" << std::endl;
 	}
-	//else std::cout << "entity render failed! nullptr!" << std::endl;
 }
 
 

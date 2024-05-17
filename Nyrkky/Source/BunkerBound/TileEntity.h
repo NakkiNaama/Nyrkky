@@ -18,13 +18,11 @@ public:
 		_event = other._event;
 		_textures = other._textures;
 
-		//std::cout << "data size: " << _data.size() << std::endl;
-
 		_collision = other._collision;
 		Render = std::make_shared<GenericObjectRenderData>();
 		Render->Init(PosX, PosY);
-		Render->SetTekstuuri(_textures[0]);
-		//std::cout << "copy finished" << std::endl;
+		Render->SetTexture(_textures[0]);
+
 	}
 	
 
@@ -48,7 +46,6 @@ public:
 	{
 		return _collision;
 	}
-	//void Initalize(Shader* shader, int posx, int posy, EventType eventType, std::vector<std::shared_ptr<TileRenderData>> data, bool collision);
 
 	inline std::string GetName() const
 	{

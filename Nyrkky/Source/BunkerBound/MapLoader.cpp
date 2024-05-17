@@ -6,15 +6,12 @@
 
 MapLoader::MapLoader()
 {
-    LoadAtlasTextures();
     GenerateGenericMap();
     InitalizeTileEntityTypes();
 }
 
 bool MapLoader::GenerateGenericMap()
 {
-    LoadAtlasTextures();
-   
     tinyxml2::XMLDocument doc;
     tinyxml2::XMLElement* root = doc.NewElement("root");
     doc.LinkEndChild(root);
@@ -103,16 +100,7 @@ void MapLoader::LoadMap(const char* path, int& gridSize, std::vector<Tile> &tile
 
 
                 tileEntities.push_back(child->FirstChildElement("EntityName")->GetText());
-                /*
-                std::vector<uint32_t> textures;
-                textures.push_back();
-                */
-                /*
-                if (HasSub)
-                {
-                    textures.push_back(GameData::GetTextureIndex(SubName));
-                }
-                */
+
                 std::shared_ptr<SubTile> subTile;
                 if (HasSub)
                 {
@@ -222,91 +210,6 @@ bool MapLoader::SaveMapToFile(int MapSize, const std::vector<Tile>& tiles, const
     std::cout << "Map save success." << std::endl;
     return true;
 
-}
-
-void MapLoader::LoadAtlasTextures()
-{
-    /*
-    std::cout << "load texture atlas called" << std::endl;
-    // If tile has no sub texture   
-    std::shared_ptr<Texture> transparent = std::make_shared<Texture>("..\\Nyrkky\\Resources\\Textures\\transparent.png", false);
-    _transparent = std::make_shared<TileRenderData>("-", transparent, 64, 64, 64, 64, 0);
-    _transparent->SetTextureID(-1);
-
-
-    std::shared_ptr<Texture> texture;
-    int ID = 0;
-
-    texture = std::make_shared<Texture>("..\\Nyrkky\\Resources\\Textures\\World\\RPGpack_sheet_2X.png", false);
-    for (int i = 0; i <= 254; i++)
-    {
-        _tileTypes.push_back(std::make_shared<TileRenderData>("RPGpack_sheet_2X.png", texture, 2560, 1664, 128, 128, i));
-        _tileTypes.back()->SetTextureID(ID);
-    }
-    ID++;
-
-    texture = std::make_shared<Texture>("..\\Nyrkky\\Resources\\Textures\\chest_atlas.png", false);
-    for (int i = 0; i <= 1; i++)
-    {
-        _tileTypes.push_back(std::make_shared<TileRenderData>("chest_atlas.png", texture, 128, 64, 64, 64, i));
-        _tileTypes.back()->SetTextureID(ID);
-    }
-    ID++;
-
-    texture = std::make_shared<Texture>("..\\Nyrkky\\Resources\\Textures\\ladder.png", false);
-    _tileTypes.push_back(std::make_shared<TileRenderData>("ladder.png", texture, 64, 64, 64, 64, 0));
-    _tileTypes.back()->SetTextureID(ID);
-    ID++;
-
-    texture = std::make_shared<Texture>("..\\Nyrkky\\Resources\\Textures\\UI\\ui_atlas.png", false);
-    for (int i = 0; i <= 36; i++)
-    {
-        _uiRenderData.push_back(std::make_shared<TileRenderData>("ui_atlas.png", texture, 512, 256, 64, 64, i));
-        _uiRenderData.back()->SetTextureID(ID);
-    }
-    ID++;
-
-    texture = std::make_shared<Texture>("..\\Nyrkky\\Resources\\Textures\\color_atlas.png", false);
-    for (int i = 0; i <= 36; i++)
-    {
-        _uiRenderData.push_back(std::make_shared<TileRenderData>("color_atlas.png", texture, 256, 128, 64, 32, i));
-        _uiRenderData.back()->SetTextureID(ID);
-    }
-    ID++;
-
-    texture = std::make_shared<Texture>("..\\Nyrkky\\Resources\\Textures\\character_atlas.png", false);
-    for (int i = 0; i <= 36; i++)
-    {
-        _characterRenderData.push_back(std::make_shared<TileRenderData>("character_atlas.png", texture, 512, 1024, 512, 1024, i));
-        _characterRenderData.back()->SetTextureID(ID);
-    }
-    ID++;
-    
-    for (auto &c : _characterRenderData)
-    {
-        _tileTypes.push_back(c);
-    }
-
-    texture = std::make_shared<Texture>("..\\Nyrkky\\Resources\\Textures\\9.png", false);
-    _tileTypes.push_back(std::make_shared<TileRenderData>("9.png", texture, 64, 64, 64, 64, 0));
-    _tileTypes.back()->SetTextureID(ID);
-    ID++;
-
-    texture = std::make_shared<Texture>("..\\Nyrkky\\Resources\\Textures\\10.png", false);
-    _tileTypes.push_back(std::make_shared<TileRenderData>("10.png", texture, 64, 64, 64, 64, 0));
-    _tileTypes.back()->SetTextureID(ID);
-    ID++;
-    
-    texture = std::make_shared<Texture>("..\\Nyrkky\\Resources\\Textures\\11.png", false);
-    _tileTypes.push_back(std::make_shared<TileRenderData>("11.png", texture, 64, 64, 64, 64, 0));
-    _tileTypes.back()->SetTextureID(ID);
-    ID++;
-
-    texture = std::make_shared<Texture>("..\\Nyrkky\\Resources\\Textures\\12.png", false);
-    _tileTypes.push_back(std::make_shared<TileRenderData>("12.png", texture, 64, 64, 64, 64, 0));
-    _tileTypes.back()->SetTextureID(ID);
-    ID++;
-    */
 }
 
 void MapLoader::InitalizeTileEntityTypes()
