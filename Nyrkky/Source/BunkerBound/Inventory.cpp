@@ -3,9 +3,9 @@
 
 Inventory::Inventory()
 {
-	GenericObjectRenderData boo();
+	//GenericObjectRenderData boo();
 
-	//Item item(EKey, "Key", std::make_unique<TileRenderData>(0, 0, Render));
+	Item item(EKey, "Key", 0);
 	//_itemTypes.push_back(item);
 
 

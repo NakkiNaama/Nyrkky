@@ -12,12 +12,13 @@ enum EItem
 struct Item
 {
 public:
-	Item(EItem id, std::string name)
-		:ID(id), Name(name)
+	Item(EItem id, std::string name, uint32_t textureID)
+		:ID(id), Name(name), TextureID(textureID)
 	{}
 
 	EItem ID;
 	std::string Name;
+	uint32_t TextureID;
 
 };
 

@@ -1,13 +1,13 @@
 #include "MapEntity.h"
 #include "GameData.h"
 
-MapEntity::MapEntity(const char* path, int posx, int posy, int State)
+MapEntity::MapEntity(const char* path, int State)
 {
 
     std::cout << "map entity init" << std::endl;
     
-	PosX = posx;
-	PosY = posy;
+	PosX = 0;
+	PosY = 0;
 
     std::vector<std::string> tileEntityData;
     GridSize = 0;
@@ -31,20 +31,20 @@ MapEntity::MapEntity(const char* path, int posx, int posy, int State)
 
 }
 
-void MapEntity::InitMap()
+void MapEntity::InitMap(int mapID, bool setActive)
 {
-    for (int i = 0; i <= 1; i++) // increase to have more layers
+    ID = mapID;
+    for (int i = 0; i <= 0; i++) // increase to have more layers
     {
         if (i == 0)
         {
-            //int layer, int ScreenX, int ScreenY, int gridSize, int tileSize;
-            Renders.push_back(std::make_shared<MapRenderData>(i, 0, 0, GridSize, TileSize));
+            Renders.push_back(std::make_shared<MapRenderData>(i, 0, 0, GridSize, TileSize, mapID));
         }
         else {
-            Renders.push_back(std::make_shared<MapRenderData>(i, 0, 0, GridSize, TileSize));
+            Renders.push_back(std::make_shared<MapRenderData>(i, 0, 0, GridSize, TileSize, mapID));
         }
         Renders[i]->Init(0, 0);
-        SetActive(true);
+        SetActive(setActive);
     }
     
 }
@@ -55,7 +55,6 @@ MapEntity::~MapEntity()
 
 void MapEntity::Tick(float DeltaTime)
 {
-    //std::cout << "ticker" << std::endl;
 }
 
 void MapEntity::ChangeTile(int layer, int index, int ID, bool solid)
@@ -193,7 +192,6 @@ void MapEntity::SpawnCharacterEntity(ECharacter id, int tile)
             int y = tile / GridSize;
             _characterEntities.push_back(clone);
             _characterEntities.back()->SetPosition(4, GridSize / 2);
-            //_characterEntities.back()->SetName(entityName);
             std::cout << _characterEntities.back()->GetName() << " spawned" << std::endl;
         }
         else std::cerr << "spawn character nullptr" << std::endl;
@@ -218,6 +216,7 @@ void MapEntity::RenderEntity()
 {
     if (Active)
     {
+        //std::cout << "rendering map: " << ID << std::endl;
         for (auto Render : Renders)
         {
             if (GameData::GetShader() != nullptr && Render != nullptr)
@@ -227,9 +226,10 @@ void MapEntity::RenderEntity()
                 {
                     if (c->Activate(PosX, PosY))
                     {
+                        //std::cout << Active << std::endl;
                         GameData::GetRenderer()->Draw(c->GetVA(), c->GetIB());
                     }
-                    else std::cout << "map render activate failed! 0000000000112233445566789987" << std::endl;
+                    else std::cout << "map render activate failed!" << std::endl;
                 }
                 else std::cout << "object render failed! nullptr!" << std::endl;
             }
@@ -238,6 +238,6 @@ void MapEntity::RenderEntity()
         RenderTileEntities();
         RenderCharacterEntities();
     }
-
+    //else std::cout << "map not active" << std::endl;
 }
 

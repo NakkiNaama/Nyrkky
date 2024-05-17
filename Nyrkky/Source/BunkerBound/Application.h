@@ -48,16 +48,6 @@ protected:
 
 	void MoveCamera(int x) {
 		GameData::AddCameraPosition(_moveSpeed, x);
-		/*
-		switch (x)
-		{
-		case 0: _cameraPosition.y += _moveSpeed; break;
-		case 1: _cameraPosition.x += _moveSpeed; break;
-		case 2: _cameraPosition.y -= _moveSpeed; break;
-		case 3: _cameraPosition.x -= _moveSpeed; break;
-		default: break;
-		}
-		*/
 	}
 
 	std::shared_ptr<TileEntity> GetFacedTileEntity() const
@@ -152,8 +142,6 @@ protected:
 	void StaticDelayPress(float DeltaTime);
 	void StaticDelayPressDialog(float DeltaTime);
 
-	void InitTextureArray();
-
 	std::unordered_set<int> _pressedKeys;
 	bool _editor = false;
 	bool _fullScreen = false;
@@ -163,18 +151,12 @@ protected:
 private:
 
 	float _moveSpeed = 20;
-	//glm::vec2 _cameraPosition = { 0, 0 };
 
 	void UpdateProjectionMatrix();
 	glm::vec2 ScreenToWorld();
 
-
-
-
 	glm::mat4 _view = glm::mat4(1.0f);
-	//std::shared_ptr<MapEntity> _map;
 	std::vector<std::shared_ptr<TextEntity>> _textEntities;
-
 	glm::vec2 _centerOfMap;
 
 

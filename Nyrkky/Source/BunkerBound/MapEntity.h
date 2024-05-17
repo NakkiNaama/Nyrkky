@@ -8,8 +8,8 @@
 class MapEntity : public Entity
 {
 public:
-	MapEntity(const char* path, int posx, int posy, int State);
-	void InitMap();
+	MapEntity(const char* path, int State);
+	void InitMap(int mapID, bool setActive = false);
 	~MapEntity();
 
 	void SpawnTileEntity(std::string entityName, int tile);
@@ -21,9 +21,6 @@ public:
 	
 	std::vector<std::shared_ptr<MapRenderData>> Renders;
 	
-	
-	//void RenderEntity(const Renderer& renderer) override;
-
 	void RenderTileEntities()
 	{
 		for (auto Entity : _tileEntities)
@@ -90,12 +87,19 @@ public:
 		Active = active;
 	}
 
+	inline bool IsActive() const
+	{
+		return Active;
+	}
+
+	int ID = 0;
+
 protected:
 
 	int GridSize = 12;
 	float TileSize = 64;
 	bool Active = false;
-
+	//int ID = 0;
 
 };
 

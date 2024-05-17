@@ -12,6 +12,7 @@
 #include "Engine/VertexArray.h"
 #include "Engine/Shader.h"
 #include "Timer.h"
+#include "TextureList.h"
 
 
 static void GLClearError() {
@@ -22,8 +23,6 @@ static void GLCheckError() {
         std::cout << "[OpenGL Error] (" << error << std::endl;
     }
 }
-
-//GLFWwindow* Window;
 
 Application::Application()
 {
@@ -43,9 +42,6 @@ void Application::CreateWindow() {
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    //GLFWmonitor* primaryMonitor = glfwGetPrimaryMonitor();
-    //const GLFWvidmode* mode = glfwGetVideoMode(primaryMonitor);
-    //Window = glfwCreateWindow(mode->width, mode->height, "Fullscreen Window", primaryMonitor, NULL);
     Window = glfwCreateWindow(GameData::GetResolutionX(), GameData::GetResolutionY(), "Nyrkky Engine - Bunker Bound", NULL, NULL);
     if (!Window)
     {
@@ -120,7 +116,6 @@ void Application::MouseClickEvent(int button, int action, int mods)
 
         case GLFW_MOUSE_BUTTON_RIGHT:
             RightClick();
-            //printf("right mouse clicked\n");
             break;
         case GLFW_MOUSE_BUTTON_MIDDLE:
             printf("middle mouse clicked\n"); break;
@@ -161,7 +156,6 @@ int Application::GetClickedTile()
         {
             int x = abs(location.x / GameData::GetMap()->GetTileSize());
             int y = abs(location.y / GameData::GetMap()->GetTileSize());
-            //std::cout << "y: " << location.y << " -- x: " << location.x << std::endl;
             if (x < GameData::GetMap()->GetGridSize() && y < GameData::GetMap()->GetGridSize())
             {
                 return y * GameData::GetMap()->GetGridSize() + x;
@@ -203,11 +197,16 @@ void Application::Run()
     Timer timer;
     int uix, uiy;
 
-
-
     if (Window != nullptr) {
         while (!glfwWindowShouldClose(Window))
         {
+            /*
+            std::cout << "map01: " << GameData::GetMaps()[0]->IsActive() << std::endl;
+            std::cout << "map02: " << GameData::GetMaps()[1]->IsActive() << std::endl;
+            std::cout << "current: " << GameData::GetMap()->IsActive() << std::endl;
+            */
+            //std::cout << "current: " << GameData::GetMap()->ID << std::endl;
+
             float deltaTime = timer.GetDeltaTime();
             HandleKeyPress(deltaTime);
 
@@ -264,8 +263,6 @@ void Application::StartGame()
 
 int main()
 {
-
-    std::cout << "main called" << std::endl;
     Application app;
     app.Run();
     return 0;
@@ -278,8 +275,6 @@ void Application::InitalizeGameStartingState()
     int windowWidth, windowHeight;
     glfwGetFramebufferSize(Window, &windowWidth, &windowHeight);
     GameData::SetProj(glm::ortho(0.0f, static_cast<float>(windowWidth), 0.0f, static_cast<float>(windowHeight), -1.0f, 1.0f));
-
-
 
     Event nuller = Event(EventNone, 0);
     std::shared_ptr<CharacterEntity> mainCharacter = std::make_shared<CharacterEntity>("Arisu", ECharacter::Arisu, nuller, 2, 2, "../Nyrkky/Resources/Textures/hahmo.png");
@@ -295,21 +290,15 @@ void Application::InitalizeGameStartingState()
     std::shared_ptr<MapLoader> mapLoader = std::make_shared<MapLoader>();
     GameData::SetMapLoader(mapLoader);
 
-
-    //std::shared_ptr<MapEntity> map = std::make_shared<MapEntity>("Maps/generic.xml", 0, 0, 0, true);
-    // Map paths here
-    //GameData::AddMap(std::make_shared<MapEntity>("Maps/generic.xml", 0, 0, 0, true));
-
-    GameData::AddMap(std::make_shared<MapEntity>("Maps/NewMap.xml", 0, 0, 0));
-    GameData::GetMaps().back()->InitMap();
+    GameData::AddMap(std::make_shared<MapEntity>("Maps/Map01.xml", 0));
+    GameData::GetMaps().back()->InitMap(0, true);
     
+    GameData::AddMap(std::make_shared<MapEntity>("Maps/Map02.xml", 1));
+    GameData::GetMaps().back()->InitMap(1);
 
     /* UI */
-
     int width, height;
     glfwGetFramebufferSize(Window, &width, &height);
-    //_ui = new UI(&_proj, width, height, shader, textShader, _map);
-
 
     std::shared_ptr<UI> ui = std::make_shared<UI>(width, height);
     GameData::InitalizeUI(ui);
@@ -324,7 +313,6 @@ void Application::InitalizeGameStartingState()
     GameData::SetCameraPosition(_centerOfMap);
 
     mainCharacter->SetPosition(2, GameData::GetMap()->GetGridSize() / 2);
-    //noob->SetPosition(4, map->GetGridSize() / 2);
 
 }
 
@@ -466,11 +454,6 @@ void Application::HandleKeyPress(float DeltaTime)
         if (_pressedKeys.count(GLFW_KEY_S)) MoveMainCharacter(Direction::Backwards);
         if (_pressedKeys.count(GLFW_KEY_A)) MoveMainCharacter(Direction::Left);
 
-
-            
-
-
-
         StaticDelayPress(DeltaTime);
     }
     else
@@ -591,7 +574,6 @@ void Application::StaticDelayPressDialog(float DeltaTime)
                         }
                     }
 
-
                 }
                 else std::cout << "press ignored!" << std::endl;
 
@@ -601,80 +583,6 @@ void Application::StaticDelayPressDialog(float DeltaTime)
     }
 }
 
-void Application::InitTextureArray()
-{
-    std::vector<std::string> paths;
-    std::string path = "..\\Nyrkky\\Resources\\Textures\\Array\\";
-
-    paths.push_back(path + "error.png");
-    paths.push_back(path + "invisible.png");
-
-    paths.push_back(path + "A.png");
-    paths.push_back(path + "B.png");
-    paths.push_back(path + "C.png");
-    paths.push_back(path + "D.png");
-
-    paths.push_back(path + "number_1.png");
-    paths.push_back(path + "number_2.png");
-    paths.push_back(path + "number_3.png");
-
-    paths.push_back(path + "collisionOff.png");
-    paths.push_back(path + "collisionOn.png");
-    paths.push_back(path + "ObjectView.png");
-    paths.push_back(path + "TerrainView.png");
-
-    paths.push_back(path + "highlight.png");
-    paths.push_back(path + "transparent.png");
-
-    paths.push_back(path + "StoneFloor01.png");
-    paths.push_back(path + "StoneFloor02.png");
-
-    paths.push_back(path + "chest_closed.png");
-    paths.push_back(path + "chest_open.png");
-    paths.push_back(path + "ladder.png");
-    paths.push_back(path + "door_closed.png");
-    paths.push_back(path + "door_open.png");
-
-    std::shared_ptr<TextureArray> AR = TextureManager::GetTextureArray(paths);
-    //AR->GetSize();
-
-    for (size_t i = 0; i < paths.size(); ++i) {
-        std::string fileName = paths[i].substr(paths[i].find_last_of("\\/") + 1);
-        GameData::AddToTextureIndex(fileName, i);
-    }
-
-    GameData::SetTextureArray(AR);
-
-    {
-        size_t textureIndex = GameData::GetTextureIndex("StoneFloor01.png");
-        std::string textureName = GameData::GetTextureName(textureIndex);
-
-        std::cout << "tex: " << textureIndex << "   " << textureName << std::endl;
-    }
-
-
-
-
-    /*-------------*/
-
-    std::vector<std::string> cpaths;
-    cpaths.push_back("..\\Nyrkky\\Resources\\Textures\\Arisu.png");
-
-    for (size_t i = 0; i < cpaths.size(); ++i) {
-        std::string fileName = cpaths[i].substr(cpaths[i].find_last_of("\\/") + 1);
-        GameData::AddToCharacterTextureIndex(fileName, i);
-    }
-
-    {
-        size_t textureIndex = GameData::GetCharacterTextureIndex("Arisu.png");
-        std::string textureName = GameData::GetCharacterTextureName(textureIndex);
-        std::cout << "character tex: " << textureIndex << "   " << textureName << std::endl;
-    }
-
-    std::shared_ptr<TextureArray> CAR = TextureManager::GetTextureArray(cpaths);
-
-    GameData::SetCharacterTextureArray(CAR);
-}
 
 
 

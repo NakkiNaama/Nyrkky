@@ -327,6 +327,7 @@
     <ClInclude Include="Source\BunkerBound\Inventory.h" />
     <ClInclude Include="Source\BunkerBound\Engine\TextureArray.h" />
     <ClInclude Include="Source\vendor\tinyxml2\tinyxml2.h" />
+    <ClInclude Include="Source\BunkerBound\TextureList.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\BunkerBound\Application.cpp">

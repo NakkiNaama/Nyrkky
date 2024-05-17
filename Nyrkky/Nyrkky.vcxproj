@@ -162,6 +162,7 @@
     <ClInclude Include="Source\BunkerBound\Engine\Render\GenericObjectRenderData.h" />
     <ClInclude Include="Source\BunkerBound\MapEntity.h" />
     <ClInclude Include="Source\BunkerBound\Engine\Render\MapRenderData.h" />
+    <ClInclude Include="Source\BunkerBound\TextureList.h" />
     <ClInclude Include="Source\BunkerBound\TileEntity.h" />
     <ClInclude Include="Source\BunkerBound\Entity.h" />
     <ClInclude Include="Source\BunkerBound\MapLoader.h" />

@@ -1,8 +1,9 @@
 #include "MapRenderData.h"
 #include "../../GameData.h"
 
-MapRenderData::MapRenderData(int layer, int ScreenX, int ScreenY, int gridSize, int tileSize)
+MapRenderData::MapRenderData(int layer, int ScreenX, int ScreenY, int gridSize, int tileSize, int mapID)
 {
+    _mapID = mapID;
     _layer = layer;
     Update(ScreenX, ScreenY, gridSize, tileSize);
 }
@@ -24,9 +25,15 @@ MapRenderData::~MapRenderData()
 void MapRenderData::Init(int PosX, int PosY)
 {
     // Define Buffer
+    /**/
+    if (!GameData::GetMaps().size() > _mapID)
+    {
+        std::cerr << "ERROR: map id out of bounds!" << std::endl;
+        return;
+    }
+    std::shared_ptr<MapEntity> map = GameData::GetMaps()[_mapID];
 
     std::vector<unsigned int> indices;
-
     glm::vec2 centerOfMap = { -windowX * 0.33, -windowY * 0.75 };
 
     for (int y = 0; y < GridSize; y++)
@@ -35,14 +42,14 @@ void MapRenderData::Init(int PosX, int PosY)
             int index = y * GridSize + x;
             
             int textureID;
-           if (GameData::GetMap() != nullptr && GameData::GetMap()->_tiles.size() > index)
+           if (map != nullptr && map->_tiles.size() > index)
             {
-               if (_layer == 0) textureID = GameData::GetMap()->_tiles[index].GetTexture();
+               if (_layer == 0) textureID = map->_tiles[index].GetTexture();
                else
                {
-                   if (GameData::GetMap()->_tiles[index].HasSub)
+                   if (map->_tiles[index].HasSub)
                    {
-                       textureID = GameData::GetMap()->_tiles[index].GetSubTile()->GetTextureID();
+                       textureID = map->_tiles[index].GetSubTile()->GetTextureID();
                    }
                    else textureID = GameData::GetTextureIndex("invisible.png");
                }
@@ -91,7 +98,6 @@ void MapRenderData::Init(int PosX, int PosY)
 
 bool MapRenderData::Activate(int PosX, int PosY)
 {
-    /**/
     if (_initialized)
     {
         // Bind the shader

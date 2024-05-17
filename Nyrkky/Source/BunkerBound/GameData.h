@@ -429,7 +429,20 @@ private:
 
 	void ImpSetCurrentMap(int id)
 	{
+
+		/*
+		if (currentMap->IsActive())
+		{
+			currentMap->SetActive(false);
+		}
+		else
+		{
+			currentMap->SetActive(true);
+		}
+		*/
+
 		currentMap->SetActive(false);
+		
 		if (maps.size() > id)
 		{
 			currentMap = maps[id];
@@ -440,13 +453,13 @@ private:
 			glm::vec2 centerOfMap = { 0, -center - (currentMap->GetTileSize() * 8) };
 			cameraPosition = centerOfMap;
 
-			std::cout << "Current map has been changed" << std::endl;
+			std::cout << "Current map has been changed to " << id << std::endl;
 			return;
 		}
 		std::cerr << "Set current map failed" << std::endl;
-		if (maps.size() > 0) currentMap = maps[0]; return;
+		//if (maps.size() > 0) currentMap = maps[0]; return;
 		std::cerr << "Set current map failed -- maps vector empty" << std::endl;
-
+		
 	}
 
 	std::shared_ptr<MapLoader> ImpGetMapLoader()

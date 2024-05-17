@@ -6,7 +6,7 @@
 
 MapLoader::MapLoader()
 {
-    GenerateGenericMap();
+    //GenerateGenericMap();
     InitalizeTileEntityTypes();
 }
 
@@ -42,18 +42,7 @@ bool MapLoader::GenerateGenericMap()
                 tinyxml2::XMLElement* child = doc.NewElement(childName);
                 switch (i)
                 {
-                case 0:
-                    {
-                        int roll = rand() % 2;
-                        switch (roll)
-                        {
-                        case 0: child->SetText("StoneFloor01.png"); break;
-                        case 1: child->SetText("StoneFloor02.png"); break;
-                        case 2: child->SetText("D.png"); break;
-                        default: child->SetText("A.png"); break;
-                        }
-                    }
-                    break;
+                case 0: child->SetText("StoneFloor01.png"); break;
 
                 case 1: child->SetText("0"); break; // collision
 
@@ -120,19 +109,12 @@ void MapLoader::LoadMap(const char* path, int& gridSize, std::vector<Tile> &tile
         }
         else std::cerr << "map xml root could not be found!";
 
-        /*
-        types = _tileTypes;
-        entityTypes = _entityTypes;
-        */
     }
     else std::cerr << "Map that were to be loaded could not be found!" << std::endl;
 
     int numColumns = sqrt(gridSize);
     gridSize = gridSize / numColumns;
 
-    std::cout << "new grid size " << gridSize << std::endl;
-
-    
 }
 
 bool MapLoader::SaveMapToFile(int MapSize, const std::vector<Tile>& tiles, const std::vector<std::shared_ptr<TileEntity>> tileEntities)
@@ -177,9 +159,6 @@ bool MapLoader::SaveMapToFile(int MapSize, const std::vector<Tile>& tiles, const
             case 3: child->SetText(GameData::GetTextureName(tile.GetSubTile()->GetTextureID()).c_str()); break;
 
             case 4: 
-                child->SetText("-"); break;
-
-                
                 finished = false;
                 for (auto& ent : tileEntities)
                 {

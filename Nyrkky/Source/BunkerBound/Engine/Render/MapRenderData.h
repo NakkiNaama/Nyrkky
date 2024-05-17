@@ -8,7 +8,7 @@
 class MapRenderData : public RenderBase
 {
 public:
-	MapRenderData(int layer, int ScreenX, int ScreenY, int gridSize, int tileSize);
+	MapRenderData(int layer, int ScreenX, int ScreenY, int gridSize, int tileSize, int mapID);
 	~MapRenderData();
 
 	void Init(int PosX, int PosY) override;
@@ -24,7 +24,7 @@ protected:
 	int GridSize;
 	float TileSize;
 	int _layer = 0;
-
+	int _mapID = 0;
 
 	void AddVertex(std::vector<float>& x, float v1, float v2, float v3, float v4, float texIndex) override;
 	void AddIndex(std::vector<unsigned int>& x, float v1, float v2, float v3) override;
