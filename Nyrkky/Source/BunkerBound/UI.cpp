@@ -94,8 +94,8 @@ void UI::CreateGameUI()
 {
 	_vnBox = CreateUIObject(UIObjectType::Dialog, ETextureArray::EMapTexture, GameData::GetTextureIndex("transparent.png"), 0.25f, 0.02f, 0.50f, 0.25f, false); // VN border
 
-	_vnLeftCharacterBox = CreateUIObject(UIObjectType::Dialog, ETextureArray::ECharacterTexture, GameData::GetDialogSprite(0), 0.f, 0.0f, 0.25f, 0.75f, false);  // Left Character
-	_vnRightCharacterBox = CreateUIObject(UIObjectType::Dialog, ETextureArray::ECharacterTexture, GameData::GetDialogSprite(1), 0.75f, 0.0f, 0.25f, 0.75f, false); // Right Character
+	_vnLeftCharacterBox = CreateUIObject(UIObjectType::Dialog, ETextureArray::ECharacterTexture, GameData::GetCharacterTextureIndex("emily_front.png"), 0.f, 0.0f, 0.25f, 0.75f, false);  // Left Character
+	_vnRightCharacterBox = CreateUIObject(UIObjectType::Dialog, ETextureArray::ECharacterTexture, GameData::GetCharacterTextureIndex("Arisu.png"), 0.75f, 0.0f, 0.25f, 0.75f, false); // Right Character
 
 	_choiceBox = CreateUIObject(UIObjectType::ChoiceUI, ETextureArray::EMapTexture, GameData::GetTextureIndex("transparent.png"), 0.33f, 0.33f, 0.33f, 0.33f, false); // choice box
 
@@ -257,9 +257,7 @@ void UI::DrawEditorButtons()
 	}
 
 	if (_view == 0)
-	{
-
-		
+	{		
 		if (_collisionButton != nullptr && _collisionButton->GetVA() != nullptr && _collisionButton->GetIB() != nullptr)
 		{
 			if (!_collision) _collisionButton->SetTexture(GameData::GetTextureIndex("collisionOff.png"));

@@ -11,7 +11,7 @@ enum ECharacter
 class CharacterEntity : public Entity
 {
 public:
-	CharacterEntity(std::string name, ECharacter id, Event event, int posx, int posy, std::string texturePath);
+	CharacterEntity(std::string name, ECharacter id, Event event, int posx, int posy, std::vector<uint32_t> textures);
 
 	CharacterEntity(const CharacterEntity& other)
 	{
@@ -19,14 +19,14 @@ public:
 		PosX = other.PosX;
 		PosY = other.PosY;
 		_name = other._name;
-		_texturePath = other._texturePath;
+		_textures = other._textures;
 		_event = other._event;
 		//_eventType = other._eventType;
 		//_data = other._data;
 		//std::cout << "data size: " << _data.size() << std::endl;
 
 		//_collision = other._collision;
-		Render = std::make_unique<CharacterRenderData>(PosX, PosY, _texturePath);
+		Render = std::make_unique<CharacterRenderData>(PosX, PosY, _textures);
 		Render->Init(PosX, PosY);
 		//std::cout << "copy finished" << std::endl;
 	}
@@ -40,6 +40,7 @@ public:
 
 	void Move(Direction direction, int x, int y);
 	void SetPosition(int x, int y);
+
 	Direction GetLastMovementDirection()
 	{
 		return _lastMovement;
@@ -71,7 +72,7 @@ public:
 protected:
 	Direction _lastMovement = Direction::Backwards;
 	std::string _name = "Nameless";
-	std::string _texturePath;
+	std::vector<uint32_t> _textures;
 
 
 };

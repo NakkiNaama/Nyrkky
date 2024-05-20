@@ -5,7 +5,7 @@
 class CharacterRenderData : public RenderBase
 {
 public:
-	CharacterRenderData(int ScreenX, int ScreenY, std::string texturePath);
+	CharacterRenderData(int ScreenX, int ScreenY, std::vector<uint32_t> textures);
 	~CharacterRenderData();
 	void Init(int PosX, int PosY) override;
 	bool Activate(int PosX, int PosY) override;
@@ -18,9 +18,9 @@ public:
 protected:
 	void AddVertex(std::vector<float>& x, float v1, float v2, float v3, float v4, float texIndex) override;
 	void AddIndex(std::vector<unsigned int>& x, float v1, float v2, float v3) override;
-	std::unique_ptr<Texture> texture;
+	//std::unique_ptr<Texture> texture;
 	Direction _lastMovement = Direction::Backwards;
-	std::string _textureLoc;
+	std::vector<uint32_t> _textures;
 
 };
 

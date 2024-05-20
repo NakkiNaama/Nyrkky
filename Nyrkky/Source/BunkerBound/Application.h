@@ -140,7 +140,9 @@ protected:
 protected:
 	void HandleKeyPress(float DeltaTime);
 	void StaticDelayPress(float DeltaTime);
-	void StaticDelayPressDialog(float DeltaTime);
+	void StaticDelayPressDialog(float DeltaTimebool);
+
+	void DialogExecute();
 
 	std::unordered_set<int> _pressedKeys;
 	bool _editor = false;

@@ -1,10 +1,9 @@
 #include "CharacterRenderData.h"
 #include "../../GameData.h"
 
-CharacterRenderData::CharacterRenderData(int ScreenX, int ScreenY, std::string texturePath)
+CharacterRenderData::CharacterRenderData(int ScreenX, int ScreenY, std::vector<uint32_t> textures)
 {
-    //Init(_shader);
-    _textureLoc = texturePath;
+    _textures = textures;
 }
 
 CharacterRenderData::~CharacterRenderData()
@@ -48,9 +47,6 @@ void CharacterRenderData::Init(int PosX, int PosY)
     _ib->Bind();
     // -----
 
-    // Texture Init
-    texture = std::make_unique<Texture>(_textureLoc);
-
     _initialized = true;
     Activate(PosX, PosY);
 
@@ -58,7 +54,7 @@ void CharacterRenderData::Init(int PosX, int PosY)
 
 bool CharacterRenderData::Activate(int PosX, int PosY)
 {
-    if (_initialized && texture != nullptr)
+    if (_initialized)
     {
         
         GameData::GetShader()->Bind();
@@ -67,31 +63,40 @@ bool CharacterRenderData::Activate(int PosX, int PosY)
         if (GameData::GetCharacterTextureArray() != nullptr)
         {
             GameData::GetCharacterTextureArray()->Bind();
-
-            GameData::GetShader()->SetUniform1i("u_Layer", 0);
         }
-               
+        
+
         int TileSize = 64;
 
         float x = 0;
         float y = 0;
 
-        float sheetWidth = 128;
-        float sheetHeight = 128;
-        float spriteSize = 128;
         int characterSize = 1;
+        int textureID = 0;
+
+        if (_textures.size() >= 4)
+        {
+            switch (_lastMovement)
+            {
+            case Forward: textureID = _textures[2]; break;
+            case Right: textureID = _textures[3]; break;
+            case Backwards: textureID = _textures[0]; break;
+            case Left: textureID = _textures[1]; break;
+
+            default: break;
+            }
+        }
 
         std::vector<float> positions;
 
-        
         AddVertex(positions, TileSize * PosX, -TileSize * (PosY - characterSize),
-            (x * spriteSize) / sheetWidth, ((y)* spriteSize) / sheetHeight, 0);
+            0.0f, 0.0f, textureID);
         AddVertex(positions, TileSize * (PosX + 1), -TileSize * (PosY - characterSize),
-            ((x + 1)* spriteSize) / sheetWidth, (y * spriteSize) / sheetHeight, 0);
+            1.0f, 0.0f, textureID);
         AddVertex(positions, TileSize * PosX, -TileSize * (PosY + characterSize),
-            ((x)* spriteSize) / sheetWidth, ((y + 1)* spriteSize) / sheetHeight, 0);
+            0.0f, 1.0f, textureID);
         AddVertex(positions, TileSize * (PosX + 1), -TileSize * (PosY + characterSize),
-            ((x + 1) * spriteSize) / sheetWidth, ((y + 1) * spriteSize) / sheetHeight, 0);
+            1.0f, 1.0f, textureID);
         
 
         _vb->Bind();

@@ -61,11 +61,16 @@ void InitMapTextures()
 void InitCharacterTextures()
 {
 
-    std::vector<std::string> cpaths;
-    cpaths.push_back("..\\Nyrkky\\Resources\\Textures\\Arisu.png");
+    std::vector<std::string> paths;
+    paths.push_back("..\\Nyrkky\\Resources\\Textures\\Characters\\emily-front.png");
+    paths.push_back("..\\Nyrkky\\Resources\\Textures\\Characters\\emily-right.png");
+    paths.push_back("..\\Nyrkky\\Resources\\Textures\\Characters\\emily-back.png");
+    paths.push_back("..\\Nyrkky\\Resources\\Textures\\Characters\\emily-left.png");
 
-    for (size_t i = 0; i < cpaths.size(); ++i) {
-        std::string fileName = cpaths[i].substr(cpaths[i].find_last_of("\\/") + 1);
+    paths.push_back("..\\Nyrkky\\Resources\\Textures\\Characters\\Arisu.png");
+
+    for (size_t i = 0; i < paths.size(); ++i) {
+        std::string fileName = paths[i].substr(paths[i].find_last_of("\\/") + 1);
         GameData::AddToCharacterTextureIndex(fileName, i);
     }
     /*
@@ -75,7 +80,7 @@ void InitCharacterTextures()
         std::cout << "character tex: " << textureIndex << "   " << textureName << std::endl;
     }
     */
-    std::shared_ptr<TextureArray> AR = TextureManager::GetTextureArray(cpaths);
+    std::shared_ptr<TextureArray> AR = TextureManager::GetTextureArray(paths);
 
     GameData::SetCharacterTextureArray(AR);
 }

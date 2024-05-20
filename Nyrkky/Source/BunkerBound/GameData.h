@@ -132,11 +132,6 @@ public:
 		Get().ImpSetDialogText(text);
 	}
 
-	static uint32_t GetDialogSprite(int index)
-	{
-		return Get().ImpGetDialogSprite(index);
-	}
-
 	static void SetStory(std::shared_ptr<Story> pstory)
 	{
 		Get().ImpSetStory(pstory);
@@ -367,11 +362,6 @@ private:
 	void ImpSetDialogText(std::string text)
 	{
 		//dialogText = text;
-	}
-
-	uint32_t ImpGetDialogSprite(int index)
-	{
-		return 0;
 	}
 
 	void ImpSetStory(std::shared_ptr<Story> pstory)

@@ -2,13 +2,13 @@
 #include <iostream>
 #include "GameData.h"
 
-CharacterEntity::CharacterEntity(std::string name, ECharacter id, Event event, int posx, int posy, std::string texturePath)
+CharacterEntity::CharacterEntity(std::string name, ECharacter id, Event event, int posx, int posy, std::vector<uint32_t> textures)
 {
 	_name = name;
 	_event = event;
 	ID = id;
-	_texturePath = texturePath;
-	Render = std::make_unique<CharacterRenderData>(posx, posy, texturePath); // "../Nyrkky/Resources/Textures/hahmo.png"
+	_textures = textures;
+	Render = std::make_unique<CharacterRenderData>(posx, posy, _textures);
 
 	Render->Init(PosX, PosY);
 

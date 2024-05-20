@@ -275,16 +275,25 @@ void Application::InitalizeGameStartingState()
     int windowWidth, windowHeight;
     glfwGetFramebufferSize(Window, &windowWidth, &windowHeight);
     GameData::SetProj(glm::ortho(0.0f, static_cast<float>(windowWidth), 0.0f, static_cast<float>(windowHeight), -1.0f, 1.0f));
+    std::vector<uint32_t> textures;
 
-    Event nuller = Event(EventNone, 0);
-    std::shared_ptr<CharacterEntity> mainCharacter = std::make_shared<CharacterEntity>("Arisu", ECharacter::Arisu, nuller, 2, 2, "../Nyrkky/Resources/Textures/hahmo.png");
+
+    textures.push_back(GameData::GetCharacterTextureIndex("emily-front.png"));
+    textures.push_back(GameData::GetCharacterTextureIndex("emily-right.png"));
+    textures.push_back(GameData::GetCharacterTextureIndex("emily-back.png"));
+    textures.push_back(GameData::GetCharacterTextureIndex("emily-left.png"));
+
+    std::shared_ptr<CharacterEntity> mainCharacter = std::make_shared<CharacterEntity>("Emily", ECharacter::Emily, Event(EventNone, 0), 2, 2, textures);
     GameData::SetPlayer(mainCharacter);
     GameData::AddCharacter(mainCharacter);
+    textures.clear();
 
-    Event EventEmily = Event(EventTalk, 0);
 
-    std::shared_ptr<CharacterEntity> noob = std::make_shared<CharacterEntity>("Emily", ECharacter::Emily, EventEmily, 4, 4, "../Nyrkky/Resources/Textures/NPC.png");
-    GameData::AddCharacter(noob);
+    Event EventArisu = Event(EventTalk, 0);
+    textures.push_back(GameData::GetCharacterTextureIndex("Arisu.png"));
+    std::shared_ptr<CharacterEntity> arisu = std::make_shared<CharacterEntity>("Arisu", ECharacter::Emily, EventArisu, 4, 4, textures);
+    GameData::AddCharacter(arisu);
+    textures.clear();
 
 
     std::shared_ptr<MapLoader> mapLoader = std::make_shared<MapLoader>();
@@ -388,7 +397,11 @@ void Application::LeftClick(bool ctrl)
         {
             if (!_editor)
             {
-                //std::cout << "non editor click" << std::endl;
+                if (GameData::IsDialogVisible())
+                {
+                    std::cout << "click dialog" << std::endl;
+                    DialogExecute();
+                }
             }
             else
             {
@@ -534,7 +547,6 @@ void Application::StaticDelayPress(float DeltaTime)
             _staticDelayTimer = 0;
         }
 
-
     }
 }
 
@@ -547,43 +559,39 @@ void Application::StaticDelayPressDialog(float DeltaTime)
         if (_pressedKeys.count(GLFW_KEY_ENTER) || _pressedKeys.count(GLFW_KEY_E))
         {
             _staticDelayTimer = 0;
-
-            if (!GameData::GetStory()->ProceedLine())
-            {
-                if (!GameData::IsChoice())
-                {
-                    bool hasNext = GameData::GetStory()->HasNextNode();
-                    if (hasNext)
-                    {
-                        //std::cout << "has next node" << std::endl;
-                        GameData::GetStory()->NextNode();
-
-                    }
-                    else
-                    {
-                        //std::cout << "no next node" << std::endl;
-                        if (GameData::GetStory()->currentNode->choices.size() > 0)
-                        {
-                            GameData::SetIsChoice(true);
-                        }
-                        else
-                        {
-                            //std::cout << "dialog finished!" << std::endl;
-                            GameData::GetStory()->FinishChain();
-                            GameData::SetDialogVisible(false);
-                        }
-                    }
-
-                }
-                else std::cout << "press ignored!" << std::endl;
-
-            }
+            DialogExecute();
         }
-
     }
 }
 
+void Application::DialogExecute()
+{
+    if (!GameData::GetStory()->ProceedLine())
+    {
+        if (!GameData::IsChoice())
+        {
+            bool hasNext = GameData::GetStory()->HasNextNode();
+            if (hasNext)
+            {
+                GameData::GetStory()->NextNode();
+            }
+            else
+            {
+                if (GameData::GetStory()->currentNode->choices.size() > 0)
+                {
+                    GameData::SetIsChoice(true);
+                }
+                else
+                {
+                    GameData::GetStory()->FinishChain();
+                    GameData::SetDialogVisible(false);
+                }
+            }
 
+        }
+        else std::cout << "press ignored!" << std::endl;
 
+    }
+}
 
 
