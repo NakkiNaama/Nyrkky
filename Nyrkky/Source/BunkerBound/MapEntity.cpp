@@ -34,7 +34,7 @@ MapEntity::MapEntity(const char* path, int State)
 void MapEntity::InitMap(int mapID, bool setActive)
 {
     ID = mapID;
-    for (int i = 0; i <= 0; i++) // increase to have more layers
+    for (int i = 0; i <= 1; i++) // increase to have more layers
     {
         if (i == 0)
         {
@@ -59,7 +59,7 @@ void MapEntity::Tick(float DeltaTime)
 
 void MapEntity::ChangeTile(int layer, int index, int ID, bool solid)
 {
-    std::cout << "change tile called! layer: " << layer << std::endl;
+    //std::cout << "change tile called! layer: " << layer << std::endl;
     
     if (layer == 0)
     {
@@ -91,46 +91,42 @@ void MapEntity::ModifyMapRender(int index, int layer)
 {
     if (_tiles.size() > index)
     {
-
         if (layer == 0)
         {
             int tileOffset = index * 4 * 5;
 
-            Renders[layer]->positions[tileOffset + 4] = _tiles[index].GetTexture();
+            Renders[layer]->positions[tileOffset + 4] = float(_tiles[index].GetTexture());
             tileOffset += 5;
 
-            Renders[layer]->positions[tileOffset + 4] = _tiles[index].GetTexture();
+            Renders[layer]->positions[tileOffset + 4] = float(_tiles[index].GetTexture());
             tileOffset += 5;
 
-            Renders[layer]->positions[tileOffset + 4] = _tiles[index].GetTexture();
+            Renders[layer]->positions[tileOffset + 4] = float(_tiles[index].GetTexture());
             tileOffset += 5;
 
-            Renders[layer]->positions[tileOffset + 4] = _tiles[index].GetTexture();
+            Renders[layer]->positions[tileOffset + 4] = float(_tiles[index].GetTexture());
             tileOffset += 5;
 
-            Renders[layer]->GetVB()->Bind();
-            glBufferSubData(GL_ARRAY_BUFFER, 0, Renders[layer]->positions.size() * sizeof(float), Renders[layer]->positions.data());
         }
         else
         {
             int tileOffset = index * 4 * 5;
 
-            Renders[layer]->positions[tileOffset + 4] = _tiles[index].GetSubTile()->GetTextureID();
+            Renders[layer]->positions[tileOffset + 4] = float(_tiles[index].GetSubTile()->GetTextureID());
             tileOffset += 5;
 
-            Renders[layer]->positions[tileOffset + 4] = _tiles[index].GetSubTile()->GetTextureID();
+            Renders[layer]->positions[tileOffset + 4] = float(_tiles[index].GetSubTile()->GetTextureID());
             tileOffset += 5;
 
-            Renders[layer]->positions[tileOffset + 4] = _tiles[index].GetSubTile()->GetTextureID();
+            Renders[layer]->positions[tileOffset + 4] = float(_tiles[index].GetSubTile()->GetTextureID());
             tileOffset += 5;
 
-            Renders[layer]->positions[tileOffset + 4] = _tiles[index].GetSubTile()->GetTextureID();
-            tileOffset += 5;
-
-            Renders[layer]->GetVB()->Bind();
-            glBufferSubData(GL_ARRAY_BUFFER, 0, Renders[layer]->positions.size() * sizeof(float), Renders[layer]->positions.data());
+            Renders[layer]->positions[tileOffset + 4] = float(_tiles[index].GetSubTile()->GetTextureID());
+            tileOffset += 5;  
         }
 
+        Renders[layer]->GetVB()->Bind();
+        glBufferSubData(GL_ARRAY_BUFFER, 0, Renders[layer]->positions.size() * sizeof(float), Renders[layer]->positions.data());
     }
     else
     {

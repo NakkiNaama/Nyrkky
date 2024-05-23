@@ -16,6 +16,13 @@ public:
 		:ID(id), Name(name), TextureID(textureID)
 	{}
 
+	Item(const Item& other)
+	{
+		ID = other.ID;
+		Name = other.Name;
+		TextureID = other.TextureID;
+	}
+
 	EItem ID;
 	std::string Name;
 	uint32_t TextureID;
@@ -27,7 +34,7 @@ class Inventory
 public:
 	Inventory();
 
-	std::vector<Item> GetInventory() const
+	std::vector<Item*> GetInventory() const
 	{
 		return _inventory;
 	}
@@ -35,7 +42,7 @@ public:
 
 protected:
 	std::vector<Item> _itemTypes;
-	std::vector<Item> _inventory;
+	std::vector<Item*> _inventory;
 
 };
 

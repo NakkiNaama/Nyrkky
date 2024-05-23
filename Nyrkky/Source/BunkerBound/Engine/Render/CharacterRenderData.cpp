@@ -15,7 +15,7 @@ void CharacterRenderData::Init(int PosX, int PosY)
 {
     // Define Buffer
     std::vector<float> positions;
-    int TileSize = 64;
+    float TileSize = 64;
     std::vector<unsigned int> indices;
 
     AddVertex(positions, TileSize * PosX, -TileSize * PosY, 0.f, 0.f, 0);
@@ -26,11 +26,10 @@ void CharacterRenderData::Init(int PosX, int PosY)
     AddIndex(indices, 1, 2, 3);
     AddIndex(indices, 2, 1, 0);
 
-    unsigned int vertexArrayID;
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-    _vb = new VertexBuffer(positions.data(), positions.size() * sizeof(float), true);
+    _vb = new VertexBuffer(positions.data(), unsigned int(positions.size()) * sizeof(float), true);
     _layout = new VertexBufferLayout();
     _va = new VertexArray();
     // --------------------------------------------------------------------------
@@ -43,7 +42,7 @@ void CharacterRenderData::Init(int PosX, int PosY)
 
 
     // Setup Index buffer
-    _ib = new IndexBuffer(indices.data(), indices.size());
+    _ib = new IndexBuffer(indices.data(), unsigned int(indices.size()));
     _ib->Bind();
     // -----
 
@@ -66,22 +65,22 @@ bool CharacterRenderData::Activate(int PosX, int PosY)
         }
         
 
-        int TileSize = 64;
+        float TileSize = 64;
 
         float x = 0;
         float y = 0;
 
         int characterSize = 1;
-        int textureID = 0;
+        float textureID = 0;
 
         if (_textures.size() >= 4)
         {
             switch (_lastMovement)
             {
-            case Forward: textureID = _textures[2]; break;
-            case Right: textureID = _textures[3]; break;
-            case Backwards: textureID = _textures[0]; break;
-            case Left: textureID = _textures[1]; break;
+            case Forward: textureID = float(_textures[2]); break;
+            case Right: textureID = float(_textures[3]); break;
+            case Backwards: textureID = float(_textures[0]); break;
+            case Left: textureID = float(_textures[1]); break;
 
             default: break;
             }
@@ -100,7 +99,7 @@ bool CharacterRenderData::Activate(int PosX, int PosY)
         
 
         _vb->Bind();
-        _vb->Update(positions.data(), positions.size() * sizeof(float));
+        _vb->Update(positions.data(), unsigned int(positions.size()) * sizeof(float));
         return true;
     }
     return false;
@@ -114,7 +113,7 @@ void CharacterRenderData::AddVertex(std::vector<float>& x, float v1, float v2, f
     x.push_back(texIndex);
 }
 
-void CharacterRenderData::AddIndex(std::vector<unsigned int>& x, float v1, float v2, float v3) {
+void CharacterRenderData::AddIndex(std::vector<unsigned int>& x, int v1, int v2, int v3) {
     x.push_back(v1);
     x.push_back(v2);
     x.push_back(v3);

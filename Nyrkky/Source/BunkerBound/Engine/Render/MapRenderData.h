@@ -27,7 +27,7 @@ protected:
 	int _mapID = 0;
 
 	void AddVertex(std::vector<float>& x, float v1, float v2, float v3, float v4, float texIndex) override;
-	void AddIndex(std::vector<unsigned int>& x, float v1, float v2, float v3) override;
+	void AddIndex(std::vector<unsigned int>& x, int v1, int v2, int v3) override;
 
 
 };

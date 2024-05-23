@@ -11,7 +11,7 @@ MapRenderData::MapRenderData(int layer, int ScreenX, int ScreenY, int gridSize, 
 void MapRenderData::Update(int ScreenX, int ScreenY, int gridSize, int tileSize)
 {
     GridSize = gridSize;
-    TileSize = tileSize;
+    TileSize = float(tileSize);
     windowX = ScreenX;
     windowY = ScreenY;
 
@@ -26,7 +26,7 @@ void MapRenderData::Init(int PosX, int PosY)
 {
     // Define Buffer
     /**/
-    if (!GameData::GetMaps().size() > _mapID)
+    if (GameData::GetMaps().size() <= _mapID)
     {
         std::cerr << "ERROR: map id out of bounds!" << std::endl;
         return;
@@ -41,17 +41,17 @@ void MapRenderData::Init(int PosX, int PosY)
         for (int x = 0; x < GridSize; x++) {
             int index = y * GridSize + x;
             
-            int textureID;
+           float textureID;
            if (map != nullptr && map->_tiles.size() > index)
             {
-               if (_layer == 0) textureID = map->_tiles[index].GetTexture();
+               if (_layer == 0) textureID = float(map->_tiles[index].GetTexture());
                else
                {
                    if (map->_tiles[index].HasSub)
                    {
-                       textureID = map->_tiles[index].GetSubTile()->GetTextureID();
+                       textureID = float(map->_tiles[index].GetSubTile()->GetTextureID());
                    }
-                   else textureID = GameData::GetTextureIndex("invisible.png");
+                   else textureID = float(GameData::GetTextureIndex("invisible.png"));
                }
                 
             }
@@ -79,7 +79,7 @@ void MapRenderData::Init(int PosX, int PosY)
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-    _vb = new VertexBuffer(positions.data(), positions.size() * sizeof(float));
+    _vb = new VertexBuffer(positions.data(), unsigned int(positions.size()) * sizeof(float));
     _layout = new VertexBufferLayout();
     _va = new VertexArray();
     // --------------------------------------------------------------------------
@@ -90,7 +90,7 @@ void MapRenderData::Init(int PosX, int PosY)
     _va->AddBuffer(*_vb, *_layout);
 
     // Setup Index buffer
-    _ib = new IndexBuffer(indices.data(), indices.size());
+    _ib = new IndexBuffer(indices.data(), unsigned int(indices.size()));
     _ib->Bind();
 
     _initialized = true;
@@ -119,7 +119,7 @@ void MapRenderData::AddVertex(std::vector<float>& x, float v1, float v2, float v
     x.push_back(texIndex);
 }
 
-void MapRenderData::AddIndex(std::vector<unsigned int>& x, float v1, float v2, float v3) {
+void MapRenderData::AddIndex(std::vector<unsigned int>& x, int v1, int v2, int v3) {
     x.push_back(v1);
     x.push_back(v2);
     x.push_back(v3);

@@ -14,13 +14,13 @@ bool Text::Init(int fontSize)
     if (font_name.empty())
     {
         std::cout << "ERROR::FREETYPE: Failed to load font_name" << std::endl;
-        return -1;
+        return false;
     }
 
 
     if (FT_New_Face(ft, font_name.c_str(), 0, &face)) {
         std::cout << "ERROR::FREETYPE: Failed to load font" << std::endl;
-        return -1;
+        return false;
     }
     else {
         // set size to load glyphs as
@@ -90,7 +90,7 @@ bool Text::Init(int fontSize)
 
 // render line of text
 // -------------------
-void Text::RenderText(std::string text, float x, float y, glm::mat4 viewMat, float scale, glm::vec3 color)
+void Text::RenderText(std::string text, int x, int y, glm::mat4 viewMat, float scale, glm::vec3 color)
 {
     if (GameData::GetTextShader() != nullptr)
     {
@@ -135,7 +135,7 @@ void Text::RenderText(std::string text, float x, float y, glm::mat4 viewMat, flo
 
             glDrawArrays(GL_TRIANGLES, 0, 6);
             // now advance cursors for next glyph (note that advance is number of 1/64 pixels)
-            x += (ch.Advance >> 6) * scale; // bitshift by 6 to get value in pixels (2^6 = 64 (divide amount of 1/64th pixels by 64 to get amount of pixels))
+            x += int((ch.Advance >> 6) * scale); // bitshift by 6 to get value in pixels (2^6 = 64 (divide amount of 1/64th pixels by 64 to get amount of pixels))
         }
         glBindVertexArray(0);
         glBindTexture(GL_TEXTURE_2D, 0);

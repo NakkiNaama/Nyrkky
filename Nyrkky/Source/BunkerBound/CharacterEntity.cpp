@@ -8,13 +8,12 @@ CharacterEntity::CharacterEntity(std::string name, ECharacter id, Event event, i
 	_event = event;
 	ID = id;
 	_textures = textures;
-	Render = std::make_unique<CharacterRenderData>(posx, posy, _textures);
 
+	Render = std::make_unique<CharacterRenderData>(posx, posy, _textures);
 	Render->Init(PosX, PosY);
 
 	PosX = posx;
 	PosY = posy;
-	//Render->UpdatePosition(PosX, PosY);
 
 }
 

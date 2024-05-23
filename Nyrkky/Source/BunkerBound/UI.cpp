@@ -38,9 +38,9 @@ UI::~UI()
 std::shared_ptr<UIObjectRenderData> UI::CreateUIObject(UIObjectType type, uint32_t arrayID, uint32_t texture, float xPercentage, float yPercentage, float widthPercentage, float heightPercentage, bool interactable, int id)
 {
 	std::shared_ptr<UIObjectRenderData> highlight = nullptr;
-	if (type != UIObjectType::Selection)
+	if (type != UIObjectType::ESelection)
 	{
-		highlight = CreateHighlight(UIObjectType::Selection, xPercentage, yPercentage, widthPercentage, heightPercentage, true);
+		highlight = CreateHighlight(UIObjectType::ESelection, xPercentage, yPercentage, widthPercentage, heightPercentage, true);
 		
 	}
 
@@ -55,15 +55,15 @@ std::shared_ptr<UIObjectRenderData> UI::CreateUIObject(UIObjectType type, uint32
 	// should be removed and vector should be parameter or something like that
 	switch (type)
 	{
-	case UIObjectType::GameOverlay: _gameOverlayRenders.push_back(element); break;
-	case UIObjectType::GameButton: _buttons.push_back(element); break;
-	case UIObjectType::EditorOverlay: _editorRenders.push_back(element); break;
-	case UIObjectType::EditorButton: _editorButtons.push_back(element); break;
-	case UIObjectType::EditorTextureButton: _editorTextureButtons.push_back(element); break;
-	case UIObjectType::Dialog: _dialogRenders.push_back(element); break;
-	case UIObjectType::EditorObjectButton: _objectButtons.push_back(element); break;
-	case UIObjectType::ChoiceUI: _choiceRenders.push_back(element); break;
-	case UIObjectType::ChoiceButton: _choiceButtons.push_back(element); break;
+	case UIObjectType::EGameOverlay: _gameOverlayRenders.push_back(element); break;
+	case UIObjectType::EGameButton: _buttons.push_back(element); break;
+	case UIObjectType::EEditorOverlay: _editorRenders.push_back(element); break;
+	case UIObjectType::EEditorButton: _editorButtons.push_back(element); break;
+	case UIObjectType::EEditorTextureButton: _editorTextureButtons.push_back(element); break;
+	case UIObjectType::EDialog: _dialogRenders.push_back(element); break;
+	case UIObjectType::EEditorObjectButton: _objectButtons.push_back(element); break;
+	case UIObjectType::EChoiceUI: _choiceRenders.push_back(element); break;
+	case UIObjectType::EChoiceButton: _choiceButtons.push_back(element); break;
 
 	}
 	/**/
@@ -78,36 +78,36 @@ std::shared_ptr<UIObjectRenderData> UI::CreateHighlight(UIObjectType type, float
 	float xP = widthPercentage;
 	float yP = heightPercentage;
 
-	float offset = 0.005;
+	float offset = 0.005f;
 
 	hP -= offset;
-	wP -= offset * 1.55;
-	xP += offset * 2;
-	yP += offset * 2 * 1.55;
+	wP -= offset * 1.55f;
+	xP += offset * 2.f;
+	yP += offset * 2.f * 1.55f;
 
-	std::shared_ptr<UIObjectRenderData> element = CreateUIObject(UIObjectType::Selection, ETextureArray::EMapTexture, GameData::GetTextureIndex("highlight.png"), hP, wP, xP, yP, true);
+	std::shared_ptr<UIObjectRenderData> element = CreateUIObject(UIObjectType::ESelection, ETextureArray::EMapTexture, GameData::GetTextureIndex("highlight.png"), hP, wP, xP, yP, true);
 
 	return element;
 }
 
 void UI::CreateGameUI()
 {
-	_vnBox = CreateUIObject(UIObjectType::Dialog, ETextureArray::EMapTexture, GameData::GetTextureIndex("transparent.png"), 0.25f, 0.02f, 0.50f, 0.25f, false); // VN border
+	_vnBox = CreateUIObject(UIObjectType::EDialog, ETextureArray::EMapTexture, GameData::GetTextureIndex("transparent.png"), 0.25f, 0.02f, 0.50f, 0.25f, false); // VN border
 
-	_vnLeftCharacterBox = CreateUIObject(UIObjectType::Dialog, ETextureArray::ECharacterTexture, GameData::GetCharacterTextureIndex("emily_front.png"), 0.f, 0.0f, 0.25f, 0.75f, false);  // Left Character
-	_vnRightCharacterBox = CreateUIObject(UIObjectType::Dialog, ETextureArray::ECharacterTexture, GameData::GetCharacterTextureIndex("Arisu.png"), 0.75f, 0.0f, 0.25f, 0.75f, false); // Right Character
+	_vnLeftCharacterBox = CreateUIObject(UIObjectType::EDialog, ETextureArray::ECharacterTexture, GameData::GetCharacterTextureIndex("emily_front.png"), 0.f, 0.0f, 0.25f, 0.75f, false);  // Left Character
+	_vnRightCharacterBox = CreateUIObject(UIObjectType::EDialog, ETextureArray::ECharacterTexture, GameData::GetCharacterTextureIndex("Arisu.png"), 0.75f, 0.0f, 0.25f, 0.75f, false); // Right Character
 
-	_choiceBox = CreateUIObject(UIObjectType::ChoiceUI, ETextureArray::EMapTexture, GameData::GetTextureIndex("transparent.png"), 0.33f, 0.33f, 0.33f, 0.33f, false); // choice box
+	_choiceBox = CreateUIObject(UIObjectType::EChoiceUI, ETextureArray::EMapTexture, GameData::GetTextureIndex("transparent.png"), 0.33f, 0.33f, 0.33f, 0.33f, false); // choice box
 
 	{
-		float xP = 0.35;
+		float xP = 0.35f;
 		float yP = 0.55f;
 		float width = 0.29f;
 		float height = 0.08f;
-		CreateUIObject(UIObjectType::ChoiceButton, ETextureArray::EMapTexture, GameData::GetTextureIndex("transparent.png"), xP, yP, width, height, true, 0);
+		CreateUIObject(UIObjectType::EChoiceButton, ETextureArray::EMapTexture, GameData::GetTextureIndex("transparent.png"), xP, yP, width, height, true, 0);
 
 		yP -= 0.1f;
-		CreateUIObject(UIObjectType::ChoiceButton, ETextureArray::EMapTexture, GameData::GetTextureIndex("transparent.png"), xP, yP, width, height, true, 1);
+		CreateUIObject(UIObjectType::EChoiceButton, ETextureArray::EMapTexture, GameData::GetTextureIndex("transparent.png"), xP, yP, width, height, true, 1);
 	}
 
 
@@ -115,11 +115,11 @@ void UI::CreateGameUI()
 
 void UI::CreateEditorUI()
 {
-	CreateUIObject(UIObjectType::EditorOverlay, ETextureArray::EMapTexture, GameData::GetTextureIndex("transparent.png"), 0.9f, 0.f, 0.1f, 1.f, true); // editor button bg
+	CreateUIObject(UIObjectType::EEditorOverlay, ETextureArray::EMapTexture, GameData::GetTextureIndex("transparent.png"), 0.9f, 0.f, 0.1f, 1.f, true); // editor button bg
 
-	_collisionButton = CreateUIObject(UIObjectType::Typeless, ETextureArray::EMapTexture, GameData::GetTextureIndex("collisionOff.png"), 0.91f, 0.05f, 0.035f, 0.05f, true);
-	_layerButton = CreateUIObject(UIObjectType::Typeless, ETextureArray::EMapTexture, GameData::GetTextureIndex("StoneFloor01.png"), 0.95f, 0.05f, 0.035f, 0.05f, true);
-	_viewButton = CreateUIObject(UIObjectType::Typeless, ETextureArray::EMapTexture, GameData::GetTextureIndex("ObjectView.png"), 0.95f, 0.90f, 0.035f, 0.05f, true);
+	_collisionButton = CreateUIObject(UIObjectType::ETypeless, ETextureArray::EMapTexture, GameData::GetTextureIndex("collisionOff.png"), 0.91f, 0.05f, 0.035f, 0.05f, true);
+	_layerButton = CreateUIObject(UIObjectType::ETypeless, ETextureArray::EMapTexture, GameData::GetTextureIndex("StoneFloor01.png"), 0.95f, 0.05f, 0.035f, 0.05f, true);
+	_viewButton = CreateUIObject(UIObjectType::ETypeless, ETextureArray::EMapTexture, GameData::GetTextureIndex("ObjectView.png"), 0.95f, 0.90f, 0.035f, 0.05f, true);
 
 	float heightP = 0.1f;
 	float widthP = heightP * 0.545f;
@@ -131,7 +131,7 @@ void UI::CreateEditorUI()
 	{
 		if (GameData::GetTextureArray()->GetSize() > i)
 		{
-			CreateUIObject(UIObjectType::EditorTextureButton, ETextureArray::EMapTexture, i, xP, yPplus, widthP, heightP, true, i);
+			CreateUIObject(UIObjectType::EEditorTextureButton, ETextureArray::EMapTexture, i, xP, yPplus, widthP, heightP, true, i);
 			yPplus += 0.13f;
 		}
 		else break;
@@ -143,7 +143,7 @@ void UI::CreateEditorUI()
 	{
 		if (GameData::GetMapLoader()->_entityTypes.size() > i)
 		{
-			CreateUIObject(UIObjectType::EditorObjectButton, ETextureArray::EMapTexture, GameData::GetMapLoader()->_entityTypes[i]->GetFirstTexture(), xP, yPplus, widthP, heightP, true, i);
+			CreateUIObject(UIObjectType::EEditorObjectButton, ETextureArray::EMapTexture, GameData::GetMapLoader()->_entityTypes[i]->GetFirstTexture(), xP, yPplus, widthP, heightP, true, i);
 			yPplus += 0.13f;
 		}
 		else break;
@@ -220,7 +220,6 @@ void UI::DrawEditorButtons()
 				
 				if (GameData::GetTextureArray()->GetSize() > id)
 				{
-					//render->SetRenderData(GameData::GetMap()->_tileTypes[id]);
 					render->SetTexture(id);
 
 					if (render->Update())
@@ -281,7 +280,6 @@ void UI::DrawEditorButtons()
 		}
 	}
 
-	//if(_viewButton->GetVA() != nullptr) std::cout << "nullptr" << std::endl;
 	if (_viewButton != nullptr && _viewButton->GetVA() != nullptr && _viewButton->GetIB() != nullptr)
 	{
 		if (_view == 0) _viewButton->SetTexture(GameData::GetTextureIndex("ObjectView.png"));
@@ -298,7 +296,7 @@ void UI::DrawEditorButtons()
 ClickResponse UI::IdentifyClick(glm::vec2 loc, int& elementID)
 {
 	int i = 0;
-	int newY = loc.y;
+	int newY = int(loc.y);
 
 	if (_editor)
 	{
@@ -322,7 +320,7 @@ ClickResponse UI::IdentifyClick(glm::vec2 loc, int& elementID)
 
 				std::cout << "editor button " << elementID << " clicked!" << std::endl;
 				_selectedObject = render;
-				return EditorButtonClick;
+				return EEditorButtonClick;
 			}
 			i++;
 		}
@@ -336,7 +334,7 @@ ClickResponse UI::IdentifyClick(glm::vec2 loc, int& elementID)
 			{
 				std::cout << "editor button " << elementID << " clicked!" << std::endl;
 				elementID = i;
-				return EditorButtonClick;
+				return EEditorButtonClick;
 			}
 			i++;
 		}
@@ -351,7 +349,7 @@ ClickResponse UI::IdentifyClick(glm::vec2 loc, int& elementID)
 				std::cout << "button clicked!" << std::endl;
 				elementID = i;
 				//_selectedObject = render;
-				return EditorButtonClick;
+				return EEditorButtonClick;
 			}
 			i++;
 		}
@@ -371,7 +369,7 @@ ClickResponse UI::IdentifyClick(glm::vec2 loc, int& elementID)
 				_collision = true;
 			}
 
-			return EditorButtonClick;
+			return EEditorButtonClick;
 		}
 
 		// Layer Button
@@ -388,7 +386,7 @@ ClickResponse UI::IdentifyClick(glm::vec2 loc, int& elementID)
 				_layer = 1;
 			}
 
-			return EditorButtonClick;
+			return EEditorButtonClick;
 		}
 
 		// View Button
@@ -405,7 +403,7 @@ ClickResponse UI::IdentifyClick(glm::vec2 loc, int& elementID)
 				_view = 1;
 			}
 
-			return EditorButtonClick;
+			return EEditorButtonClick;
 		}
 
 		// UI elements that consume clicks
@@ -417,7 +415,7 @@ ClickResponse UI::IdentifyClick(glm::vec2 loc, int& elementID)
 				std::cout << "UI consumed the click!" << std::endl;
 				elementID = i;
 
-				return StaticElementClick;
+				return EStaticElementClick;
 			}
 			i++;
 		}
@@ -430,7 +428,7 @@ ClickResponse UI::IdentifyClick(glm::vec2 loc, int& elementID)
 			{
 				std::cout << "editor UI consumed the click!" << std::endl;
 				elementID = i;
-				return StaticElementClick;
+				return EStaticElementClick;
 			}
 			i++;
 		}
@@ -448,7 +446,7 @@ ClickResponse UI::IdentifyClick(glm::vec2 loc, int& elementID)
 			{
 				std::cout << "choice button " << i << " clicked!" << std::endl;
 				elementID = i;
-				return ButtonClick;
+				return EButtonClick;
 			}
 			i++;
 		}
@@ -457,7 +455,7 @@ ClickResponse UI::IdentifyClick(glm::vec2 loc, int& elementID)
 
 	//_selectedObject = nullptr;
 	elementID = -1;
-	return NoneClick;
+	return ENoneClick;
 }
 
 void UI::UpdateUIOnFramebufferResize(int newWidth, int newHeight) 
@@ -477,7 +475,7 @@ void UI::UpdateUIOnFramebufferResize(int newWidth, int newHeight)
 		render->xEnd *= scaleX;
 		render->yStart *= scaleY;
 		render->yEnd *= scaleY;
-		//render->Updater(_shader);
+
 	}
 
 	// Store the new framebuffer size for future reference
@@ -567,7 +565,7 @@ void UI::DrawObjects()
 				float offset = abs(_choiceButtons[ti]->yEnd - _choiceButtons[ti]->yStart) / 2;
 				float y = _choiceButtons[ti]->yEnd - offset;
 				
-				_choiceText[ti]->RenderText(choices[ti].text, x, y);
+				_choiceText[ti]->RenderText(choices[ti].text, int(x), int(y));
 			}
 		}	
 	}
@@ -593,7 +591,7 @@ void UI::DrawObjects()
 			y = _vnBox->yEnd - 75;
 		}
 		
-		_text->RenderText(GameData::GetDialogText(), x, y);
+		_text->RenderText(GameData::GetDialogText(), int(x), int(y));
 	}
 
 	

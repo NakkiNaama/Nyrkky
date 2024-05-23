@@ -103,7 +103,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>..\bin\Debug-windows-x86_64\Nyrkky\Nyrkky.lib</ImportLibrary>
       <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\freetype;$(SolutionDir)Dependencies\GLFW\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>glfw3.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;freetype.lib</AdditionalDependencies>
+      <AdditionalDependencies>/NODEFAULTLIB:MSVCRT;glfw3.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;freetype.lib</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>
@@ -125,7 +125,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>..\bin\Release-windows-x86_64\Nyrkky\Nyrkky.lib</ImportLibrary>
-      <AdditionalDependencies>glfw3.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;freetype.lib</AdditionalDependencies>
+      <AdditionalDependencies>/NODEFAULTLIB:MSVCRT;glfw3.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;freetype.lib</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>IF EXIST ..\bin\Release-windows-x86_64\Nyrkky\Nyrkky.dll\ (xcopy /Q /E /Y /I ..\bin\Release-windows-x86_64\Nyrkky\Nyrkky.dll ..\bin\Release-windows-x86_64\NakkiGame &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Release-windows-x86_64\Nyrkky\Nyrkky.dll ..\bin\Release-windows-x86_64\NakkiGame &gt; nul)</Command>
@@ -147,7 +147,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>..\bin\Dist-windows-x86_64\Nyrkky\Nyrkky.lib</ImportLibrary>
       <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\freetype;$(SolutionDir)Dependencies\GLFW\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>glfw3.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;freetype.lib</AdditionalDependencies>
+      <AdditionalDependencies>/NODEFAULTLIB:MSVCRT;glfw3.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;freetype.lib</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>IF EXIST ..\bin\Dist-windows-x86_64\Nyrkky\Nyrkky.dll\ (xcopy /Q /E /Y /I ..\bin\Dist-windows-x86_64\Nyrkky\Nyrkky.dll ..\bin\Dist-windows-x86_64\NakkiGame &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Dist-windows-x86_64\Nyrkky\Nyrkky.dll ..\bin\Dist-windows-x86_64\NakkiGame &gt; nul)</Command>

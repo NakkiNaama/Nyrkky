@@ -397,12 +397,12 @@ private:
 
 	void ImpAddCharacter(std::shared_ptr<CharacterEntity> character)
 	{
-		characterEntities.push_back(character);
+		characterTypes.push_back(character);
 	}
 
 	std::shared_ptr<CharacterEntity> ImpGetCharacter(ECharacter character)
 	{
-		for (auto c : characterEntities)
+		for (auto c : characterTypes)
 		{
 			if (c->ID == character)
 			{
@@ -414,7 +414,7 @@ private:
 
 	std::vector<std::shared_ptr<CharacterEntity>> ImpGetCharacters()
 	{
-		return characterEntities;
+		return characterTypes;
 	}
 
 	void ImpSetCurrentMap(int id)
@@ -521,16 +521,16 @@ private:
 		auto& indexMap = textureIndexMap;
 		auto it = indexMap.find(textureName);
 		if (it != indexMap.end())
-			return it->second;
-		return std::numeric_limits<size_t>::max();
+			return uint32_t(it->second);
+		return std::numeric_limits<uint32_t>::max();
 	}
 
 	uint32_t ImpGetCharacterTextureIndex(const std::string& textureName) {
 		auto& indexMap = characterTextureIndexMap;
 		auto it = indexMap.find(textureName);
 		if (it != indexMap.end())
-			return it->second;
-		return std::numeric_limits<size_t>::max();
+			return uint32_t(it->second);
+		return std::numeric_limits<uint32_t>::max();
 	}
 
 	void ImpAddToTextureIndex(std::string fileName, size_t i)
@@ -584,7 +584,7 @@ private:
 	std::shared_ptr<Renderer> renderer;
 
 	std::shared_ptr<CharacterEntity> Player;
-	std::vector<std::shared_ptr<CharacterEntity>> characterEntities;
+	std::vector<std::shared_ptr<CharacterEntity>> characterTypes;
 	glm::vec2 cameraPosition;
 
 	std::shared_ptr<TextureArray> textureArray;

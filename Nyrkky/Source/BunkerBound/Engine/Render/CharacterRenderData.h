@@ -17,7 +17,7 @@ public:
 
 protected:
 	void AddVertex(std::vector<float>& x, float v1, float v2, float v3, float v4, float texIndex) override;
-	void AddIndex(std::vector<unsigned int>& x, float v1, float v2, float v3) override;
+	void AddIndex(std::vector<unsigned int>& x, int v1, int v2, int v3) override;
 	//std::unique_ptr<Texture> texture;
 	Direction _lastMovement = Direction::Backwards;
 	std::vector<uint32_t> _textures;

@@ -27,11 +27,10 @@ UIObjectRenderData::UIObjectRenderData(uint32_t arrayID, uint32_t texture, float
     AddIndex(indices, 3, 2, 1);
 
     /**/
-    unsigned int vertexArrayID;
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-    _vb = new VertexBuffer(positions.data(), positions.size() * sizeof(float), true);
+    _vb = new VertexBuffer(positions.data(), unsigned int(positions.size()) * sizeof(float), true);
     _layout = new VertexBufferLayout();
     _va = new VertexArray();
     // --------------------------------------------------------------------------
@@ -44,7 +43,7 @@ UIObjectRenderData::UIObjectRenderData(uint32_t arrayID, uint32_t texture, float
     // -----
 
     // Setup Index buffer
-    _ib = new IndexBuffer(indices.data(), indices.size());
+    _ib = new IndexBuffer(indices.data(), unsigned int(indices.size()));
     _ib->Bind();
 
     _initialized = true;
@@ -85,7 +84,7 @@ bool UIObjectRenderData::Update()
         }
 
         std::vector<float> positions;
-        int texIndex = _textureID;
+        float texIndex = float(_textureID);
 
         AddVertex(positions, xStart, yEnd,
             0.0f, 0.0f, texIndex);
@@ -100,7 +99,7 @@ bool UIObjectRenderData::Update()
             1.0f, 1.0f, texIndex);
 
         _vb->Bind();
-        _vb->Update(positions.data(), positions.size() * sizeof(float));
+        _vb->Update(positions.data(), unsigned int(positions.size()) * sizeof(float));
         return true;
     }
     else std::cout << "generic object renderer not initalized!" << std::endl;
@@ -124,7 +123,7 @@ void UIObjectRenderData::AddVertex(std::vector<float>& x, float v1, float v2, fl
     x.push_back(texIndex);
 }
 
-void UIObjectRenderData::AddIndex(std::vector<unsigned int>& x, float v1, float v2, float v3) {
+void UIObjectRenderData::AddIndex(std::vector<unsigned int>& x, int v1, int v2, int v3) {
     x.push_back(v1);
     x.push_back(v2);
     x.push_back(v3);

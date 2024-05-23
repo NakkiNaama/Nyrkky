@@ -18,10 +18,10 @@ void GenericObjectRenderData::Init(int PosX, int PosY)
 {
     // Define Buffer
     std::vector<float> positions;
-    int TileSize = 64;
+    float TileSize = 64;
     std::vector<unsigned int> indices;
 
-    int textureID = 11;
+    float textureID = 11;
 
     AddVertex(positions, TileSize * PosX, -TileSize * PosY,
         0.0f, 0.0f, textureID);
@@ -40,11 +40,10 @@ void GenericObjectRenderData::Init(int PosX, int PosY)
 
 
     /**/
-    unsigned int vertexArrayID;
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-    _vb = new VertexBuffer(positions.data(), positions.size() * sizeof(float), true);
+    _vb = new VertexBuffer(positions.data(), unsigned int(positions.size()) * unsigned int(sizeof(float)), true);
     _layout = new VertexBufferLayout();
     _va = new VertexArray();
     // --------------------------------------------------------------------------
@@ -57,7 +56,7 @@ void GenericObjectRenderData::Init(int PosX, int PosY)
     // -----
 
     // Setup Index buffer
-    _ib = new IndexBuffer(indices.data(), indices.size());
+    _ib = new IndexBuffer(indices.data(), unsigned int(indices.size()));
     _ib->Bind();
     // -----
 
@@ -72,9 +71,9 @@ bool GenericObjectRenderData::Activate(int PosX, int PosY)
     if (_initialized)
     {
         GameData::GetShader()->Bind();
-        int textureID = _texID;
+        float textureID = float(_texID);
 
-        int TileSize = 64;
+        float TileSize = 64;
         std::vector<float> positions;
 
         
@@ -91,7 +90,7 @@ bool GenericObjectRenderData::Activate(int PosX, int PosY)
             1.0f, 1.0f, textureID);
         
         _vb->Bind();
-        _vb->Update(positions.data(), positions.size() * sizeof(float));
+        _vb->Update(positions.data(), unsigned int(positions.size()) * unsigned int(sizeof(float)));
         return true;
     }
     else std::cout << "generic object renderer not initalized!" << std::endl;
@@ -106,7 +105,7 @@ void GenericObjectRenderData::AddVertex(std::vector<float>& x, float v1, float v
     x.push_back(texIndex);
 }
 
-void GenericObjectRenderData::AddIndex(std::vector<unsigned int>& x, float v1, float v2, float v3) {
+void GenericObjectRenderData::AddIndex(std::vector<unsigned int>& x, int v1, int v2, int v3) {
     x.push_back(v1);
     x.push_back(v2);
     x.push_back(v3);

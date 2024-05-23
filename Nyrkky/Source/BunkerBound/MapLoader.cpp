@@ -112,7 +112,7 @@ void MapLoader::LoadMap(const char* path, int& gridSize, std::vector<Tile> &tile
     }
     else std::cerr << "Map that were to be loaded could not be found!" << std::endl;
 
-    int numColumns = sqrt(gridSize);
+    int numColumns = int(sqrt(gridSize));
     gridSize = gridSize / numColumns;
 
 }

@@ -130,7 +130,7 @@ void Application::MouseScrollEvent(double xoffset, double yoffset)
     {
         if (xoffset > 0) yoffset = 1;
         else if (xoffset < 0) yoffset = -1;
-        GameData::GetUI()->AddTextureOffset(yoffset);
+        GameData::GetUI()->AddTextureOffset(int(yoffset));
     }
     else
     {
@@ -138,7 +138,7 @@ void Application::MouseScrollEvent(double xoffset, double yoffset)
         {
             if (xoffset > 0) yoffset = 1;
             else if (xoffset < 0) yoffset = -1;
-            GameData::GetUI()->AddObjectOffset(yoffset);
+            GameData::GetUI()->AddObjectOffset(int(yoffset));
         }      
     }
 }
@@ -154,8 +154,8 @@ int Application::GetClickedTile()
     {
         if (GameData::GetMap() != nullptr)
         {
-            int x = abs(location.x / GameData::GetMap()->GetTileSize());
-            int y = abs(location.y / GameData::GetMap()->GetTileSize());
+            int x = int(abs(location.x / GameData::GetMap()->GetTileSize()));
+            int y = int(abs(location.y / GameData::GetMap()->GetTileSize()));
             if (x < GameData::GetMap()->GetGridSize() && y < GameData::GetMap()->GetGridSize())
             {
                 return y * GameData::GetMap()->GetGridSize() + x;
@@ -200,12 +200,6 @@ void Application::Run()
     if (Window != nullptr) {
         while (!glfwWindowShouldClose(Window))
         {
-            /*
-            std::cout << "map01: " << GameData::GetMaps()[0]->IsActive() << std::endl;
-            std::cout << "map02: " << GameData::GetMaps()[1]->IsActive() << std::endl;
-            std::cout << "current: " << GameData::GetMap()->IsActive() << std::endl;
-            */
-            //std::cout << "current: " << GameData::GetMap()->ID << std::endl;
 
             float deltaTime = timer.GetDeltaTime();
             HandleKeyPress(deltaTime);
@@ -291,7 +285,11 @@ void Application::InitalizeGameStartingState()
 
     Event EventArisu = Event(EventTalk, 0);
     textures.push_back(GameData::GetCharacterTextureIndex("Arisu.png"));
-    std::shared_ptr<CharacterEntity> arisu = std::make_shared<CharacterEntity>("Arisu", ECharacter::Emily, EventArisu, 4, 4, textures);
+    textures.push_back(GameData::GetCharacterTextureIndex("Arisu.png"));
+    textures.push_back(GameData::GetCharacterTextureIndex("Arisu.png"));
+    textures.push_back(GameData::GetCharacterTextureIndex("Arisu.png"));
+
+    std::shared_ptr<CharacterEntity> arisu = std::make_shared<CharacterEntity>("Arisu", ECharacter::Arisu, EventArisu, 4, 4, textures);
     GameData::AddCharacter(arisu);
     textures.clear();
 
@@ -299,11 +297,11 @@ void Application::InitalizeGameStartingState()
     std::shared_ptr<MapLoader> mapLoader = std::make_shared<MapLoader>();
     GameData::SetMapLoader(mapLoader);
 
-    GameData::AddMap(std::make_shared<MapEntity>("Maps/Map01.xml", 0));
-    GameData::GetMaps().back()->InitMap(0, true);
+    GameData::AddMap(std::make_shared<MapEntity>("Maps/Map01.xml", int(GameData::GetMaps().size())));
+    GameData::GetMaps().back()->InitMap(int(GameData::GetMaps().size() - 1), true);
     
-    GameData::AddMap(std::make_shared<MapEntity>("Maps/Map02.xml", 1));
-    GameData::GetMaps().back()->InitMap(1);
+    GameData::AddMap(std::make_shared<MapEntity>("Maps/Map02.xml", int(GameData::GetMaps().size())));
+    GameData::GetMaps().back()->InitMap(int(GameData::GetMaps().size() - 1));
 
     /* UI */
     int width, height;
@@ -315,6 +313,9 @@ void Application::InitalizeGameStartingState()
     std::shared_ptr<Story> story = std::make_shared<Story>();
     GameData::SetStory(story);
     /* ---------- */
+
+    std::shared_ptr<TextEntity> textEntity = std::make_shared<TextEntity>(0, 0, 24);
+    _textEntities.push_back(textEntity);
 
     /* camera */
     int center = GameData::GetMap()->GetGridSize() / 2 * GameData::GetMap()->GetTileSize();
@@ -341,8 +342,8 @@ glm::vec2 Application::ScreenToWorld()
     int windowWidth, windowHeight;
     glfwGetFramebufferSize(Window, &windowWidth, &windowHeight);
 
-    float normalizedX = (2.0f * mouseX / windowWidth) - 1.0f;
-    float normalizedY = 1.0f - (2.0f * mouseY / windowHeight);
+    double normalizedX = (2.0f * mouseX / windowWidth) - 1.0f;
+    double normalizedY = 1.0f - (2.0f * mouseY / windowHeight);
     glm::vec4 normalizedPositions(normalizedX, normalizedY, 0.0f, 1.0f);
 
     glm::mat4 inverseProjection = glm::inverse(GameData::GetProj());
@@ -368,16 +369,16 @@ void Application::LeftClick(bool ctrl)
         ClickResponse click = GameData::GetUI()->IdentifyClick(glm::vec2(x, y), id);
         switch (click)
         {
-        case NoneClick: break;
-        case GameClick:
+        case ENoneClick: break;
+        case EGameClick:
             break;
-        case ButtonClick:
+        case EButtonClick:
             uiClick = true;
             GameData::GetStory()->ChoiceSelected(id);
             GameData::SetIsChoice(false);
             std::cout << "game button clicked" << std::endl;
             break;
-        case EditorButtonClick:
+        case EEditorButtonClick:
             if (_editor)
             {
                 uiClick = true;
@@ -388,7 +389,7 @@ void Application::LeftClick(bool ctrl)
                 }
             }
             break;
-        case StaticElementClick:
+        case EStaticElementClick:
             uiClick = true;
             break;
         }
@@ -405,6 +406,7 @@ void Application::LeftClick(bool ctrl)
             }
             else
             {
+                if (GameData::IsDialogVisible()) return;
                 int tile = GetClickedTile();
                 if (tile != -1)
                 {

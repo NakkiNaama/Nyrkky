@@ -21,7 +21,7 @@ public:
 		_collision = other._collision;
 		Render = std::make_shared<GenericObjectRenderData>();
 		Render->Init(PosX, PosY);
-		Render->SetTexture(_textures[0]);
+		Render->SetTexture(uint32_t(_textures[0]));
 
 	}
 	

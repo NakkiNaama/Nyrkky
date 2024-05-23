@@ -5,6 +5,7 @@
 #include "Engine/Render/UIObjectRenderData.h"
 #include "Engine/TileTypeList.h"
 #include "MapEntity.h"
+#include "Inventory.h"
 #include <filesystem>
 
 
@@ -16,26 +17,26 @@ enum ETextureArray
 
 enum ClickResponse
 {
-	NoneClick, 
-	GameClick,
-	ButtonClick,
-	EditorButtonClick,
-	StaticElementClick
+	ENoneClick, 
+	EGameClick,
+	EButtonClick,
+	EEditorButtonClick,
+	EStaticElementClick
 };
 
 enum UIObjectType
 {
-	Typeless,
-	EditorOverlay,
-	EditorButton,
-	EditorTextureButton,
-	EditorObjectButton,
-	Selection,
-	GameOverlay,
-	Dialog,
-	GameButton,
-	ChoiceUI,
-	ChoiceButton
+	ETypeless,
+	EEditorOverlay,
+	EEditorButton,
+	EEditorTextureButton,
+	EEditorObjectButton,
+	ESelection,
+	EGameOverlay,
+	EDialog,
+	EGameButton,
+	EChoiceUI,
+	EChoiceButton
 };
 
 
@@ -65,7 +66,7 @@ public:
 
 	bool IsHoveringEditorUI(glm::vec2 loc) const
 	{
-		int newY = loc.y;
+		float newY = loc.y;
 
 		for (auto& render : _gameOverlayRenders)
 		{

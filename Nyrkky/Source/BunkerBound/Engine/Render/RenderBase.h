@@ -21,7 +21,7 @@ public:
 	virtual bool Activate(int PosX, int PosY) = 0;
 
 	virtual void AddVertex(std::vector<float>& x, float v1, float v2, float v3, float v4, float texIndex) = 0;
-	virtual void AddIndex(std::vector<unsigned int>& x, float v1, float v2, float v3) = 0;
+	virtual void AddIndex(std::vector<unsigned int>& x, int v1, int v2, int v3) = 0;
 	
 	VertexArray* GetVA() const { return _va; }
 	VertexBuffer* GetVB() const { return _vb; }

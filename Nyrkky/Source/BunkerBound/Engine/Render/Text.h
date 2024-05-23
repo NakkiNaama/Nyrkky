@@ -26,7 +26,7 @@ class Text
 {
 public:
 
-    void RenderText(std::string text, float x, float y, glm::mat4 viewMat = glm::mat4(1.0f), float scale = 1, glm::vec3 color = glm::vec3(1.0f, 1.0f, 1.0f));
+    void RenderText(std::string text, int x, int y, glm::mat4 viewMat = glm::mat4(1.0f), float scale = 1, glm::vec3 color = glm::vec3(1.0f, 1.0f, 1.0f));
 
     bool Init(int fontSize);
 

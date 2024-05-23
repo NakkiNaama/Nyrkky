@@ -20,7 +20,7 @@ public:
 	float xEnd;
 	float yEnd;
 
-	void SetTexture(size_t x)
+	void SetTexture(uint32_t x)
 	{
 		_textureID = x;
 	}
@@ -35,11 +35,11 @@ public:
 
 protected:
 	void AddVertex(std::vector<float>& x, float v1, float v2, float v3, float v4, float texIndex) override;
-	void AddIndex(std::vector<unsigned int>& x, float v1, float v2, float v3) override;
+	void AddIndex(std::vector<unsigned int>& x, int v1, int v2, int v3) override;
 
 
-	size_t _textureID = 0;
-	size_t _textureArray = 0;
+	uint32_t _textureID = 0;
+	uint32_t _textureArray = 0;
 	std::shared_ptr<UIObjectRenderData> _highlight = nullptr;
 
 

@@ -97,7 +97,7 @@ public:
 protected:
 
 	int GridSize = 12;
-	float TileSize = 64;
+	int TileSize = 64;
 	bool Active = false;
 	//int ID = 0;
 
