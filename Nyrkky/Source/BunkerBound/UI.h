@@ -5,7 +5,6 @@
 #include "Engine/Render/UIObjectRenderData.h"
 #include "Engine/TileTypeList.h"
 #include "MapEntity.h"
-#include "Inventory.h"
 #include <filesystem>
 
 
@@ -36,7 +35,8 @@ enum UIObjectType
 	EDialog,
 	EGameButton,
 	EChoiceUI,
-	EChoiceButton
+	EChoiceButton,
+	EInventoryOverlay
 };
 
 
@@ -128,6 +128,7 @@ public:
 protected:
 
 	std::vector<std::shared_ptr<UIObjectRenderData>> _choiceButtons;
+	std::vector<std::shared_ptr<UIObjectRenderData>> _inventoryButtons;
 
 	std::vector<std::shared_ptr<UIObjectRenderData>> _editorTextureButtons;
 	std::vector<std::shared_ptr<UIObjectRenderData>> _objectButtons;
@@ -149,7 +150,7 @@ protected:
 	std::shared_ptr<UIObjectRenderData> _vnRightCharacterBox;
 
 	std::shared_ptr<UIObjectRenderData> _choiceBox = nullptr;
-
+	std::shared_ptr<UIObjectRenderData> _itemBox = nullptr;
 
 	int _frameBufferX, _frameBufferY;
 

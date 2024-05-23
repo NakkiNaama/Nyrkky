@@ -46,6 +46,7 @@ void TileEntity::ActivateEvent()
 
 	case EventChest: 
 		_event.Type = EventNone;
+		GameData::GetInventory()->AddItem(EKey);
 		if (_textures.size() > 1) Render->SetTexture(_textures[1]);
 
 		break;

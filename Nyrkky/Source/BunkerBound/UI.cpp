@@ -64,6 +64,7 @@ std::shared_ptr<UIObjectRenderData> UI::CreateUIObject(UIObjectType type, uint32
 	case UIObjectType::EEditorObjectButton: _objectButtons.push_back(element); break;
 	case UIObjectType::EChoiceUI: _choiceRenders.push_back(element); break;
 	case UIObjectType::EChoiceButton: _choiceButtons.push_back(element); break;
+	case UIObjectType::EInventoryOverlay: _inventoryButtons.push_back(element); break;
 
 	}
 	/**/
@@ -110,6 +111,22 @@ void UI::CreateGameUI()
 		CreateUIObject(UIObjectType::EChoiceButton, ETextureArray::EMapTexture, GameData::GetTextureIndex("transparent.png"), xP, yP, width, height, true, 1);
 	}
 
+	_itemBox = CreateUIObject(UIObjectType::EGameOverlay, ETextureArray::EMapTexture, GameData::GetTextureIndex("transparent.png"), 0.0f, 0.0f, 0.2f, 0.1f, false); // Item box
+
+	{
+		float heightP = 0.1f / 2;
+		float widthP = heightP * 0.545f;
+		float xP = 0.006;
+		float yP = 0.025f;
+		float xPplus = xP;
+
+		for (int i = 0; i < 5; i++)
+		{
+			CreateUIObject(UIObjectType::EInventoryOverlay, ETextureArray::EMapTexture, 0, xPplus, yP, widthP, heightP, true, i);
+			xPplus += 0.04f;
+		}
+
+	}
 
 }
 
@@ -529,6 +546,23 @@ void UI::DrawObjects()
 				GameData::GetRenderer()->Draw(render->GetVA(), render->GetIB());
 			}
 		}
+	}
+
+	int itemCount = 0;
+	for (auto& render : _inventoryButtons)
+	{
+		if (render != nullptr && render->GetVA() != nullptr && render->GetIB() != nullptr)
+		{
+			if (GameData::GetInventory()->GetItems().size() > itemCount)
+			{
+				render->SetTexture(GameData::GetInventory()->GetItems()[itemCount]->TextureID);
+				if (render->Update())
+				{
+					GameData::GetRenderer()->Draw(render->GetVA(), render->GetIB());
+				}
+			}
+		}
+		itemCount++;
 	}
 	
 	if (GameData::IsChoice())

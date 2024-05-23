@@ -307,11 +307,15 @@ void Application::InitalizeGameStartingState()
     int width, height;
     glfwGetFramebufferSize(Window, &width, &height);
 
+    std::shared_ptr<Inventory> inv = std::make_shared<Inventory>();
+    GameData::InitalizeInventory(inv);
+
     std::shared_ptr<UI> ui = std::make_shared<UI>(width, height);
     GameData::InitalizeUI(ui);
 
     std::shared_ptr<Story> story = std::make_shared<Story>();
     GameData::SetStory(story);
+
     /* ---------- */
 
     std::shared_ptr<TextEntity> textEntity = std::make_shared<TextEntity>(0, 0, 24);
@@ -488,7 +492,12 @@ void Application::StaticDelayPress(float DeltaTime)
         {
             InteractWithObject();
             _staticDelayTimer = 0;
+        }
 
+        if (_pressedKeys.count(GLFW_KEY_P))
+        {
+            GameData::GetInventory()->AddItem(EKey);
+            _staticDelayTimer = 0;
         }
 
         if (_pressedKeys.count(GLFW_KEY_J))

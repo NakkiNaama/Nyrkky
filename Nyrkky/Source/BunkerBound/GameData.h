@@ -5,6 +5,7 @@
 #include "DialogManager.h"
 #include "CharacterEntity.h"
 #include "MapLoader.h"
+#include "Inventory.h"
 #include "Engine/TextureArray.h"
 
 
@@ -254,7 +255,17 @@ public:
 	{
 		return Get().GameData::ImpGetCharacterTextureName(index);
 	}
-
+	
+	static std::shared_ptr<Inventory> GetInventory()
+	{
+		return Get().ImpGetInventory();
+	}
+	
+	static void InitalizeInventory(std::shared_ptr<Inventory> inv)
+	{
+		Get().GameData::ImpInitalizeInventory(inv);
+	}
+	
 private:
 
 	void ImpAddMap(std::shared_ptr<MapEntity> pmap)
@@ -562,8 +573,17 @@ private:
 		}
 		return "";
 	}
-
-
+	
+	std::shared_ptr<Inventory> ImpGetInventory()
+	{
+		return inventory;
+	}
+	
+	void ImpInitalizeInventory(std::shared_ptr<Inventory> inv)
+	{
+		inventory = inv;
+	}
+	
 	std::vector<std::shared_ptr<MapEntity>> maps;
 	std::shared_ptr<MapEntity> currentMap;
 
@@ -601,6 +621,7 @@ private:
 	//std::string dialogText = "Modify this text";
 	
 	std::shared_ptr<Story> story;
+	std::shared_ptr<Inventory> inventory;
 
 };
 
