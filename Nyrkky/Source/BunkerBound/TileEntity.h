@@ -2,7 +2,7 @@
 #include "Entity.h"
 #include "Engine/Render/GenericObjectRenderData.h"
 #include "Engine/TileTypeList.h"
-
+#include "Inventory.h"
 
 
 class TileEntity : public Entity
@@ -84,8 +84,9 @@ protected:
 
 	std::vector<uint32_t> _textures;
 	bool _collision = false;
-
+	bool _ignoreReq = false;
 	std::string _name;
+	bool ConsumeItem(EItem KeyItem);
 
 private:
 

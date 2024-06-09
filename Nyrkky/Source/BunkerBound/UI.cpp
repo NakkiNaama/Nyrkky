@@ -7,8 +7,11 @@ UI::UI(int frameBufferX, int frameBufferY)
 	_frameBufferX = frameBufferX;
 	_frameBufferY = frameBufferY;
 
-	_text = std::make_unique<Text>();
-	_text->Init(_dialogTextSize);
+	_dialogText = std::make_unique<Text>();
+	_dialogText->Init(_dialogTextSize);
+
+	_inputText = std::make_unique<Text>();
+	_inputText->Init(_dialogTextSize);
 
 	// Choice Text Init
 	for (int i = 0; i < 4; i++)
@@ -625,9 +628,10 @@ void UI::DrawObjects()
 			y = _vnBox->yEnd - 75;
 		}
 		
-		_text->RenderText(GameData::GetDialogText(), int(x), int(y));
+		_dialogText->RenderText(GameData::GetDialogText(), int(x), int(y));
 	}
 
+	_inputText->RenderText(GameData::GetInputText(), 300, 300);
 	
 }
 

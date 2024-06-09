@@ -158,6 +158,16 @@ public:
 		Get().ImpSetChoiceLines();
 	}
 
+	static std::string GetInputText()
+	{
+		return Get().input;
+	}
+
+	static void SetInputText(std::string text)
+	{
+		Get().ImpSetInputText(text);
+	}
+
 	static void AddCharacter(std::shared_ptr<CharacterEntity> character)
 	{
 		Get().ImpAddCharacter(character);
@@ -583,6 +593,11 @@ private:
 		}
 		return "";
 	}
+
+	void ImpSetInputText(std::string text)
+	{
+		input = text;
+	}
 	
 	std::shared_ptr<Inventory> ImpGetInventory()
 	{
@@ -645,6 +660,7 @@ private:
 	//std::string dialogText = "Modify this text";
 	
 	std::shared_ptr<Story> story;
+	std::string input = "generic text";
 	std::shared_ptr<Inventory> inventory;
 
 };

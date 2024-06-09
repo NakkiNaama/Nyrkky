@@ -507,6 +507,11 @@ void Application::ChangeOffset(int offset, bool cursorPosCheck)
 
 void Application::HandleKeyPress(float DeltaTime)
 {
+    if (_inputMode) 
+    {
+        StaticDelayPressWrite(DeltaTime);
+        return;
+    }
     if (!_mouseInUse)
     {
         if (!GameData::IsDialogVisible())
@@ -559,6 +564,12 @@ void Application::StaticDelayPress(float DeltaTime)
         if (_pressedKeys.count(GLFW_KEY_K))
         {
             GameData::ChangeMap(0);
+            _staticDelayTimer = 0;
+        }
+
+        if (_pressedKeys.count(GLFW_KEY_I))
+        {
+            _inputMode = true;
             _staticDelayTimer = 0;
         }
 
@@ -621,6 +632,33 @@ void Application::StaticDelayPressDialog(float DeltaTime)
         {
             _staticDelayTimer = 0;
             DialogExecute();
+        }
+    }
+}
+
+void Application::StaticDelayPressWrite(float DeltaTime)
+{
+    _staticDelayTimer += DeltaTime;
+
+    if (_staticDelayTimer > 0.5)
+    {
+        // Check if any key in the _pressedKeys set is a normal symbol
+        for (const auto& key : _pressedKeys)
+        {
+            if ((key >= GLFW_KEY_SPACE && key <= GLFW_KEY_Z) ||
+                (key >= GLFW_KEY_LEFT_BRACKET && key <= GLFW_KEY_GRAVE_ACCENT) ||
+                (key >= GLFW_KEY_WORLD_1 && key <= GLFW_KEY_WORLD_2))
+            {
+                _staticDelayTimer = 0;
+
+                std::string current = GameData::GetInputText();
+
+                current += "a";
+
+                GameData::SetInputText(current);
+
+                break;
+            }
         }
     }
 }

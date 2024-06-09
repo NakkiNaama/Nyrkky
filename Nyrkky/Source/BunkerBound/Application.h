@@ -141,6 +141,7 @@ protected:
 	void HandleKeyPress(float DeltaTime);
 	void StaticDelayPress(float DeltaTime);
 	void StaticDelayPressDialog(float DeltaTimebool);
+	void StaticDelayPressWrite(float DeltaTime);
 
 	void DialogExecute();
 
@@ -148,7 +149,7 @@ protected:
 	bool _editor = false;
 	bool _fullScreen = false;
 	float _staticDelayTimer = 0;
-
+	bool _inputMode = false;
 
 private:
 

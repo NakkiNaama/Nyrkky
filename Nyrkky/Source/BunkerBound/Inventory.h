@@ -39,6 +39,18 @@ public:
 		return _items;
 	}
 
+	Item* FindItem(EItem item)
+	{
+		for (auto& i : _items)
+		{
+			if (i->ID == item)
+			{
+				return i;
+			}
+		}
+		return nullptr;
+	}
+
 	void AddItem(EItem itemID)
 	{
 		std::cout << "add item" << std::endl;
@@ -49,6 +61,17 @@ public:
 				_items.push_back(&item);
 				std::cout << item.Name << " added!" << std::endl;
 				break;
+			}
+		}
+	}
+
+	void RemoveItem(EItem itemID) {
+		for (auto it = _items.begin(); it != _items.end(); ) {
+			if (*it != nullptr && (*it)->ID == itemID) {
+				it = _items.erase(it);
+			}
+			else {
+				++it;
 			}
 		}
 	}

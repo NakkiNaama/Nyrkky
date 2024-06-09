@@ -53,7 +53,8 @@ public:
 	void CreateEditorUI();
 	std::shared_ptr<UIObjectRenderData> CreateHighlight(UIObjectType type, float xPercentage, float yPercentage, float widthPercentage, float heightPercentage, bool interactable);
 
-	std::shared_ptr<Text> _text = nullptr;
+	std::shared_ptr<Text> _dialogText = nullptr;
+	std::shared_ptr<Text> _inputText = nullptr;
 	std::vector<std::shared_ptr<Text>> _choiceText;
 
 	// Texture button offset. Determinates textures drawn and result of button press

@@ -28,13 +28,17 @@ void TileEntity::ActivateEvent()
 		std::cout << "no event on object!" << std::endl;
 		break;
 
-	case EventDoor: 
+	case EventDoor:
 		std::cout << "interacted with door!" << std::endl;
+
 		if (_event.State == 0)
 		{
-			_event.State = 1;
-			if (_textures.size() > 1) Render->SetTexture(_textures[1]);
-			_collision = false;
+			if (ConsumeItem(EKey))
+			{
+				_event.State = 1;
+				if (_textures.size() > 1) Render->SetTexture(_textures[1]);
+				_collision = false;
+			}
 		}
 		else
 		{
@@ -43,6 +47,7 @@ void TileEntity::ActivateEvent()
 			_collision = true;
 		}
 		break;
+
 
 	case EventChest: 
 		_event.Type = EventNone;
@@ -86,4 +91,19 @@ void TileEntity::RenderEntity()
 	}
 }
 
-
+bool TileEntity::ConsumeItem(EItem KeyItem)
+{
+	if (!_ignoreReq)
+	{
+		Item* x = GameData::GetInventory()->FindItem(KeyItem);
+		if (x == nullptr)
+		{
+			std::cout << "No required item!" << std::endl;
+			return false;
+		}
+		std::cout << "required item used!" << std::endl;
+		GameData::GetInventory()->RemoveItem(KeyItem);
+		_ignoreReq = true;
+	}
+	return true;
+}
