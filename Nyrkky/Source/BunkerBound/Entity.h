@@ -44,6 +44,12 @@ public:
 		x = PosX;
 		y = PosY;
 	}
+	/*
+	int GetPositionIndex() const
+	{
+		return GameData::CoordinateToIndex(PosX, PosY);
+	}
+	*/
 
 	void SetPosition(int x, int y)
 	{

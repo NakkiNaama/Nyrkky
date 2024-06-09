@@ -116,7 +116,7 @@ void UI::CreateGameUI()
 	{
 		float heightP = 0.1f / 2;
 		float widthP = heightP * 0.545f;
-		float xP = 0.006;
+		float xP = 0.006f;
 		float yP = 0.025f;
 		float xPplus = xP;
 

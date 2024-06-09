@@ -10,6 +10,7 @@
 #include <string>
 #include <map>
 
+
 #include <memory>
 
 
@@ -33,8 +34,6 @@ static void AddDirectionToCoordinate(Direction direction, int& x, int& y)
 	case Direction::Left: x += -1; y += 0; break;
 	}
 }
-
-
 
 
 

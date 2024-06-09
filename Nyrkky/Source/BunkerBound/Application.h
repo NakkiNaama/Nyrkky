@@ -160,7 +160,7 @@ private:
 	glm::mat4 _view = glm::mat4(1.0f);
 	std::vector<std::shared_ptr<TextEntity>> _textEntities;
 	glm::vec2 _centerOfMap;
-
+	bool _mouseInUse = false;
 
 };
 

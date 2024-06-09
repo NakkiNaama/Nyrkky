@@ -18,6 +18,8 @@ void InitMapTextures()
     paths.push_back(path + "StoneFloor01.png");
     paths.push_back(path + "StoneFloor02.png");
 
+    paths.push_back(path + "BrickWall01.png");
+
     paths.push_back(path + "chest_closed.png");
     paths.push_back(path + "chest_open.png");
     paths.push_back(path + "ladder.png");

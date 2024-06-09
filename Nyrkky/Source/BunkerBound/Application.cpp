@@ -105,12 +105,30 @@ void Application::KeyPressEvent(int key, int scancode, int action, int mods)
 
 void Application::MouseClickEvent(int button, int action, int mods)
 {
-    if (action == GLFW_PRESS) {
+    if (action == GLFW_PRESS) 
+    {
         switch (button) {
         case GLFW_MOUSE_BUTTON_LEFT:
         {
-
+            _mouseInUse = true;
             LeftClick(CTRL);
+        }
+        break;
+
+        case GLFW_MOUSE_BUTTON_RIGHT:
+            RightClick();
+            break;
+        case GLFW_MOUSE_BUTTON_MIDDLE:
+            printf("middle mouse clicked\n"); break;
+
+        }
+    }
+    else if (action == GLFW_RELEASE)
+    {
+        switch (button) {
+        case GLFW_MOUSE_BUTTON_LEFT:
+        {
+            _mouseInUse = false;
         }
         break;
 
@@ -407,6 +425,35 @@ void Application::LeftClick(bool ctrl)
                     std::cout << "click dialog" << std::endl;
                     DialogExecute();
                 }
+                else
+                {
+
+                    int charX, charY;
+                    GameData::GetCharacter(ECharacter::Emily)->GetPosition(charX, charY);
+
+                    std::pair<int, int> oldPos = std::pair<int, int>(charX, charY);
+                    std::pair<int, int> clickedPos = GameData::IndexToCoordinate(GetClickedTile());
+                   
+
+                    int deltaX = clickedPos.first - oldPos.first;
+                    int deltaY = clickedPos.second - oldPos.second;
+
+                    Direction dir = Direction::DirNone;
+
+                    if      (deltaY > 0) dir = Direction::Backwards;
+                    else if (deltaY < 0) dir = Direction::Forward;
+                    else if (deltaX > 0) dir = Direction::Right;
+                    else if (deltaX < 0) dir = Direction::Left;
+
+                    MoveMainCharacter(dir);
+
+                    /*
+                    if (_pressedKeys.count(GLFW_KEY_W)) MoveMainCharacter(Direction::Forward);
+                    if (_pressedKeys.count(GLFW_KEY_D)) MoveMainCharacter(Direction::Right);
+                    if (_pressedKeys.count(GLFW_KEY_S)) MoveMainCharacter(Direction::Backwards);
+                    if (_pressedKeys.count(GLFW_KEY_A)) MoveMainCharacter(Direction::Left);
+                    */
+                }
             }
             else
             {
@@ -460,24 +507,27 @@ void Application::ChangeOffset(int offset, bool cursorPosCheck)
 
 void Application::HandleKeyPress(float DeltaTime)
 {
-    if (!GameData::IsDialogVisible())
+    if (!_mouseInUse)
     {
-        if (_pressedKeys.count(GLFW_KEY_UP)) MoveCamera(0);
-        if (_pressedKeys.count(GLFW_KEY_RIGHT)) MoveCamera(1);
-        if (_pressedKeys.count(GLFW_KEY_DOWN)) MoveCamera(2);
-        if (_pressedKeys.count(GLFW_KEY_LEFT)) MoveCamera(3);
+        if (!GameData::IsDialogVisible())
+        {
+            if (_pressedKeys.count(GLFW_KEY_UP)) MoveCamera(0);
+            if (_pressedKeys.count(GLFW_KEY_RIGHT)) MoveCamera(1);
+            if (_pressedKeys.count(GLFW_KEY_DOWN)) MoveCamera(2);
+            if (_pressedKeys.count(GLFW_KEY_LEFT)) MoveCamera(3);
 
-        MoveMainCharacter(Direction::DirNone);
-        if (_pressedKeys.count(GLFW_KEY_W)) MoveMainCharacter(Direction::Forward);
-        if (_pressedKeys.count(GLFW_KEY_D)) MoveMainCharacter(Direction::Right);
-        if (_pressedKeys.count(GLFW_KEY_S)) MoveMainCharacter(Direction::Backwards);
-        if (_pressedKeys.count(GLFW_KEY_A)) MoveMainCharacter(Direction::Left);
+            MoveMainCharacter(Direction::DirNone);
+            if (_pressedKeys.count(GLFW_KEY_W)) MoveMainCharacter(Direction::Forward);
+            if (_pressedKeys.count(GLFW_KEY_D)) MoveMainCharacter(Direction::Right);
+            if (_pressedKeys.count(GLFW_KEY_S)) MoveMainCharacter(Direction::Backwards);
+            if (_pressedKeys.count(GLFW_KEY_A)) MoveMainCharacter(Direction::Left);
 
-        StaticDelayPress(DeltaTime);
-    }
-    else
-    {
-        StaticDelayPressDialog(DeltaTime);
+            StaticDelayPress(DeltaTime);
+        }
+        else
+        {
+            StaticDelayPressDialog(DeltaTime);
+        }
     }
 }
 

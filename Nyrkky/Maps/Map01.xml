@@ -1575,127 +1575,127 @@
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -1799,8 +1799,8 @@
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -1918,8 +1918,8 @@
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -2023,8 +2023,8 @@
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -2142,8 +2142,8 @@
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -2242,6 +2242,685 @@
     <Tile>
         <Name>StoneFloor01.png</Name>
         <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>B.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>B.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>B.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>B.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>B.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>B.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -2352,559 +3031,6 @@
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>B.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>B.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>B.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>B.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>B.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
         <Name>StoneFloor01.png</Name>
         <Collision>0</Collision>
         <HasSub>0</HasSub>
@@ -2912,127 +3038,8 @@
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>B.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -3136,15 +3143,8 @@
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -3262,8 +3262,8 @@
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -3367,232 +3367,8 @@
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>Ladder</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>B.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -3710,8 +3486,8 @@
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -3815,8 +3591,8 @@
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -3934,8 +3710,8 @@
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -4039,8 +3815,232 @@
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
         <Name>StoneFloor01.png</Name>
         <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>Ladder</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>B.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -4158,8 +4158,113 @@
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
         <Name>StoneFloor01.png</Name>
         <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>StoneFloor01.png</Name>
+        <Collision>0</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -4277,8 +4382,8 @@
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -4382,8 +4487,22 @@
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
+        <HasSub>0</HasSub>
+        <SubName>invisible.png</SubName>
+        <EntityName>-</EntityName>
+    </Tile>
+    <Tile>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -4393,151 +4512,32 @@
         <Collision>0</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
+        <EntityName>Door01</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
-        <HasSub>0</HasSub>
-        <SubName>invisible.png</SubName>
-        <EntityName>-</EntityName>
-    </Tile>
-    <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -4564,50 +4564,50 @@
         <EntityName>Chest01</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -4711,8 +4711,8 @@
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -4760,36 +4760,36 @@
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -4935,8 +4935,8 @@
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -4984,8 +4984,8 @@
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -5159,8 +5159,8 @@
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -5208,8 +5208,8 @@
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
@@ -5383,57 +5383,57 @@
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>
     </Tile>
     <Tile>
-        <Name>StoneFloor01.png</Name>
-        <Collision>0</Collision>
+        <Name>BrickWall01.png</Name>
+        <Collision>1</Collision>
         <HasSub>0</HasSub>
         <SubName>invisible.png</SubName>
         <EntityName>-</EntityName>

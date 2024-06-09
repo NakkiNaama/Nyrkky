@@ -20,7 +20,6 @@ CharacterEntity::CharacterEntity(std::string name, ECharacter id, Event event, i
 void CharacterEntity::Tick(float DeltaTime)
 {
 	_moveTimer += DeltaTime;
-
 	if (_moveTimer > 0.1)
 	{
 		_moveTimer = 0;

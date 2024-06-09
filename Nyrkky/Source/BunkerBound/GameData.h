@@ -265,6 +265,16 @@ public:
 	{
 		Get().GameData::ImpInitalizeInventory(inv);
 	}
+
+	static int CoordinateToIndex(int x, int y)
+	{
+		return Get().ImpCoordinateToIndex(x, y);
+	}
+
+	static std::pair<int, int> IndexToCoordinate(int index)
+	{
+		return Get().ImpIndexToCoordinate(index);
+	}
 	
 private:
 
@@ -582,6 +592,20 @@ private:
 	void ImpInitalizeInventory(std::shared_ptr<Inventory> inv)
 	{
 		inventory = inv;
+	}
+
+	int ImpCoordinateToIndex(int x, int y)
+	{
+		int grid = GameData::GetMap()->GetGridSize();
+		return grid * y + x;
+	}
+
+	std::pair<int, int> ImpIndexToCoordinate(int index)
+	{
+		int grid = GameData::GetMap()->GetGridSize();
+		int y = index / grid;
+		int x = index % grid;
+		return std::make_pair(x, y);
 	}
 	
 	std::vector<std::shared_ptr<MapEntity>> maps;

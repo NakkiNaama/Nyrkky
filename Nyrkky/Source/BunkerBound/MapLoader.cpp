@@ -100,7 +100,7 @@ void MapLoader::LoadMap(const char* path, int& gridSize, std::vector<Tile> &tile
                     subTile = std::make_shared<SubTile>(GameData::GetTextureIndex("invisible.png"), false);
                 }
 
-                Tile v = Tile(name, false, HasSub, GameData::GetTextureIndex(name), subTile);
+                Tile v = Tile(name, Collision, HasSub, GameData::GetTextureIndex(name), subTile);
                 tiles.push_back(v);
 
                 gridSize++;
